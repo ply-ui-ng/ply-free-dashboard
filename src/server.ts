@@ -35,6 +35,10 @@ app.use(
   }),
 );
 
+function isAbortError(err: unknown): boolean {
+  return err instanceof Error && err.name === 'AbortError';
+}
+
 /**
  * Handle all other requests by rendering the Angular application.
  */
@@ -42,7 +46,13 @@ app.use((req, res, next) => {
   angularApp
     .handle(req)
     .then((response) => (response ? writeResponseToNodeResponse(response, res) : next()))
-    .catch(next);
+    .catch((err: unknown) => {
+      // Vite aborts the first SSR render while deps are still bundling.
+      if (isAbortError(err) || req.destroyed) {
+        return;
+      }
+      next(err);
+    });
 });
 
 /**
