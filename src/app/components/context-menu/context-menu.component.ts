@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   Component,
@@ -20,16 +20,16 @@ let contextMenuIdCounter = 0;
 
 /**
  * The container component for a right-click context menu.
- * Designed to be passed into a `[base-context-menu-trigger]` directive.
+ * Designed to be passed into a `[ply-context-menu-trigger]` directive.
  *
  * @example
- * <div [base-context-menu-trigger]="menu">Right-click me</div>
- * <base-context-menu #menu>
- *   <button base-context-menu-item>Copy</button>
- * </base-context-menu>
+ * <div [ply-context-menu-trigger]="menu">Right-click me</div>
+ * <ply-context-menu #menu>
+ *   <button ply-context-menu-item>Copy</button>
+ * </ply-context-menu>
  */
 @Component({
-  selector: 'base-context-menu',
+  selector: 'ply-context-menu',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './context-menu.component.html',
 })
@@ -40,7 +40,7 @@ export class ContextMenuComponent<T> implements ContextMenuPanel<T> {
    * Optional custom width for the context menu container.
    *
    * @example
-   * <base-context-menu size="220px">...</base-context-menu>
+   * <ply-context-menu size="220px">...</ply-context-menu>
    */
   readonly size = input<string>();
 
@@ -51,12 +51,12 @@ export class ContextMenuComponent<T> implements ContextMenuPanel<T> {
    * Emitted when the menu should close (Escape, Tab, or after an item is chosen).
    *
    * @example
-   * <base-context-menu (closed)="onClosed()"></base-context-menu>
+   * <ply-context-menu (closed)="onClosed()"></ply-context-menu>
    */
   readonly closed = output<void>();
 
   /** Stable id referenced by the trigger's aria-controls. */
-  readonly menuId = `base-context-menu-${contextMenuIdCounter++}`;
+  readonly menuId = `ply-context-menu-${contextMenuIdCounter++}`;
 
   readonly menuClasses = computed(() => {
     const base =

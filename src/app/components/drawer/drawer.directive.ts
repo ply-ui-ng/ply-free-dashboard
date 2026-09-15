@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   Directive,
@@ -16,15 +16,15 @@ import { merge, Subscription } from 'rxjs';
 import { outputToObservable } from '@angular/core/rxjs-interop';
 
 /**
- * A directive that attaches a `base-drawer` to a trigger element (like a button).
+ * A directive that attaches a `ply-drawer` to a trigger element (like a button).
  * Automatically handles the overlay backdrop and click-to-open behavior.
  * 
  * @example
- * <base-drawer #myDrawer position="right">Drawer Content</base-drawer>
- * <button [base-drawer]="myDrawer">Open Drawer</button>
+ * <ply-drawer #myDrawer position="right">Drawer Content</ply-drawer>
+ * <button [ply-drawer]="myDrawer">Open Drawer</button>
  */
 @Directive({
-  selector: '[base-drawer]',
+  selector: '[ply-drawer]',
   host: {
     '(click)': 'toggleDrawer()',
   },
@@ -37,8 +37,8 @@ export class DrawerDirective<T> implements OnDestroy {
   /** The edge of the screen to slide the drawer in from. */
   readonly placement = input('right');
   
-  /** The reference to the `base-drawer` component to open. */
-  readonly drawerPanel = input.required<DrawerPanel<T>>({ alias: "base-drawer" });
+  /** The reference to the `ply-drawer` component to open. */
+  readonly drawerPanel = input.required<DrawerPanel<T>>({ alias: "ply-drawer" });
 
   private overlay = inject(Overlay);
   private viewContainerRef = inject(ViewContainerRef);

@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, computed, input ,
   ChangeDetectionStrategy
@@ -8,13 +8,13 @@ import { Component, computed, input ,
 import { cn } from '../../tw-merge/tw-merge';
 
 /**
- * A helper/info text element for use inside a `base-input-group`.
+ * A helper/info text element for use inside a `ply-input-group`.
  *
  * @example
- * <base-info-text>We'll never share your email</base-info-text>
+ * <ply-info-text>We'll never share your email</ply-info-text>
  */
 @Component({
-  selector: 'base-info-text',
+  selector: 'ply-info-text',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './info-text.component.html',
   host: { '[class]': 'hostCls()' }

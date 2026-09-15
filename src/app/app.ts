@@ -9,12 +9,12 @@ import { SeoService } from './core/seo/seo';
   imports: [RouterOutlet, CookieBannerComponent],
   template: `
     <router-outlet />
-    <base-cookie-banner
+    <ply-cookie-banner
       storageKey="base-ui-dashboard-cookie-consent"
       title="We use cookies"
       message="We store theme and a mock session in this demo. You can reject non-essential cookies."
-      policyHref="https://base-ui.net">
-    </base-cookie-banner>
+      policyHref="https://ply-ui.com">
+    </ply-cookie-banner>
   `,
 })
 export class App {

@@ -6,30 +6,30 @@
     sectionId="buttons"
     title="Buttons"
     description="Solid, stroked, and icon variants."
-    componentName="base-button">
+    componentName="ply-button">
     <div class="flex flex-wrap gap-2">
-      <button type="button" base-button color="primary">Primary</button>
-      <button type="button" base-button color="success">Success</button>
-      <button type="button" base-button color="danger">Danger</button>
-      <button type="button" base-button color="warning">Warning</button>
-      <button type="button" base-button color="accent">Accent</button>
-      <button type="button" base-button color="default">Default</button>
+      <button type="button" ply-button color="primary">Primary</button>
+      <button type="button" ply-button color="success">Success</button>
+      <button type="button" ply-button color="danger">Danger</button>
+      <button type="button" ply-button color="warning">Warning</button>
+      <button type="button" ply-button color="accent">Accent</button>
+      <button type="button" ply-button color="default">Default</button>
     </div>
     <div class="flex flex-wrap gap-2">
-      <button type="button" base-stroked-button color="primary">Stroked</button>
-      <button type="button" base-stroked-button color="danger">Stroked danger</button>
-      <button type="button" base-button color="primary" size="sm">Small</button>
-      <button type="button" base-button color="primary" size="lg">Large</button>
+      <button type="button" ply-stroked-button color="primary">Stroked</button>
+      <button type="button" ply-stroked-button color="danger">Stroked danger</button>
+      <button type="button" ply-button color="primary" size="sm">Small</button>
+      <button type="button" ply-button color="primary" size="lg">Large</button>
     </div>
     <div class="flex flex-wrap items-center gap-2">
-      <button type="button" base-icon-button color="primary" aria-label="Add">
-        <base-icon name="plus"></base-icon>
+      <button type="button" ply-icon-button color="primary" aria-label="Add">
+        <ply-icon name="plus"></ply-icon>
       </button>
-      <button type="button" base-stroked-icon-button color="default" aria-label="Settings">
-        <base-icon name="settings"></base-icon>
+      <button type="button" ply-stroked-icon-button color="default" aria-label="Settings">
+        <ply-icon name="settings"></ply-icon>
       </button>
-      <button type="button" base-button color="primary">
-        <base-icon name="user-plus" class="w-4 h-4"></base-icon>
+      <button type="button" ply-button color="primary">
+        <ply-icon name="user-plus" class="w-4 h-4"></ply-icon>
         With icon
       </button>
     </div>
@@ -39,57 +39,57 @@
     sectionId="button-group"
     title="Button group"
     description="Toggle between views."
-    componentName="base-button-group">
-    <base-button-group size="sm" [(ngModel)]="viewMode">
-      <base-group-button-item value="list" icon="list"></base-group-button-item>
-      <base-group-button-item value="grid" icon="grid"></base-group-button-item>
-      <base-group-button-item value="layout" icon="layout"></base-group-button-item>
-    </base-button-group>
+    componentName="ply-button-group">
+    <ply-button-group size="sm" [(ngModel)]="viewMode">
+      <ply-group-button-item value="list" icon="list"></ply-group-button-item>
+      <ply-group-button-item value="grid" icon="grid"></ply-group-button-item>
+      <ply-group-button-item value="layout" icon="layout"></ply-group-button-item>
+    </ply-button-group>
     <p class="text-xs text-slate-500">Selected: {{ viewMode }}</p>
   </app-showcase-section>
 
   <app-showcase-section
     sectionId="badges-chips"
     title="Badges & chips"
-    componentName="base-badge / base-chip">
+    componentName="ply-badge / ply-chip">
     <div class="flex flex-wrap gap-2">
-      <base-badge color="primary" size="sm" shape="rectangular">Primary</base-badge>
-      <base-badge color="success" size="sm" shape="rectangular">Success</base-badge>
-      <base-badge color="danger" size="sm" shape="rectangular">Danger</base-badge>
-      <base-badge color="warning" size="sm" shape="rectangular">Warning</base-badge>
-      <base-badge color="accent" size="sm" shape="rectangular">Accent</base-badge>
+      <ply-badge color="primary" size="sm" shape="rectangular">Primary</ply-badge>
+      <ply-badge color="success" size="sm" shape="rectangular">Success</ply-badge>
+      <ply-badge color="danger" size="sm" shape="rectangular">Danger</ply-badge>
+      <ply-badge color="warning" size="sm" shape="rectangular">Warning</ply-badge>
+      <ply-badge color="accent" size="sm" shape="rectangular">Accent</ply-badge>
     </div>
     <div class="flex flex-wrap gap-2">
-      <base-chip>Default</base-chip>
-      <base-chip color="primary" [active]="true">Active</base-chip>
-      <base-chip color="success" icon="check">Success</base-chip>
-      <base-chip color="danger" [removable]="true">Removable</base-chip>
+      <ply-chip>Default</ply-chip>
+      <ply-chip color="primary" [active]="true">Active</ply-chip>
+      <ply-chip color="success" icon="check">Success</ply-chip>
+      <ply-chip color="danger" [removable]="true">Removable</ply-chip>
     </div>
   </app-showcase-section>
 
-  <app-showcase-section sectionId="avatars" title="Avatars" componentName="base-avatar">
+  <app-showcase-section sectionId="avatars" title="Avatars" componentName="ply-avatar">
     <div class="flex flex-wrap items-center gap-3">
-      <base-avatar size="xs" shape="circle" initials="XS"></base-avatar>
-      <base-avatar size="sm" shape="circle" initials="SM" status="active"></base-avatar>
-      <base-avatar size="md" shape="circle" initials="MD" status="inactive"></base-avatar>
-      <base-avatar size="lg" shape="circle" initials="LG"></base-avatar>
-      <base-avatar size="md" shape="square" initials="SQ"></base-avatar>
+      <ply-avatar size="xs" shape="circle" initials="XS"></ply-avatar>
+      <ply-avatar size="sm" shape="circle" initials="SM" status="active"></ply-avatar>
+      <ply-avatar size="md" shape="circle" initials="MD" status="inactive"></ply-avatar>
+      <ply-avatar size="lg" shape="circle" initials="LG"></ply-avatar>
+      <ply-avatar size="md" shape="square" initials="SQ"></ply-avatar>
     </div>
   </app-showcase-section>
 
   <app-showcase-section
     sectionId="icons-divider"
     title="Icons & divider"
-    componentName="base-icon / base-divider">
+    componentName="ply-icon / ply-divider">
     <div class="flex flex-wrap gap-4 text-slate-600 dark:text-slate-300">
-      <base-icon name="home" class="w-5 h-5"></base-icon>
-      <base-icon name="users" class="w-5 h-5"></base-icon>
-      <base-icon name="bell" class="w-5 h-5"></base-icon>
-      <base-icon name="settings" class="w-5 h-5"></base-icon>
-      <base-icon name="search" class="w-5 h-5"></base-icon>
-      <base-icon name="star" class="w-5 h-5 stroke-amber-500"></base-icon>
+      <ply-icon name="home" class="w-5 h-5"></ply-icon>
+      <ply-icon name="users" class="w-5 h-5"></ply-icon>
+      <ply-icon name="bell" class="w-5 h-5"></ply-icon>
+      <ply-icon name="settings" class="w-5 h-5"></ply-icon>
+      <ply-icon name="search" class="w-5 h-5"></ply-icon>
+      <ply-icon name="star" class="w-5 h-5 stroke-amber-500"></ply-icon>
     </div>
-    <base-divider></base-divider>
+    <ply-divider></ply-divider>
     <p class="text-xs text-slate-500">Content below a divider</p>
   </app-showcase-section>
 
@@ -97,12 +97,12 @@
     sectionId="ripple"
     title="Ripple"
     description="Click the button to see the material-style ripple."
-    componentName="base-ripple">
+    componentName="ply-ripple">
     <button
       type="button"
-      base-button
+      ply-button
       color="primary"
-      base-ripple
+      ply-ripple
       class="relative overflow-hidden">
       Tap for ripple
     </button>
@@ -112,9 +112,9 @@
     sectionId="reveal"
     title="Reveal"
     description="Scroll into view animation helper."
-    componentName="baseReveal">
+    componentName="plyReveal">
     <div
-      baseReveal
+      plyReveal
       class="rounded-xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-600 dark:border-slate-700 dark:bg-slate-800/60 dark:text-slate-300">
       This block fades and slides in when it enters the viewport.
     </div>
@@ -124,10 +124,10 @@
     sectionId="kbd"
     title="Keyboard"
     description="Inline glyphs for shortcuts in copy, menus, and docs."
-    componentName="base-kbd">
+    componentName="ply-kbd">
     <p class="m-0! text-sm text-slate-700 dark:text-slate-200">
-      Press <base-kbd>⌘</base-kbd> <base-kbd>K</base-kbd> to search, or
-      <base-kbd>Esc</base-kbd> to dismiss a dialog.
+      Press <ply-kbd>⌘</ply-kbd> <ply-kbd>K</ply-kbd> to search, or
+      <ply-kbd>Esc</ply-kbd> to dismiss a dialog.
     </p>
   </app-showcase-section>
 
@@ -135,31 +135,31 @@
     sectionId="aspect-ratio"
     title="Aspect ratio"
     description="Preserves width-to-height via CSS aspect-ratio."
-    componentName="base-aspect-ratio">
+    componentName="ply-aspect-ratio">
     <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
       <div>
         <p class="mb-2 text-xs font-medium text-slate-500">16 / 9</p>
-        <base-aspect-ratio ratio="16/9" class="rounded-lg">
+        <ply-aspect-ratio ratio="16/9" class="rounded-lg">
           <div class="flex h-full w-full items-end bg-linear-to-br from-blue-500 to-slate-800 p-3 text-sm font-medium text-white">
             Hero
           </div>
-        </base-aspect-ratio>
+        </ply-aspect-ratio>
       </div>
       <div>
         <p class="mb-2 text-xs font-medium text-slate-500">4 / 3</p>
-        <base-aspect-ratio ratio="4/3" class="rounded-lg">
+        <ply-aspect-ratio ratio="4/3" class="rounded-lg">
           <div class="flex h-full w-full items-end bg-linear-to-br from-emerald-500 to-slate-800 p-3 text-sm font-medium text-white">
             Card
           </div>
-        </base-aspect-ratio>
+        </ply-aspect-ratio>
       </div>
       <div>
         <p class="mb-2 text-xs font-medium text-slate-500">1 / 1</p>
-        <base-aspect-ratio ratio="1/1" class="rounded-lg">
+        <ply-aspect-ratio ratio="1/1" class="rounded-lg">
           <div class="flex h-full w-full items-end bg-linear-to-br from-violet-500 to-slate-800 p-3 text-sm font-medium text-white">
             Avatar
           </div>
-        </base-aspect-ratio>
+        </ply-aspect-ratio>
       </div>
     </div>
   </app-showcase-section>
@@ -168,8 +168,8 @@
     sectionId="scroll-area"
     title="Scroll area"
     description="Overflow container with a thin, theme-aware scrollbar."
-    componentName="base-scroll-area">
-    <base-scroll-area class="h-40 max-w-sm rounded-lg border border-slate-200 dark:border-slate-700">
+    componentName="ply-scroll-area">
+    <ply-scroll-area class="h-40 max-w-sm rounded-lg border border-slate-200 dark:border-slate-700">
       <ul class="m-0! list-none p-0">
         @for (tag of scrollTags; track tag) {
           <li
@@ -178,7 +178,7 @@
           </li>
         }
       </ul>
-    </base-scroll-area>
+    </ply-scroll-area>
   </app-showcase-section>
 
   <app-showcase-section

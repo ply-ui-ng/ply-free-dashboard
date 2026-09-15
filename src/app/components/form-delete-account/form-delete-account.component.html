@@ -1,14 +1,14 @@
 <!--
-  Base UI (free tier) — https://base-ui.net
+  Ply (free tier) — https://ply-ui.com
   Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-  Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+  Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 -->
-<base-card>
+<ply-card>
   <div class="p-8 flex flex-col gap-6">
 
     <div class="flex items-start gap-4 p-5 rounded-xl bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-900/50">
       <div class="w-10 h-10 rounded-lg bg-red-100 dark:bg-red-900/50 flex items-center justify-center shrink-0">
-        <base-icon name="alert-triangle" class="w-5 h-5 stroke-red-600 dark:stroke-red-400"></base-icon>
+        <ply-icon name="alert-triangle" class="w-5 h-5 stroke-red-600 dark:stroke-red-400"></ply-icon>
       </div>
       <div>
         <h3 class="text-[13px] font-semibold text-red-700 dark:text-red-400 mb-1.5 uppercase tracking-wider">Danger Zone — This cannot be undone</h3>
@@ -26,35 +26,35 @@
       </p>
       <div class="flex flex-col gap-2.5">
         <div class="flex items-center gap-2.5">
-          <base-icon name="x-circle" class="w-3.5 h-3.5 stroke-red-400 shrink-0"></base-icon>
+          <ply-icon name="x-circle" class="w-3.5 h-3.5 stroke-red-400 shrink-0"></ply-icon>
           <span class="text-[11px] text-slate-500 dark:text-slate-400">All 14 projects will be permanently deleted</span>
         </div>
         <div class="flex items-center gap-2.5">
-          <base-icon name="x-circle" class="w-3.5 h-3.5 stroke-red-400 shrink-0"></base-icon>
+          <ply-icon name="x-circle" class="w-3.5 h-3.5 stroke-red-400 shrink-0"></ply-icon>
           <span class="text-[11px] text-slate-500 dark:text-slate-400">3 team members will lose workspace access</span>
         </div>
         <div class="flex items-center gap-2.5">
-          <base-icon name="x-circle" class="w-3.5 h-3.5 stroke-red-400 shrink-0"></base-icon>
+          <ply-icon name="x-circle" class="w-3.5 h-3.5 stroke-red-400 shrink-0"></ply-icon>
           <span class="text-[11px] text-slate-500 dark:text-slate-400">Active subscriptions will be immediately cancelled</span>
         </div>
       </div>
     </div>
 
-    <base-input-group>
-      <base-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Type DELETE to confirm</base-label>
+    <ply-input-group>
+      <ply-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Type DELETE to confirm</ply-label>
       <input
-        base-input
+        ply-input
         placeholder="DELETE"
         class="font-mono tracking-widest"
         (input)="updateConfirm($event)" />
-    </base-input-group>
+    </ply-input-group>
 
     <button
-      base-button
+      ply-button
       [disabled]="!canDelete"
       class="w-full bg-red-600! hover:bg-red-700! border-red-600! text-white! disabled:opacity-40 disabled:cursor-not-allowed">
       Delete Account Permanently
     </button>
 
   </div>
-</base-card>
+</ply-card>

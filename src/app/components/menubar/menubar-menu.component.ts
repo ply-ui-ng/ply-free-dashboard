@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   Component,
@@ -19,17 +19,17 @@ import { MenubarComponent } from './menubar.component';
 import { cn } from '../tw-merge/tw-merge';
 
 /**
- * One top-level menu inside `base-menubar`. Project `base-dropdown-menu-item`
- * children, plus nested `base-dropdown-menu` panels on items that use
- * `[base-dropdown-menu-trigger]` with `placement="right"` (or `left`).
+ * One top-level menu inside `ply-menubar`. Project `ply-dropdown-menu-item`
+ * children, plus nested `ply-dropdown-menu` panels on items that use
+ * `[ply-dropdown-menu-trigger]` with `placement="right"` (or `left`).
  *
  * @example
- * <base-menubar-menu label="Edit">
- *   <base-dropdown-menu-item>Cut</base-dropdown-menu-item>
- * </base-menubar-menu>
+ * <ply-menubar-menu label="Edit">
+ *   <ply-dropdown-menu-item>Cut</ply-dropdown-menu-item>
+ * </ply-menubar-menu>
  */
 @Component({
-  selector: 'base-menubar-menu',
+  selector: 'ply-menubar-menu',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [DropdownMenuComponent, DropdownMenuDirective, IconComponent],
   templateUrl: './menubar-menu.component.html',
@@ -41,21 +41,21 @@ export class MenubarMenuComponent {
   /**
    * Visible label on the menubar trigger.
    * @example
-   * <base-menubar-menu label="File"></base-menubar-menu>
+   * <ply-menubar-menu label="File"></ply-menubar-menu>
    */
   readonly label = input('');
 
   /**
    * Extra host classes merged via `cn()`.
    * @example
-   * <base-menubar-menu class="hidden sm:block" label="Help"></base-menubar-menu>
+   * <ply-menubar-menu class="hidden sm:block" label="Help"></ply-menubar-menu>
    */
   readonly extraClass = input('', { alias: 'class' });
 
   /**
    * Disables the trigger so the menu cannot open.
    * @example
-   * <base-menubar-menu label="Help" disabled></base-menubar-menu>
+   * <ply-menubar-menu label="Help" disabled></ply-menubar-menu>
    */
   readonly disabled = input(false, { transform: booleanAttribute });
 

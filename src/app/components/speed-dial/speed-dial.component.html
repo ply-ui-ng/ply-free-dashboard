@@ -1,7 +1,7 @@
 <!--
-  Base UI (free tier) — https://base-ui.net
+  Ply (free tier) — https://ply-ui.com
   Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-  Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+  Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 -->
 <div class="relative inline-flex">
   <!-- Actions (absolutely stacked so closed state doesn't reserve space) -->
@@ -47,7 +47,7 @@
         }
         <button
           type="button"
-          base-icon-button
+          ply-icon-button
           [color]="action.color || 'default'"
           [size]="size()"
           class="rounded-full! shadow-lg shrink-0"
@@ -55,7 +55,7 @@
           [attr.aria-label]="actionAriaLabel(action)"
           (click)="onActionClick(action, $event)"
         >
-          <base-icon [name]="action.icon" class="stroke-current" aria-hidden="true"></base-icon>
+          <ply-icon [name]="action.icon" class="stroke-current" aria-hidden="true"></ply-icon>
         </button>
       </div>
     }
@@ -64,7 +64,7 @@
   <!-- Trigger -->
   <button
     type="button"
-    base-icon-button
+    ply-icon-button
     [color]="color()"
     [size]="size()"
     class="relative z-10 rounded-full! shadow-lg shrink-0"
@@ -73,11 +73,11 @@
     [attr.aria-label]="triggerAriaLabel()"
     (click)="toggle(); $event.stopPropagation()"
   >
-    <base-icon
+    <ply-icon
       [name]="open() ? closeIcon() : openIcon()"
       class="stroke-current transition-transform duration-200"
       [class.rotate-90]="open()"
       aria-hidden="true"
-    ></base-icon>
+    ></ply-icon>
   </button>
 </div>

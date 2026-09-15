@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component,
   OnDestroy,
@@ -30,13 +30,13 @@ import { cn } from '../tw-merge/tw-merge';
  * Supports auto-play, touch swiping, and slide/crossfade transitions.
  *
  * @example
- * <base-gallery-slider [interval]="3000" transition="crossfade" [wrap]="true">
- *   <base-carousel-item>Slide 1 content</base-carousel-item>
- *   <base-carousel-item>Slide 2 content</base-carousel-item>
- * </base-gallery-slider>
+ * <ply-gallery-slider [interval]="3000" transition="crossfade" [wrap]="true">
+ *   <ply-carousel-item>Slide 1 content</ply-carousel-item>
+ *   <ply-carousel-item>Slide 2 content</ply-carousel-item>
+ * </ply-gallery-slider>
  */
 @Component({
-  selector: 'base-gallery-slider, base-carousel',
+  selector: 'ply-gallery-slider, ply-carousel',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [IconComponent, IconButtonDirective],
   templateUrl: './gallery-slider.component.html',

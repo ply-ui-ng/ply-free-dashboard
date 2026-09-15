@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, computed, input ,
   ChangeDetectionStrategy
@@ -20,10 +20,10 @@ export interface AvatarGroupItem {
  * Avatars overlap tightly at rest and spread apart on hover.
  *
  * @example
- * <base-avatar-group [items]="users" [max]="4" size="md"></base-avatar-group>
+ * <ply-avatar-group [items]="users" [max]="4" size="md"></ply-avatar-group>
  */
 @Component({
-  selector: 'base-avatar-group',
+  selector: 'ply-avatar-group',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   templateUrl: './avatar-group.component.html',

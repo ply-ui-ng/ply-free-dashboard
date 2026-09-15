@@ -1,9 +1,9 @@
 <!--
-  Base UI (free tier) — https://base-ui.net
+  Ply (free tier) — https://ply-ui.com
   Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-  Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+  Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 -->
-<base-card>
+<ply-card>
   <div class="p-8 flex flex-col gap-6">
     <div>
       <h3 class="font-bold text-sm text-slate-900 dark:text-white mb-1 uppercase tracking-widest">Billing &amp; Plan
@@ -19,7 +19,7 @@
         [class.dark:bg-blue-950]="selectedPlan() === 'starter'"
         class="flex flex-col items-start p-5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 text-left transition-all hover:border-slate-300 dark:hover:border-slate-600 cursor-pointer min-w-36.5">
         <div class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-700 flex items-center justify-center mb-3">
-          <base-icon name="zap" class="w-4 h-4 stroke-slate-500 dark:stroke-slate-400"></base-icon>
+          <ply-icon name="zap" class="w-4 h-4 stroke-slate-500 dark:stroke-slate-400"></ply-icon>
         </div>
         <p class="text-xs font-semibold text-slate-800 dark:text-slate-100 mb-1">Starter</p>
         <p class="text-xl font-bold text-slate-900 dark:text-white leading-none mb-1">$9<span
@@ -32,10 +32,10 @@
         [class.dark:bg-blue-950]="selectedPlan() === 'pro'"
         class="flex flex-col items-start p-5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 text-left transition-all hover:border-slate-300 dark:hover:border-slate-600 cursor-pointer relative min-w-36.5">
         <div class="absolute top-3 right-3">
-          <base-badge color="primary" size="sm" shape="rectangular">Popular</base-badge>
+          <ply-badge color="primary" size="sm" shape="rectangular">Popular</ply-badge>
         </div>
         <div class="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center mb-3">
-          <base-icon name="star" class="w-4 h-4 stroke-blue-600 dark:stroke-blue-400"></base-icon>
+          <ply-icon name="star" class="w-4 h-4 stroke-blue-600 dark:stroke-blue-400"></ply-icon>
         </div>
         <p class="text-xs font-semibold text-slate-800 dark:text-slate-100 mb-1">Pro</p>
         <p class="text-xl font-bold text-slate-900 dark:text-white leading-none mb-1">$29<span
@@ -49,7 +49,7 @@
         [class.dark:bg-blue-950]="selectedPlan() === 'enterprise'"
         class="flex flex-col items-start p-5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 text-left transition-all hover:border-slate-300 dark:hover:border-slate-600 cursor-pointer min-w-36.5">
         <div class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-700 flex items-center justify-center mb-3">
-          <base-icon name="code" class="w-4 h-4 stroke-slate-500 dark:stroke-slate-400"></base-icon>
+          <ply-icon name="code" class="w-4 h-4 stroke-slate-500 dark:stroke-slate-400"></ply-icon>
         </div>
         <p class="text-xs font-semibold text-slate-800 dark:text-slate-100 mb-1">Enterprise</p>
         <p class="text-xl font-bold text-slate-900 dark:text-white leading-none mb-1">$99<span
@@ -69,29 +69,29 @@
       <div class="flex items-center gap-0 border border-slate-200 dark:border-slate-600 rounded-lg overflow-hidden">
         <button type="button" (click)="decrement()" [disabled]="seats() <= 1"
           class="w-9 h-9 flex items-center justify-center bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed border-r border-slate-200 dark:border-slate-600">
-          <base-icon name="minus" class="w-3.5 h-3.5 stroke-slate-500"></base-icon>
+          <ply-icon name="minus" class="w-3.5 h-3.5 stroke-slate-500"></ply-icon>
         </button>
         <span
           class="w-12 text-center text-[13px] font-semibold text-slate-900 dark:text-white bg-white dark:bg-slate-800">{{
           seats() }}</span>
         <button type="button" (click)="increment()" [disabled]="seats() >= 100"
           class="w-9 h-9 flex items-center justify-center bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed border-l border-slate-200 dark:border-slate-600">
-          <base-icon name="plus" class="w-3.5 h-3.5 stroke-slate-500"></base-icon>
+          <ply-icon name="plus" class="w-3.5 h-3.5 stroke-slate-500"></ply-icon>
         </button>
       </div>
     </div>
 
     <!-- Promo Code -->
     <div class="flex gap-2.5">
-      <base-input-group class="flex-1">
-        <base-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Promo Code</base-label>
-        <input base-input placeholder="LAUNCH25" class="font-mono uppercase" />
-      </base-input-group>
+      <ply-input-group class="flex-1">
+        <ply-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Promo Code</ply-label>
+        <input ply-input placeholder="LAUNCH25" class="font-mono uppercase" />
+      </ply-input-group>
       <div class="flex items-end">
-        <button base-button color="secondary" class="h-10.5">Apply</button>
+        <button ply-button color="secondary" class="h-10.5">Apply</button>
       </div>
     </div>
 
-    <button base-button color="primary" class="w-full">Upgrade Plan</button>
+    <button ply-button color="primary" class="w-full">Upgrade Plan</button>
   </div>
-</base-card>
+</ply-card>

@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Directive, HostListener, output } from '@angular/core';
 
@@ -8,12 +8,12 @@ import { Directive, HostListener, output } from '@angular/core';
  * A structural directive that wraps elements inside a slider/carousel, adding touch-swipe support.
  *
  * @example
- * <div baseSlider (slideAction)="onSlide($event)">
+ * <div plySlider (slideAction)="onSlide($event)">
  *   <div>Slide content</div>
  * </div>
  */
 @Directive({
-  selector: '[baseSlider]',
+  selector: '[plySlider]',
 })
 export class SliderDirective {
   private threshold = 50;

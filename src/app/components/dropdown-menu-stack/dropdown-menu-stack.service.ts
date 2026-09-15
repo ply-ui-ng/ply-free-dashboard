@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Injectable } from '@angular/core';
 
@@ -16,7 +16,7 @@ export interface DropdownMenuStackEntry {
 }
 
 /**
- * Root-level stack of open `base-dropdown-menu` overlays for cascade support.
+ * Root-level stack of open `ply-dropdown-menu` overlays for cascade support.
  *
  * @example
  * // Injected by DropdownMenuDirective — consumers rarely need this directly.

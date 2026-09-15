@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Directive, inject, input } from '@angular/core';
 import { DialogContext } from './dialog-context';
@@ -10,10 +10,10 @@ import { DialogContext } from './dialog-context';
  * Injects `DialogContext` to find the active dialog reference.
  * 
  * @example
- * <button base-button base-dialog-close>Cancel</button>
+ * <button ply-button ply-dialog-close>Cancel</button>
  */
 @Directive({
-  selector: '[base-dialog-close]',
+  selector: '[ply-dialog-close]',
   host: {
     '(click)': '_onButtonClick($event)',
     '[attr.aria-label]': 'ariaLabel() || null',

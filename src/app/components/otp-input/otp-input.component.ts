@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component,
   OnChanges,
@@ -22,10 +22,10 @@ import { cn } from '../tw-merge/tw-merge';
  * Integrates with Angular Forms via ControlValueAccessor.
  *
  * @example
- * <base-otp-input [length]="6" (completed)="onVerify($event)"></base-otp-input>
+ * <ply-otp-input [length]="6" (completed)="onVerify($event)"></ply-otp-input>
  */
 @Component({
-  selector: 'base-otp-input',
+  selector: 'ply-otp-input',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [FormsModule],
   templateUrl: './otp-input.component.html',

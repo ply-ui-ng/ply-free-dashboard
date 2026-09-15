@@ -1,20 +1,20 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 import { cn } from '../../tw-merge/tw-merge';
 
 /**
- * Main content slot for `base-sidenav` (typically hosts a router outlet).
+ * Main content slot for `ply-sidenav` (typically hosts a router outlet).
  *
  * @example
- * <base-sidenav-body>
+ * <ply-sidenav-body>
  *   <router-outlet></router-outlet>
- * </base-sidenav-body>
+ * </ply-sidenav-body>
  */
 @Component({
-  selector: 'base-sidenav-body',
+  selector: 'ply-sidenav-body',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './sidenav-body.component.html',
   host: { '[class]': 'hostCls()' },
@@ -24,7 +24,7 @@ export class SidenavBodyComponent {
    * Extra host classes merged via `cn()`.
    *
    * @example
-   * <base-sidenav-body class="bg-white dark:bg-slate-950"></base-sidenav-body>
+   * <ply-sidenav-body class="bg-white dark:bg-slate-950"></ply-sidenav-body>
    */
   readonly extraClass = input('', { alias: 'class' });
 

@@ -1,15 +1,15 @@
 <!--
-  Base UI (free tier) — https://base-ui.net
+  Ply (free tier) — https://ply-ui.com
   Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-  Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+  Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 -->
 <div class="relative flex items-center group">
   @if (showLeftArrow()) {
-  <button type="button" base-icon-button color="transparent" size="sm"
+  <button type="button" ply-icon-button color="transparent" size="sm"
     class="absolute left-0 z-10 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm shadow-[2px_0_4px_-1px_rgba(0,0,0,0.1)]"
     aria-label="Scroll tabs left"
     (click)="scrollTabs('left')">
-    <base-icon name="chevron-left" aria-hidden="true"></base-icon>
+    <ply-icon name="chevron-left" aria-hidden="true"></ply-icon>
   </button>
   }
 
@@ -41,11 +41,11 @@
   </div>
 
   @if (showRightArrow()) {
-  <button type="button" base-icon-button color="transparent" size="sm"
+  <button type="button" ply-icon-button color="transparent" size="sm"
     class="absolute right-0 z-10 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm shadow-[-2px_0_4px_-1px_rgba(0,0,0,0.1)]"
     aria-label="Scroll tabs right"
     (click)="scrollTabs('right')">
-    <base-icon name="chevron-right" aria-hidden="true"></base-icon>
+    <ply-icon name="chevron-right" aria-hidden="true"></ply-icon>
   </button>
   }
 </div>

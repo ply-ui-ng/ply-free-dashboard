@@ -1,7 +1,7 @@
 <!--
-  Base UI (free tier) — https://base-ui.net
+  Ply (free tier) — https://ply-ui.com
   Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-  Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+  Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 -->
 @if (label()) {
 <label [id]="labelId" class="block text-sm font-medium mb-px text-slate-700 dark:text-slate-300">
@@ -26,8 +26,8 @@
             {{ selectedLabel() || placeholder() }}
         </span>
         <span class="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none" aria-hidden="true">
-            <base-icon name="chevron-down" class="w-4 h-4 stroke-slate-500 transition-transform duration-200"
-                [class.rotate-180]="isOpen()"></base-icon>
+            <ply-icon name="chevron-down" class="w-4 h-4 stroke-slate-500 transition-transform duration-200"
+                [class.rotate-180]="isOpen()"></ply-icon>
         </span>
     </button>
 
@@ -50,7 +50,7 @@
 
                 @if (isSelected(option)) {
                 <span class="absolute inset-y-0 right-0 flex items-center pr-0.75 text-blue-600" aria-hidden="true">
-                    <base-icon name="check" class="w-1 h-1 stroke-current"></base-icon>
+                    <ply-icon name="check" class="w-1 h-1 stroke-current"></ply-icon>
                 </span>
                 }
             </li>

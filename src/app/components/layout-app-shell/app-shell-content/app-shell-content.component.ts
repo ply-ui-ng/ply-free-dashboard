@@ -1,20 +1,20 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/lussos/base-theme/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply-theme/blob/main/LICENSE.md
 
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 import { cn } from '../../tw-merge/tw-merge';
 
 /**
- * Main content slot for `base-app-shell` (typically a `router-outlet` or `base-page-main`).
+ * Main content slot for `ply-app-shell` (typically a `router-outlet` or `ply-page-main`).
  *
  * @example
- * <base-app-shell-content>
+ * <ply-app-shell-content>
  *   <router-outlet />
- * </base-app-shell-content>
+ * </ply-app-shell-content>
  */
 @Component({
-  selector: 'base-app-shell-content',
+  selector: 'ply-app-shell-content',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './app-shell-content.component.html',
   host: { '[class]': 'hostCls()' },

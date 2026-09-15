@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { AfterViewInit, Component, OnDestroy, ViewEncapsulation, computed, input, viewChild, ElementRef, ChangeDetectorRef, inject ,
   ChangeDetectionStrategy
@@ -13,12 +13,12 @@ import { cn } from '../tw-merge/tw-merge';
  * A horizontally scrollable carousel with drag-to-scroll and touch swipe.
  *
  * @example
- * <base-horizontal-carousel title="Featured">
+ * <ply-horizontal-carousel title="Featured">
  *   <div class="w-16 h-16">Item</div>
- * </base-horizontal-carousel>
+ * </ply-horizontal-carousel>
  */
 @Component({
-  selector: 'base-horizontal-carousel',
+  selector: 'ply-horizontal-carousel',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [IconComponent, IconButtonDirective],
   templateUrl: './carousel.component.html',

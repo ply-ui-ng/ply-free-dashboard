@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/lussos/base-theme/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply-theme/blob/main/LICENSE.md
 
 import { ChangeDetectionStrategy, Component, computed, inject, input } from '@angular/core';
 import { SidebarService } from '../../sidebar/sidebar.service';
@@ -8,16 +8,16 @@ import { cn } from '../../tw-merge/tw-merge';
 import { LayoutAppShellComponent } from '../layout-app-shell.component';
 
 /**
- * Sidebar slot for `base-app-shell` — logo and primary nav
- * (`base-app-shell-nav-section` / `base-app-shell-nav-item`).
+ * Sidebar slot for `ply-app-shell` — logo and primary nav
+ * (`ply-app-shell-nav-section` / `ply-app-shell-nav-item`).
  *
  * @example
- * <base-app-shell-sidebar>
- *   <base-app-shell-nav-section label="App">…</base-app-shell-nav-section>
- * </base-app-shell-sidebar>
+ * <ply-app-shell-sidebar>
+ *   <ply-app-shell-nav-section label="App">…</ply-app-shell-nav-section>
+ * </ply-app-shell-sidebar>
  */
 @Component({
-  selector: 'base-app-shell-sidebar',
+  selector: 'ply-app-shell-sidebar',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './app-shell-sidebar.component.html',
   host: { '[class]': 'hostCls()' },

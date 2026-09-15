@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { CommonModule } from '@angular/common';
 import { Component, forwardRef, input, model, computed ,
@@ -15,10 +15,10 @@ import { cn } from '../tw-merge/tw-merge';
  * Supports ngModel and reactive forms via ControlValueAccessor.
  * 
  * @example
- * <base-checkbox [(ngModel)]="agree" color="primary">I agree to the terms</base-checkbox>
+ * <ply-checkbox [(ngModel)]="agree" color="primary">I agree to the terms</ply-checkbox>
  */
 @Component({
-  selector: 'base-checkbox',
+  selector: 'ply-checkbox',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CommonModule, IconComponent, FormsModule],
   templateUrl: './checkbox.component.html',
@@ -45,18 +45,18 @@ export class CheckboxComponent implements ControlValueAccessor {
    * Defaults to false.
    *
    * @example
-   * <base-checkbox [checked]="allSelected" [indeterminate]="someSelected"></base-checkbox>
+   * <ply-checkbox [checked]="allSelected" [indeterminate]="someSelected"></ply-checkbox>
    */
   readonly indeterminate = input(false, { transform: booleanAttribute });
 
   /**
    * Optional accessible name applied directly to the native `<input>`.
-   * Use this instead of `[attr.aria-label]` on `<base-checkbox>` itself —
+   * Use this instead of `[attr.aria-label]` on `<ply-checkbox>` itself —
    * the host element isn't the focusable/interactive part, so an attribute
    * bound to the host would never reach assistive tech.
    *
    * @example
-   * <base-checkbox [ariaLabel]="'Select ' + row.name"></base-checkbox>
+   * <ply-checkbox [ariaLabel]="'Select ' + row.name"></ply-checkbox>
    */
   readonly ariaLabel = input<string | undefined>(undefined);
 

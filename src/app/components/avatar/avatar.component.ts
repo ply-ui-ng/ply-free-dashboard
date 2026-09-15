@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, computed, input ,
   ChangeDetectionStrategy
@@ -14,10 +14,10 @@ import { cn } from '../tw-merge/tw-merge';
  * A highly customizable avatar component for displaying user profile images or initials.
  *
  * @example
- * <base-avatar [avatarUrl]="user.image" size="lg" shape="circle" status="active"></base-avatar>
+ * <ply-avatar [avatarUrl]="user.image" size="lg" shape="circle" status="active"></ply-avatar>
  */
 @Component({
-  selector: 'base-avatar',
+  selector: 'ply-avatar',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CommonModule, IconComponent],
   templateUrl: './avatar.component.html',

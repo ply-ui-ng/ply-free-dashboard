@@ -29,7 +29,7 @@ export class AuthService {
 
     const authUser: AuthUser = {
       name: displayName || 'Demo User',
-      email: email || 'demo@base-ui.net',
+      email: email || 'demo@ply-ui.com',
       initials: this.toInitials(displayName || 'Demo User'),
     };
 

@@ -1,9 +1,9 @@
 <!--
-  Base UI (free tier) — https://base-ui.net
+  Ply (free tier) — https://ply-ui.com
   Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-  Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+  Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 -->
-<div class="base-stepper w-full text-slate-700 dark:text-slate-300">
+<div class="ply-stepper w-full text-slate-700 dark:text-slate-300">
     <!-- Stepper Header -->
     <div class="flex items-center w-full mb-8 overflow-x-auto no-scrollbar py-2 px-1">
         @for (step of steps(); track step; let i = $index, last = $last) {
@@ -16,13 +16,13 @@
             <div [class]="getStepIndicatorClass(step, i === activeStepIndex(), last)">
 
                 @if (step.isCompleted && (!(i === activeStepIndex()) || last)) {
-                <base-icon name="check" class="w-5 h-5 stroke-white"></base-icon>
+                <ply-icon name="check" class="w-5 h-5 stroke-white"></ply-icon>
                 }
 
                 @if (step.icon() && (!step.isCompleted || ((i === activeStepIndex()) && !last))) {
-                <base-icon [name]="step.icon()"
+                <ply-icon [name]="step.icon()"
                     [class]="getStepIconClass(i === activeStepIndex())">
-                </base-icon>
+                </ply-icon>
                 }
 
                 @if (!step.icon() && (!step.isCompleted || ((i === activeStepIndex()) && !last))) {
@@ -53,11 +53,11 @@
 
     <!-- Stepper Content -->
     <div
-        class="base-stepper-content bg-white dark:bg-slate-800/50 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 md:p-8 shadow-sm min-h-50">
+        class="ply-stepper-content bg-white dark:bg-slate-800/50 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 md:p-8 shadow-sm min-h-50">
         @if (isSubmitted) {
         <div class="flex flex-col items-center justify-center py-8 text-center animate-in fade-in zoom-in duration-300">
             <div class="w-20 h-20 bg-green-100 dark:bg-green-500/20 rounded-full flex items-center justify-center mb-4">
-                <base-icon name="check" class="w-10 h-10 stroke-green-500"></base-icon>
+                <ply-icon name="check" class="w-10 h-10 stroke-green-500"></ply-icon>
             </div>
             <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">{{ successTitle() }}</h3>
             <p class="text-slate-500 dark:text-slate-400">{{ successMessage() }}</p>
@@ -76,22 +76,22 @@
     <!-- Internal Navigation Buttons -->
     @if (!isSubmitted && !hideNavigation()) {
     <div class="flex justify-between items-center mt-6">
-        <button (click)="previous()" [disabled]="activeStepIndex() === 0" base-stroked-button color="primary">
-            <base-icon name="arrow-left" class="-ml-2 w-4 h-4"></base-icon>
+        <button (click)="previous()" [disabled]="activeStepIndex() === 0" ply-stroked-button color="primary">
+            <ply-icon name="arrow-left" class="-ml-2 w-4 h-4"></ply-icon>
             Back
         </button>
 
         @if (activeStepIndex() < steps().length - 1) {
-        <button (click)="next()" [disabled]="!steps()[activeStepIndex()].isValid()" base-button color="primary">
+        <button (click)="next()" [disabled]="!steps()[activeStepIndex()].isValid()" ply-button color="primary">
             Next Step
-            <base-icon name="arrow-right" class="-mr-2 w-4 h-4"></base-icon>
+            <ply-icon name="arrow-right" class="-mr-2 w-4 h-4"></ply-icon>
         </button>
         } @else {
         <div class="flex items-center gap-4">
             <span class="text-sm text-slate-500 dark:text-slate-400 hidden sm:block">Please review and click Submit to confirm.</span>
-            <button (click)="submit()" [disabled]="!steps()[activeStepIndex()].isValid()" base-button color="success">
+            <button (click)="submit()" [disabled]="!steps()[activeStepIndex()].isValid()" ply-button color="success">
                 Submit
-                <base-icon name="check" class="-mr-2 w-4 h-4"></base-icon>
+                <ply-icon name="check" class="-mr-2 w-4 h-4"></ply-icon>
             </button>
         </div>
         }

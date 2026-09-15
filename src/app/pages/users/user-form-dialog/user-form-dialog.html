@@ -1,39 +1,39 @@
-<base-dialog [width]="520">
-  <base-dialog-header>{{ isEdit ? 'Edit User' : 'Add User' }}</base-dialog-header>
-  <base-dialog-body>
+<ply-dialog [width]="520">
+  <ply-dialog-header>{{ isEdit ? 'Edit User' : 'Add User' }}</ply-dialog-header>
+  <ply-dialog-body>
     <form id="user-form" class="space-y-4 p-1" (ngSubmit)="save()">
-      <base-input-group>
-        <base-label>Name</base-label>
-        <input base-input name="name" [(ngModel)]="name" placeholder="Full name" required />
-      </base-input-group>
-      <base-input-group>
-        <base-label>Email</base-label>
-        <input base-input name="email" type="email" [(ngModel)]="email" placeholder="Email" required />
-      </base-input-group>
+      <ply-input-group>
+        <ply-label>Name</ply-label>
+        <input ply-input name="name" [(ngModel)]="name" placeholder="Full name" required />
+      </ply-input-group>
+      <ply-input-group>
+        <ply-label>Email</ply-label>
+        <input ply-input name="email" type="email" [(ngModel)]="email" placeholder="Email" required />
+      </ply-input-group>
       <div class="grid gap-4 sm:grid-cols-2">
-        <base-input-group>
-          <base-label>Role</base-label>
-          <select base-input name="role" [(ngModel)]="role">
+        <ply-input-group>
+          <ply-label>Role</ply-label>
+          <select ply-input name="role" [(ngModel)]="role">
             @for (roleOption of roles; track roleOption) {
               <option [value]="roleOption">{{ roleOption }}</option>
             }
           </select>
-        </base-input-group>
-        <base-input-group>
-          <base-label>Status</base-label>
-          <select base-input name="status" [(ngModel)]="status">
+        </ply-input-group>
+        <ply-input-group>
+          <ply-label>Status</ply-label>
+          <select ply-input name="status" [(ngModel)]="status">
             @for (statusOption of statuses; track statusOption) {
               <option [value]="statusOption">{{ statusOption }}</option>
             }
           </select>
-        </base-input-group>
+        </ply-input-group>
       </div>
     </form>
-  </base-dialog-body>
-  <base-dialog-footer>
-    <button type="button" base-stroked-button color="default" base-dialog-close>Cancel</button>
-    <button type="submit" form="user-form" base-button color="primary">
+  </ply-dialog-body>
+  <ply-dialog-footer>
+    <button type="button" ply-stroked-button color="default" ply-dialog-close>Cancel</button>
+    <button type="submit" form="user-form" ply-button color="primary">
       {{ isEdit ? 'Save Changes' : 'Create User' }}
     </button>
-  </base-dialog-footer>
-</base-dialog>
+  </ply-dialog-footer>
+</ply-dialog>

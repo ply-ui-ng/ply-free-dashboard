@@ -2,147 +2,147 @@
   title="Navigation"
   description="Tabs, breadcrumbs, accordion, stepper, and scroll helpers."
   [sections]="sections">
-  <app-showcase-section sectionId="tabs" title="Tabs" componentName="base-tabs">
-    <base-tabs type="underline" [defaultTab]="0" ariaLabel="Demo tabs">
-      <base-tab label="Overview">
-        <base-tab-body>
+  <app-showcase-section sectionId="tabs" title="Tabs" componentName="ply-tabs">
+    <ply-tabs type="underline" [defaultTab]="0" ariaLabel="Demo tabs">
+      <ply-tab label="Overview">
+        <ply-tab-body>
           <p class="mt-4 text-sm text-slate-600 dark:text-slate-300">Underline tabs for page sections.</p>
-        </base-tab-body>
-      </base-tab>
-      <base-tab label="Activity">
-        <base-tab-body>
+        </ply-tab-body>
+      </ply-tab>
+      <ply-tab label="Activity">
+        <ply-tab-body>
           <p class="mt-4 text-sm text-slate-600 dark:text-slate-300">Activity content goes here.</p>
-        </base-tab-body>
-      </base-tab>
-      <base-tab label="Billing">
-        <base-tab-body>
+        </ply-tab-body>
+      </ply-tab>
+      <ply-tab label="Billing">
+        <ply-tab-body>
           <p class="mt-4 text-sm text-slate-600 dark:text-slate-300">Billing summary placeholder.</p>
-        </base-tab-body>
-      </base-tab>
-    </base-tabs>
+        </ply-tab-body>
+      </ply-tab>
+    </ply-tabs>
 
-    <base-tabs type="pills" [defaultTab]="0" class="mt-6" ariaLabel="Pill tabs">
-      <base-tab label="All"
-        ><base-tab-body><p class="mt-3 text-sm text-slate-500">All items</p></base-tab-body></base-tab
+    <ply-tabs type="pills" [defaultTab]="0" class="mt-6" ariaLabel="Pill tabs">
+      <ply-tab label="All"
+        ><ply-tab-body><p class="mt-3 text-sm text-slate-500">All items</p></ply-tab-body></ply-tab
       >
-      <base-tab label="Active"
-        ><base-tab-body><p class="mt-3 text-sm text-slate-500">Active only</p></base-tab-body></base-tab
+      <ply-tab label="Active"
+        ><ply-tab-body><p class="mt-3 text-sm text-slate-500">Active only</p></ply-tab-body></ply-tab
       >
-      <base-tab label="Archived"
-        ><base-tab-body><p class="mt-3 text-sm text-slate-500">Archived</p></base-tab-body></base-tab
+      <ply-tab label="Archived"
+        ><ply-tab-body><p class="mt-3 text-sm text-slate-500">Archived</p></ply-tab-body></ply-tab
       >
-    </base-tabs>
+    </ply-tabs>
   </app-showcase-section>
 
-  <app-showcase-section sectionId="breadcrumb" title="Breadcrumb" componentName="base-breadcrumb">
-    <base-breadcrumb>
-      <base-breadcrumb-item label="App" link="/app/dashboard"></base-breadcrumb-item>
-      <base-breadcrumb-item label="UI" link="/app/ui/primitives"></base-breadcrumb-item>
-      <base-breadcrumb-item label="Navigation"></base-breadcrumb-item>
-    </base-breadcrumb>
+  <app-showcase-section sectionId="breadcrumb" title="Breadcrumb" componentName="ply-breadcrumb">
+    <ply-breadcrumb>
+      <ply-breadcrumb-item label="App" link="/app/dashboard"></ply-breadcrumb-item>
+      <ply-breadcrumb-item label="UI" link="/app/ui/primitives"></ply-breadcrumb-item>
+      <ply-breadcrumb-item label="Navigation"></ply-breadcrumb-item>
+    </ply-breadcrumb>
   </app-showcase-section>
 
-  <app-showcase-section sectionId="accordion" title="Accordion" componentName="base-accordion">
-    <base-accordion>
-      <base-accordion-item [isOpen]="true">
-        <base-accordion-item-header>What is included in Free?</base-accordion-item-header>
-        <base-accordion-item-body>
+  <app-showcase-section sectionId="accordion" title="Accordion" componentName="ply-accordion">
+    <ply-accordion>
+      <ply-accordion-item [isOpen]="true">
+        <ply-accordion-item-header>What is included in Free?</ply-accordion-item-header>
+        <ply-accordion-item-body>
           Primitives, form blocks, app-shell with a mini rail and nav sections, and most interactive widgets.
-        </base-accordion-item-body>
-      </base-accordion-item>
-      <base-accordion-item>
-        <base-accordion-item-header>When should I upgrade to Pro?</base-accordion-item-header>
-        <base-accordion-item-body>
-          When you need data-table, mega-menu, tree, file-upload, the full `base-shell` product chrome, or page layouts like layout-dashboard.
-        </base-accordion-item-body>
-      </base-accordion-item>
-      <base-accordion-item>
-        <base-accordion-item-header>Can I customize the source?</base-accordion-item-header>
-        <base-accordion-item-body>
+        </ply-accordion-item-body>
+      </ply-accordion-item>
+      <ply-accordion-item>
+        <ply-accordion-item-header>When should I upgrade to Pro?</ply-accordion-item-header>
+        <ply-accordion-item-body>
+          When you need data-table, mega-menu, tree, file-upload, the full `ply-shell` product chrome, or page layouts like layout-dashboard.
+        </ply-accordion-item-body>
+      </ply-accordion-item>
+      <ply-accordion-item>
+        <ply-accordion-item-header>Can I customize the source?</ply-accordion-item-header>
+        <ply-accordion-item-body>
           Yes — CLI copies components into your project so you own and edit the Tailwind source.
-        </base-accordion-item-body>
-      </base-accordion-item>
-    </base-accordion>
+        </ply-accordion-item-body>
+      </ply-accordion-item>
+    </ply-accordion>
   </app-showcase-section>
 
   <app-showcase-section
     sectionId="menubar"
     title="Menubar"
     description="Click a top-level menu to open it; then hover to switch menus and nested submenus. Leaf items close; checkbox items stay open."
-    componentName="base-menubar">
-    <base-menubar>
-      <base-menubar-menu label="File">
-        <base-dropdown-menu-item (click)="lastAction.set('New Tab')">New Tab</base-dropdown-menu-item>
-        <base-dropdown-menu-item
-          [base-dropdown-menu-trigger]="openRecent"
+    componentName="ply-menubar">
+    <ply-menubar>
+      <ply-menubar-menu label="File">
+        <ply-dropdown-menu-item (click)="lastAction.set('New Tab')">New Tab</ply-dropdown-menu-item>
+        <ply-dropdown-menu-item
+          [ply-dropdown-menu-trigger]="openRecent"
           placement="right">
           Open Recent
-          <base-icon name="chevron-right" class="ml-auto h-4 w-4 shrink-0 stroke-slate-500"></base-icon>
-        </base-dropdown-menu-item>
-        <base-dropdown-menu #openRecent class="hidden">
-          <base-dropdown-menu-item (click)="lastAction.set('Opened Project A')">Project A</base-dropdown-menu-item>
-          <base-dropdown-menu-item (click)="lastAction.set('Opened Project B')">Project B</base-dropdown-menu-item>
-          <base-dropdown-menu-item
-            [base-dropdown-menu-trigger]="fromSource"
+          <ply-icon name="chevron-right" class="ml-auto h-4 w-4 shrink-0 stroke-slate-500"></ply-icon>
+        </ply-dropdown-menu-item>
+        <ply-dropdown-menu #openRecent class="hidden">
+          <ply-dropdown-menu-item (click)="lastAction.set('Opened Project A')">Project A</ply-dropdown-menu-item>
+          <ply-dropdown-menu-item (click)="lastAction.set('Opened Project B')">Project B</ply-dropdown-menu-item>
+          <ply-dropdown-menu-item
+            [ply-dropdown-menu-trigger]="fromSource"
             placement="right">
             More
-            <base-icon name="chevron-right" class="ml-auto h-4 w-4 shrink-0 stroke-slate-500"></base-icon>
-          </base-dropdown-menu-item>
-          <base-dropdown-menu #fromSource class="hidden">
-            <base-dropdown-menu-item (click)="lastAction.set('Clone from GitHub')">From GitHub</base-dropdown-menu-item>
-            <base-dropdown-menu-item (click)="lastAction.set('Opened from disk')">From Disk</base-dropdown-menu-item>
-          </base-dropdown-menu>
-        </base-dropdown-menu>
+            <ply-icon name="chevron-right" class="ml-auto h-4 w-4 shrink-0 stroke-slate-500"></ply-icon>
+          </ply-dropdown-menu-item>
+          <ply-dropdown-menu #fromSource class="hidden">
+            <ply-dropdown-menu-item (click)="lastAction.set('Clone from GitHub')">From GitHub</ply-dropdown-menu-item>
+            <ply-dropdown-menu-item (click)="lastAction.set('Opened from disk')">From Disk</ply-dropdown-menu-item>
+          </ply-dropdown-menu>
+        </ply-dropdown-menu>
         <div class="my-1 h-px bg-slate-200 dark:bg-slate-700" role="separator"></div>
-        <base-dropdown-menu-item [(checked)]="wordWrap">Word wrap</base-dropdown-menu-item>
-        <base-dropdown-menu-item [(checked)]="minimap">Show minimap</base-dropdown-menu-item>
+        <ply-dropdown-menu-item [(checked)]="wordWrap">Word wrap</ply-dropdown-menu-item>
+        <ply-dropdown-menu-item [(checked)]="minimap">Show minimap</ply-dropdown-menu-item>
         <div class="my-1 h-px bg-slate-200 dark:bg-slate-700" role="separator"></div>
-        <base-dropdown-menu-item (click)="lastAction.set('Saved')">Save</base-dropdown-menu-item>
-      </base-menubar-menu>
-      <base-menubar-menu label="Edit">
-        <base-dropdown-menu-item (click)="lastAction.set('Undo')">Undo</base-dropdown-menu-item>
-        <base-dropdown-menu-item (click)="lastAction.set('Cut')">Cut</base-dropdown-menu-item>
-        <base-dropdown-menu-item (click)="lastAction.set('Copy')">Copy</base-dropdown-menu-item>
-        <base-dropdown-menu-item (click)="lastAction.set('Paste')">Paste</base-dropdown-menu-item>
-      </base-menubar-menu>
-      <base-menubar-menu label="View">
-        <base-dropdown-menu-item
-          [base-dropdown-menu-trigger]="appearance"
+        <ply-dropdown-menu-item (click)="lastAction.set('Saved')">Save</ply-dropdown-menu-item>
+      </ply-menubar-menu>
+      <ply-menubar-menu label="Edit">
+        <ply-dropdown-menu-item (click)="lastAction.set('Undo')">Undo</ply-dropdown-menu-item>
+        <ply-dropdown-menu-item (click)="lastAction.set('Cut')">Cut</ply-dropdown-menu-item>
+        <ply-dropdown-menu-item (click)="lastAction.set('Copy')">Copy</ply-dropdown-menu-item>
+        <ply-dropdown-menu-item (click)="lastAction.set('Paste')">Paste</ply-dropdown-menu-item>
+      </ply-menubar-menu>
+      <ply-menubar-menu label="View">
+        <ply-dropdown-menu-item
+          [ply-dropdown-menu-trigger]="appearance"
           placement="right">
           Appearance
-          <base-icon name="chevron-right" class="ml-auto h-4 w-4 shrink-0 stroke-slate-500"></base-icon>
-        </base-dropdown-menu-item>
-        <base-dropdown-menu #appearance class="hidden">
-          <base-dropdown-menu-item (click)="lastAction.set('Zoom in')">Zoom In</base-dropdown-menu-item>
-          <base-dropdown-menu-item (click)="lastAction.set('Zoom out')">Zoom Out</base-dropdown-menu-item>
-          <base-dropdown-menu-item [(checked)]="minimap">Minimap</base-dropdown-menu-item>
-        </base-dropdown-menu>
-        <base-dropdown-menu-item (click)="lastAction.set('Opened documentation')">
+          <ply-icon name="chevron-right" class="ml-auto h-4 w-4 shrink-0 stroke-slate-500"></ply-icon>
+        </ply-dropdown-menu-item>
+        <ply-dropdown-menu #appearance class="hidden">
+          <ply-dropdown-menu-item (click)="lastAction.set('Zoom in')">Zoom In</ply-dropdown-menu-item>
+          <ply-dropdown-menu-item (click)="lastAction.set('Zoom out')">Zoom Out</ply-dropdown-menu-item>
+          <ply-dropdown-menu-item [(checked)]="minimap">Minimap</ply-dropdown-menu-item>
+        </ply-dropdown-menu>
+        <ply-dropdown-menu-item (click)="lastAction.set('Opened documentation')">
           Documentation
-        </base-dropdown-menu-item>
-      </base-menubar-menu>
-    </base-menubar>
+        </ply-dropdown-menu-item>
+      </ply-menubar-menu>
+    </ply-menubar>
     <p class="mt-3 m-0! text-xs text-slate-500">
       Last action: {{ lastAction() }} · Word wrap {{ wordWrap() ? 'on' : 'off' }} · Minimap {{ minimap() ? 'on' : 'off' }}
     </p>
   </app-showcase-section>
 
-  <app-showcase-section sectionId="stepper" title="Stepper" componentName="base-stepper">
-    <base-stepper>
-      <base-step label="Account" description="Create credentials">
+  <app-showcase-section sectionId="stepper" title="Stepper" componentName="ply-stepper">
+    <ply-stepper>
+      <ply-step label="Account" description="Create credentials">
         <p class="text-sm text-slate-600 dark:text-slate-300">Step 1 content — account details.</p>
-      </base-step>
-      <base-step label="Workspace" description="Invite teammates">
+      </ply-step>
+      <ply-step label="Workspace" description="Invite teammates">
         <p class="text-sm text-slate-600 dark:text-slate-300">Step 2 content — workspace setup.</p>
-      </base-step>
-      <base-step label="Finish" description="Confirm & launch">
+      </ply-step>
+      <ply-step label="Finish" description="Confirm & launch">
         <p class="text-sm text-slate-600 dark:text-slate-300">Step 3 content — review and submit.</p>
-      </base-step>
-    </base-stepper>
+      </ply-step>
+    </ply-stepper>
   </app-showcase-section>
 
-  <app-showcase-section sectionId="scroll-to" title="Scroll to" componentName="baseScrollTo">
-    <button type="button" base-button color="primary" baseScrollTo="scroll-buttons">
+  <app-showcase-section sectionId="scroll-to" title="Scroll to" componentName="plyScrollTo">
+    <button type="button" ply-button color="primary" plyScrollTo="scroll-buttons">
       Jump to scroll buttons
     </button>
   </app-showcase-section>
@@ -151,15 +151,15 @@
     sectionId="scroll-buttons"
     title="Scroll buttons"
     description="Absolute FAB variants inside this card (threshold lowered for the demo)."
-    componentName="base-scroll-top / base-scroll-bottom">
+    componentName="ply-scroll-top / ply-scroll-bottom">
     <div class="relative h-40 overflow-y-auto rounded-xl border border-slate-200 dark:border-slate-700">
       <div class="space-y-3 p-4 text-sm text-slate-600 dark:text-slate-300">
         @for (n of [1, 2, 3, 4, 5, 6, 7, 8]; track n) {
           <p>Scrollable demo content line {{ n }}.</p>
         }
       </div>
-      <base-scroll-top [fixed]="false" [threshold]="40" position="bottom-right"></base-scroll-top>
-      <base-scroll-bottom [fixed]="false" [threshold]="40" position="bottom-left"></base-scroll-bottom>
+      <ply-scroll-top [fixed]="false" [threshold]="40" position="bottom-right"></ply-scroll-top>
+      <ply-scroll-bottom [fixed]="false" [threshold]="40" position="bottom-left"></ply-scroll-bottom>
     </div>
   </app-showcase-section>
 </app-showcase-page>

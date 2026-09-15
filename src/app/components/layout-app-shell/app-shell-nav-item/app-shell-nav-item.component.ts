@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { ChangeDetectionStrategy, Component, computed, inject, input } from '@angular/core';
 import { IconComponent } from '../../icon/icon.component';
@@ -9,18 +9,18 @@ import { cn } from '../../tw-merge/tw-merge';
 import { LayoutAppShellComponent } from '../layout-app-shell.component';
 
 /**
- * Navigation item for `base-app-shell`. Shows an icon plus a label; in the
+ * Navigation item for `ply-app-shell`. Shows an icon plus a label; in the
  * desktop mini rail the label fades out with the rail width.
  *
  * Pair with `routerLink` / `routerLinkActive="active"` on the host.
  *
  * @example
- * <a base-app-shell-nav-item icon="home" routerLink="/" routerLinkActive="active">
+ * <a ply-app-shell-nav-item icon="home" routerLink="/" routerLinkActive="active">
  *   Home
  * </a>
  */
 @Component({
-  selector: 'a[base-app-shell-nav-item], button[base-app-shell-nav-item], base-app-shell-nav-item',
+  selector: 'a[ply-app-shell-nav-item], button[ply-app-shell-nav-item], ply-app-shell-nav-item',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [IconComponent],
   templateUrl: './app-shell-nav-item.component.html',
@@ -36,7 +36,7 @@ export class AppShellNavItemComponent {
    * Extra host classes merged via `cn()`.
    *
    * @example
-   * <a base-app-shell-nav-item class="mt-1" icon="home" routerLink="/">Home</a>
+   * <a ply-app-shell-nav-item class="mt-1" icon="home" routerLink="/">Home</a>
    */
   readonly extraClass = input('', { alias: 'class' });
 
@@ -44,7 +44,7 @@ export class AppShellNavItemComponent {
    * Icon sprite name rendered before the label.
    *
    * @example
-   * <a base-app-shell-nav-item icon="settings" routerLink="/settings">Settings</a>
+   * <a ply-app-shell-nav-item icon="settings" routerLink="/settings">Settings</a>
    */
   readonly icon = input('');
 
@@ -52,7 +52,7 @@ export class AppShellNavItemComponent {
    * Optional badge text shown after the label (hidden in the mini rail).
    *
    * @example
-   * <a base-app-shell-nav-item icon="users" badge="3" routerLink="/users">Users</a>
+   * <a ply-app-shell-nav-item icon="users" badge="3" routerLink="/users">Users</a>
    */
   readonly badge = input('');
 

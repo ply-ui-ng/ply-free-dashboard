@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, computed, input ,
   ChangeDetectionStrategy
@@ -8,15 +8,15 @@ import { Component, computed, input ,
 import { cn } from '../../tw-merge/tw-merge';
 
 /**
- * The main content container of a base-card. Provides correct padding and spacing.
+ * The main content container of a ply-card. Provides correct padding and spacing.
  *
  * @example
- * <base-card-body>
+ * <ply-card-body>
  *   <p>Card content goes here.</p>
- * </base-card-body>
+ * </ply-card-body>
  */
 @Component({
-  selector: 'base-card-body',
+  selector: 'ply-card-body',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './card-body.component.html',
   host: { '[class]': 'hostCls()' }

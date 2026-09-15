@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   Directive,
@@ -35,7 +35,7 @@ export abstract class ScrollButtonBase implements OnDestroy {
    * Scroll container: `'window'`, `'nearest'` (closest scrollable ancestor), or a CSS selector.
    *
    * @example
-   * <base-scroll-top target="#panel"></base-scroll-top>
+   * <ply-scroll-top target="#panel"></ply-scroll-top>
    */
   readonly target = input<ScrollContainerTarget>('window');
 
@@ -43,7 +43,7 @@ export abstract class ScrollButtonBase implements OnDestroy {
    * Pixels of scroll before the button becomes visible.
    *
    * @example
-   * <base-scroll-top [threshold]="200"></base-scroll-top>
+   * <ply-scroll-top [threshold]="200"></ply-scroll-top>
    */
   readonly threshold = input(400, { transform: numberAttribute });
 
@@ -51,7 +51,7 @@ export abstract class ScrollButtonBase implements OnDestroy {
    * Semantic color for the icon button.
    *
    * @example
-   * <base-scroll-top color="primary"></base-scroll-top>
+   * <ply-scroll-top color="primary"></ply-scroll-top>
    */
   readonly color = input<IconButtonColor | string>('primary');
 
@@ -59,7 +59,7 @@ export abstract class ScrollButtonBase implements OnDestroy {
    * Size of the icon button.
    *
    * @example
-   * <base-scroll-top size="lg"></base-scroll-top>
+   * <ply-scroll-top size="lg"></ply-scroll-top>
    */
   readonly size = input<IconButtonSize>('lg');
 
@@ -67,7 +67,7 @@ export abstract class ScrollButtonBase implements OnDestroy {
    * Corner placement of the floating button.
    *
    * @example
-   * <base-scroll-top position="bottom-left"></base-scroll-top>
+   * <ply-scroll-top position="bottom-left"></ply-scroll-top>
    */
   readonly position = input<ScrollButtonPosition>('bottom-right');
 
@@ -76,7 +76,7 @@ export abstract class ScrollButtonBase implements OnDestroy {
    * Set false for `absolute` placement inside a `relative` parent.
    *
    * @example
-   * <base-scroll-top [fixed]="false"></base-scroll-top>
+   * <ply-scroll-top [fixed]="false"></ply-scroll-top>
    */
   readonly fixed = input(true, { transform: booleanAttribute });
 
@@ -84,7 +84,7 @@ export abstract class ScrollButtonBase implements OnDestroy {
    * Scroll behavior passed to `scrollTo`.
    *
    * @example
-   * <base-scroll-top behavior="auto"></base-scroll-top>
+   * <ply-scroll-top behavior="auto"></ply-scroll-top>
    */
   readonly behavior = input<ScrollBehavior>('smooth');
 
@@ -92,7 +92,7 @@ export abstract class ScrollButtonBase implements OnDestroy {
    * Extra host classes merged via `cn()`.
    *
    * @example
-   * <base-scroll-top class="!bottom-20"></base-scroll-top>
+   * <ply-scroll-top class="!bottom-20"></ply-scroll-top>
    */
   readonly extraClass = input('', { alias: 'class' });
 

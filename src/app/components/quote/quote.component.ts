@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, input, computed,
   ChangeDetectionStrategy
@@ -14,12 +14,12 @@ import { cn } from '../tw-merge/tw-merge';
  * A stylized blockquote component for displaying testimonials, reviews, or pull quotes.
  * 
  * @example
- * <base-quote variant="avatar-left" authorName="John Doe" authorRole="CEO" avatarUrl="user.jpg">
+ * <ply-quote variant="avatar-left" authorName="John Doe" authorRole="CEO" avatarUrl="user.jpg">
  *   This is an amazing product!
- * </base-quote>
+ * </ply-quote>
  */
 @Component({
-  selector: 'base-quote',
+  selector: 'ply-quote',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [AvatarComponent, IconComponent],
   templateUrl: './quote.component.html'

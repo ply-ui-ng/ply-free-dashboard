@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   Component,
@@ -18,8 +18,8 @@ import { DropdownMenuStack } from '../dropdown-menu-stack/dropdown-menu-stack.se
 import { MenubarMenuComponent } from './menubar-menu.component';
 
 /**
- * Horizontal application menubar. Project `base-menubar-menu` children; each
- * menu opens a `base-dropdown-menu` of actions. Click a top-level trigger to
+ * Horizontal application menubar. Project `ply-menubar-menu` children; each
+ * menu opens a `ply-dropdown-menu` of actions. Click a top-level trigger to
  * open the first menu; after that, hover switches menus and opens nested
  * submenus. Click a leaf / link or outside to close. Bind `checked` (or
  * `stayOpen`) on items that should toggle without dismissing the menu.
@@ -27,14 +27,14 @@ import { MenubarMenuComponent } from './menubar-menu.component';
  * Enter / Space open; Escape closes.
  *
  * @example
- * <base-menubar>
- *   <base-menubar-menu label="File">
- *     <base-dropdown-menu-item>New Tab</base-dropdown-menu-item>
- *   </base-menubar-menu>
- * </base-menubar>
+ * <ply-menubar>
+ *   <ply-menubar-menu label="File">
+ *     <ply-dropdown-menu-item>New Tab</ply-dropdown-menu-item>
+ *   </ply-menubar-menu>
+ * </ply-menubar>
  */
 @Component({
-  selector: 'base-menubar',
+  selector: 'ply-menubar',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   templateUrl: './menubar.component.html',
@@ -50,7 +50,7 @@ export class MenubarComponent {
   /**
    * Extra host classes merged via `cn()`.
    * @example
-   * <base-menubar class="w-full"></base-menubar>
+   * <ply-menubar class="w-full"></ply-menubar>
    */
   readonly extraClass = input('', { alias: 'class' });
 

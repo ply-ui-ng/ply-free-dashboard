@@ -40,18 +40,18 @@ import { ShowcaseSection } from '../showcase-section';
     StrokedButtonDirective,
   ],
   template: `
-    <base-dialog [width]="420">
-      <base-dialog-header>Demo dialog</base-dialog-header>
-      <base-dialog-body>
+    <ply-dialog [width]="420">
+      <ply-dialog-header>Demo dialog</ply-dialog-header>
+      <ply-dialog-body>
         <p class="text-sm text-slate-600 dark:text-slate-300">
           Opened with <code class="text-xs">DialogService</code>. Use this pattern for forms and confirmations.
         </p>
-      </base-dialog-body>
-      <base-dialog-footer>
-        <button type="button" base-stroked-button base-dialog-close>Close</button>
-        <button type="button" base-button color="primary" base-dialog-close>Got it</button>
-      </base-dialog-footer>
-    </base-dialog>
+      </ply-dialog-body>
+      <ply-dialog-footer>
+        <button type="button" ply-stroked-button ply-dialog-close>Close</button>
+        <button type="button" ply-button color="primary" ply-dialog-close>Got it</button>
+      </ply-dialog-footer>
+    </ply-dialog>
   `,
 })
 export class OverlayDemoDialog {}

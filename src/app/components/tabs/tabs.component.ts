@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, HostListener, OnChanges, SimpleChanges, computed, contentChildren, effect, input, output, viewChild, ElementRef, signal,
   ChangeDetectionStrategy, booleanAttribute, inject} from '@angular/core';
@@ -16,12 +16,12 @@ import { injectTimers } from '../safe-timer/safe-timer';
  * A container component for rendering tabbed navigation and content.
  *
  * @example
- * <base-tabs [defaultTab]="1">
- *   <base-tab label="Overview"><base-tab-body>Content</base-tab-body></base-tab>
- * </base-tabs>
+ * <ply-tabs [defaultTab]="1">
+ *   <ply-tab label="Overview"><ply-tab-body>Content</ply-tab-body></ply-tab>
+ * </ply-tabs>
  */
 @Component({
-  selector: 'base-tabs',
+  selector: 'ply-tabs',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [NgTemplateOutlet, IconComponent, IconButtonDirective],
   templateUrl: './tabs.component.html',

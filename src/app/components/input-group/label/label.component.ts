@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, computed, input ,
   ChangeDetectionStrategy
@@ -8,13 +8,13 @@ import { Component, computed, input ,
 import { cn } from '../../tw-merge/tw-merge';
 
 /**
- * A label element for use inside a `base-input-group`.
+ * A label element for use inside a `ply-input-group`.
  *
  * @example
- * <base-label>Email address</base-label>
+ * <ply-label>Email address</ply-label>
  */
 @Component({
-  selector: 'base-label',
+  selector: 'ply-label',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './label.component.html',
   host: { '[class]': 'hostCls()' }

@@ -1,7 +1,7 @@
 <!--
-  Base UI (free tier) — https://base-ui.net
+  Ply (free tier) — https://ply-ui.com
   Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-  Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+  Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 -->
 <div class="flex flex-col w-full relative px-4">
   <!-- Header -->
@@ -13,13 +13,13 @@
     }
     <!-- Navigation arrows -->
     <div class="flex gap-2">
-      <button [disabled]="!canScrollPrev" base-icon-button (click)="scrollPrev()"
+      <button [disabled]="!canScrollPrev" ply-icon-button (click)="scrollPrev()"
         class="bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700">
-        <base-icon name="chevron-left"></base-icon>
+        <ply-icon name="chevron-left"></ply-icon>
       </button>
-      <button [disabled]="!canScrollNext" base-icon-button (click)="scrollNext()"
+      <button [disabled]="!canScrollNext" ply-icon-button (click)="scrollNext()"
         class="bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700">
-        <base-icon name="chevron-right"></base-icon>
+        <ply-icon name="chevron-right"></ply-icon>
       </button>
     </div>
   </div>

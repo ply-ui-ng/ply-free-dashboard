@@ -1,7 +1,7 @@
 <!--
-  Base UI (free tier) — https://base-ui.net
+  Ply (free tier) — https://ply-ui.com
   Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-  Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+  Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 -->
 <label class="relative flex items-start text-sm font-medium text-slate-700 dark:text-slate-200">
   <input
@@ -14,16 +14,16 @@
     [attr.aria-checked]="ariaChecked()"
     (click)="onClick($event)"
   />
-  <base-icon
+  <ply-icon
     name="checkbox"
     class="invisible absolute left-0.5 mt-1.5 h-3 w-3 stroke-white peer-checked:visible"
     aria-hidden="true"
-  ></base-icon>
-  <base-icon
+  ></ply-icon>
+  <ply-icon
     name="minus"
     class="invisible absolute left-0.5 mt-1.5 h-3 w-3 stroke-white peer-indeterminate:visible"
     aria-hidden="true"
-  ></base-icon>
+  ></ply-icon>
 
   <span class="cursor-pointer peer-disabled:cursor-default peer-disabled:opacity-50">
     <ng-content></ng-content>

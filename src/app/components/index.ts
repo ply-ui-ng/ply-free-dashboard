@@ -1,4 +1,4 @@
-// Barrel re-exports for Base UI components (path alias: "Base").
+// Barrel re-exports for Ply components (path alias: "Base").
 
 export { CardComponent } from './card/card.component';
 export { CardBodyComponent } from './card/card-body/card-body.component';

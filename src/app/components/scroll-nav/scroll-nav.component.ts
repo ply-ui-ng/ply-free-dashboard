@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   AfterViewInit,
@@ -30,16 +30,16 @@ const ACTIVATION_OFFSET_PX = 48;
 
 /**
  * Docs/layout shell: one scrollport with a sticky TOC sidebar.
- * Scroll lives on this host; `base-scroll-nav-sidebar` sticks to the top.
+ * Scroll lives on this host; `ply-scroll-nav-sidebar` sticks to the top.
  *
  * @example
- * <base-scroll-nav>
- *   <base-scroll-nav-content>...</base-scroll-nav-content>
- *   <base-scroll-nav-sidebar>...</base-scroll-nav-sidebar>
- * </base-scroll-nav>
+ * <ply-scroll-nav>
+ *   <ply-scroll-nav-content>...</ply-scroll-nav-content>
+ *   <ply-scroll-nav-sidebar>...</ply-scroll-nav-sidebar>
+ * </ply-scroll-nav>
  */
 @Component({
-  selector: 'base-scroll-nav',
+  selector: 'ply-scroll-nav',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   templateUrl: './scroll-nav.component.html',

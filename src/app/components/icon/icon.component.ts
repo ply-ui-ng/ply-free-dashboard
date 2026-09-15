@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, computed, input, viewChild, ElementRef ,
   ChangeDetectionStrategy, booleanAttribute } from '@angular/core';
@@ -17,11 +17,11 @@ import { cn } from '../tw-merge/tw-merge';
  * favorite/wishlist heart or a filled star rating.
  *
  * @example
- * <base-icon name="home" size="32" class="stroke-blue-500"></base-icon>
- * <base-icon name="heart" [filled]="isFavorited" class="fill-red-500"></base-icon>
+ * <ply-icon name="home" size="32" class="stroke-blue-500"></ply-icon>
+ * <ply-icon name="heart" [filled]="isFavorited" class="fill-red-500"></ply-icon>
  */
 @Component({
-  selector: 'base-icon',
+  selector: 'ply-icon',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   templateUrl: './icon.component.html',

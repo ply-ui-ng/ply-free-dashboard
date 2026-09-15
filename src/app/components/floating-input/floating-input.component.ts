@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   Component,
@@ -18,10 +18,10 @@ import { cn } from '../tw-merge/tw-merge';
  * A specialized input component that features a floating label.
  *
  * @example
- * <base-floating-input label="Email Address" type="email" [(ngModel)]="email"></base-floating-input>
+ * <ply-floating-input label="Email Address" type="email" [(ngModel)]="email"></ply-floating-input>
  */
 @Component({
-  selector: 'base-floating-input',
+  selector: 'ply-floating-input',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CommonModule, FormsModule],
   providers: [

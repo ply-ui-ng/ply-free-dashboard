@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, inject, input, computed ,
   ChangeDetectionStrategy, signal, HostBinding
@@ -11,16 +11,16 @@ import { cn } from '../../tw-merge/tw-merge';
 
 /**
  * An individual slide item within a gallery slider (`GallerySliderComponent`).
- * Can contain arbitrary content, typically an image and an optional `base-carousel-caption`.
+ * Can contain arbitrary content, typically an image and an optional `ply-carousel-caption`.
  *
  * @example
- * <base-carousel-item>
+ * <ply-carousel-item>
  *   <img src="slide.jpg" alt="Slide" />
- *   <base-carousel-caption>Caption</base-carousel-caption>
- * </base-carousel-item>
+ *   <ply-carousel-caption>Caption</ply-carousel-caption>
+ * </ply-carousel-item>
  */
 @Component({
-  selector: 'base-carousel-item',
+  selector: 'ply-carousel-item',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   templateUrl: './carousel-item.component.html',

@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, computed, input ,
   ChangeDetectionStrategy
@@ -8,16 +8,16 @@ import { Component, computed, input ,
 import { cn } from '../../tw-merge/tw-merge';
 
 /**
- * Sticky TOC sidebar for `base-scroll-nav`. Sticks to the top of the parent
+ * Sticky TOC sidebar for `ply-scroll-nav`. Sticks to the top of the parent
  * scrollport; it does not scroll independently.
  *
  * @example
- * <base-scroll-nav-sidebar>
- *   <a base-list-item>Section 1</a>
- * </base-scroll-nav-sidebar>
+ * <ply-scroll-nav-sidebar>
+ *   <a ply-list-item>Section 1</a>
+ * </ply-scroll-nav-sidebar>
  */
 @Component({
-  selector: 'base-scroll-nav-sidebar',
+  selector: 'ply-scroll-nav-sidebar',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './scroll-nav-sidebar.component.html',
   host: { '[class]': 'hostCls()' }

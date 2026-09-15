@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, OnInit, input ,
   ChangeDetectionStrategy
@@ -14,13 +14,13 @@ import { IconComponent } from '../icon/icon.component';
  * A wrapper component that combines an input field with a native HTML datalist for autocomplete suggestions.
  * 
  * @example
- * <base-input-autocomplete suggestions="country-list">
+ * <ply-input-autocomplete suggestions="country-list">
  *   <option value="United States"></option>
  *   <option value="Canada"></option>
- * </base-input-autocomplete>
+ * </ply-input-autocomplete>
  */
 @Component({
-  selector: 'base-input-autocomplete',
+  selector: 'ply-input-autocomplete',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [InputGroupComponent, BaseInputDirective, IconComponent],
   templateUrl: './input-autocomplete.component.html'

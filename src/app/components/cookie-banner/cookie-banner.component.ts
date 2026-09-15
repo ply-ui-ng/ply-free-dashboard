@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   Component,
@@ -25,10 +25,10 @@ import { cn } from '../tw-merge/tw-merge';
  * stored choice (SSR-safe). Accept / Reject persist that choice and emit.
  *
  * @example
- * <base-cookie-banner (accepted)="enableAnalytics()" (rejected)="disableAnalytics()"></base-cookie-banner>
+ * <ply-cookie-banner (accepted)="enableAnalytics()" (rejected)="disableAnalytics()"></ply-cookie-banner>
  */
 @Component({
-  selector: 'base-cookie-banner',
+  selector: 'ply-cookie-banner',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [BaseButtonDirective, StrokedButtonDirective, IconComponent],
   templateUrl: './cookie-banner.component.html',
@@ -40,28 +40,28 @@ export class CookieBannerComponent {
   /**
    * Extra host classes merged via `cn()`.
    * @example
-   * <base-cookie-banner class="md:left-8"></base-cookie-banner>
+   * <ply-cookie-banner class="md:left-8"></ply-cookie-banner>
    */
   readonly extraClass = input('', { alias: 'class' });
 
   /**
    * `localStorage` key used to remember the choice.
    * @example
-   * <base-cookie-banner storageKey="docs-cookie-consent"></base-cookie-banner>
+   * <ply-cookie-banner storageKey="docs-cookie-consent"></ply-cookie-banner>
    */
-  readonly storageKey = input('base-cookie-consent');
+  readonly storageKey = input('ply-cookie-consent');
 
   /**
    * Heading shown beside the cookie icon.
    * @example
-   * <base-cookie-banner title="Cookies"></base-cookie-banner>
+   * <ply-cookie-banner title="Cookies"></ply-cookie-banner>
    */
   readonly title = input('We use cookies');
 
   /**
    * Supporting copy under the title.
    * @example
-   * <base-cookie-banner message="We store preferences only."></base-cookie-banner>
+   * <ply-cookie-banner message="We store preferences only."></ply-cookie-banner>
    */
   readonly message = input(
     'We use cookies to remember your theme and keep the docs working. You can reject non-essential cookies.',
@@ -70,49 +70,49 @@ export class CookieBannerComponent {
   /**
    * Label for the accept button.
    * @example
-   * <base-cookie-banner acceptLabel="Allow all"></base-cookie-banner>
+   * <ply-cookie-banner acceptLabel="Allow all"></ply-cookie-banner>
    */
   readonly acceptLabel = input('Accept');
 
   /**
    * Label for the reject button.
    * @example
-   * <base-cookie-banner rejectLabel="Essential only"></base-cookie-banner>
+   * <ply-cookie-banner rejectLabel="Essential only"></ply-cookie-banner>
    */
   readonly rejectLabel = input('Reject');
 
   /**
    * Optional privacy policy URL. Hidden when empty.
    * @example
-   * <base-cookie-banner policyHref="/privacy"></base-cookie-banner>
+   * <ply-cookie-banner policyHref="/privacy"></ply-cookie-banner>
    */
   readonly policyHref = input('');
 
   /**
    * Label for the privacy policy link.
    * @example
-   * <base-cookie-banner policyLabel="Privacy"></base-cookie-banner>
+   * <ply-cookie-banner policyLabel="Privacy"></ply-cookie-banner>
    */
   readonly policyLabel = input('Privacy policy');
 
   /**
    * Emitted after the user accepts (and the choice is stored).
    * @example
-   * <base-cookie-banner (accepted)="onAccept()"></base-cookie-banner>
+   * <ply-cookie-banner (accepted)="onAccept()"></ply-cookie-banner>
    */
   readonly accepted = output<void>();
 
   /**
    * Emitted after the user rejects (and the choice is stored).
    * @example
-   * <base-cookie-banner (rejected)="onReject()"></base-cookie-banner>
+   * <ply-cookie-banner (rejected)="onReject()"></ply-cookie-banner>
    */
   readonly rejected = output<void>();
 
   /**
    * Emitted with the stored consent value after accept, reject, or a successful reset.
    * @example
-   * <base-cookie-banner (consentChange)="consent.set($event)"></base-cookie-banner>
+   * <ply-cookie-banner (consentChange)="consent.set($event)"></ply-cookie-banner>
    */
   readonly consentChange = output<CookieConsent>();
 

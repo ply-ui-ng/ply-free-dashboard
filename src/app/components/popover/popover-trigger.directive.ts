@@ -1,26 +1,26 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Directive, ElementRef, HostListener, OnDestroy, inject, input } from '@angular/core';
 import { PopoverComponent } from './popover.component';
 import { PopoverPlacement } from '../types';
 
 /**
- * Alternative external trigger for `base-popover`.
- * Use this when the trigger button must live outside the `<base-popover>` element.
+ * Alternative external trigger for `ply-popover`.
+ * Use this when the trigger button must live outside the `<ply-popover>` element.
  *
  * @example
- * <base-popover #myPop placement="bottom-start">Panel content</base-popover>
- * <button [base-popover-trigger]="myPop" placement="bottom-end">Open</button>
+ * <ply-popover #myPop placement="bottom-start">Panel content</ply-popover>
+ * <button [ply-popover-trigger]="myPop" placement="bottom-end">Open</button>
  */
 @Directive({
-  selector: '[base-popover-trigger]',
+  selector: '[ply-popover-trigger]',
 })
 export class PopoverTriggerDirective implements OnDestroy {
   private el = inject<ElementRef<HTMLElement>>(ElementRef);
 
-  readonly popover = input.required<PopoverComponent>({ alias: "base-popover-trigger" });
+  readonly popover = input.required<PopoverComponent>({ alias: "ply-popover-trigger" });
   readonly placement = input<PopoverPlacement>('bottom-start');
 
   @HostListener('click')

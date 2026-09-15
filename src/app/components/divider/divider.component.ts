@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, computed, input ,
   ChangeDetectionStrategy, booleanAttribute } from '@angular/core';
@@ -11,11 +11,11 @@ import { cn } from '../tw-merge/tw-merge';
  * A layout component used to separate content visually.
  *
  * @example
- * <base-divider></base-divider>
- * <base-divider [vertical]="true"></base-divider>
+ * <ply-divider></ply-divider>
+ * <ply-divider [vertical]="true"></ply-divider>
  */
 @Component({
-  selector: 'base-divider',
+  selector: 'ply-divider',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   templateUrl: './divider.component.html',

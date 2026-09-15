@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, computed, inject, input , signal,
   ChangeDetectionStrategy, booleanAttribute } from '@angular/core';
@@ -28,13 +28,13 @@ const ICON_SIZE_CLASSES: Record<GroupButtonSize, string> = {
 };
 
 /**
- * An individual button item inside a `base-button-group`.
+ * An individual button item inside a `ply-button-group`.
  *
  * @example
- * <base-group-button-item value="list" icon="list"></base-group-button-item>
+ * <ply-group-button-item value="list" icon="list"></ply-group-button-item>
  */
 @Component({
-  selector: 'base-group-button-item',
+  selector: 'ply-group-button-item',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CommonModule, IconComponent],
   templateUrl: './group-button.component.html',
@@ -47,9 +47,9 @@ export class GroupButtonComponent {
   readonly disabled = input(false, { transform: booleanAttribute });
   readonly value      = input<unknown>(undefined);
   /**
-   * Optional size override. When omitted, inherits from the parent `base-button-group`.
+   * Optional size override. When omitted, inherits from the parent `ply-button-group`.
    * @example
-   * <base-group-button-item value="grid" icon="grid" size="sm"></base-group-button-item>
+   * <ply-group-button-item value="grid" icon="grid" size="sm"></ply-group-button-item>
    */
   readonly size = input<GroupButtonSize | undefined>(undefined);
 

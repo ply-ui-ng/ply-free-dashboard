@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   AfterViewInit,
@@ -23,10 +23,10 @@ import { cn } from '../tw-merge/tw-merge';
  * Animates a number from a start value to the target on first viewport intersection.
  *
  * @example
- * <base-animated-counter [value]="48295" prefix="$" separator=","></base-animated-counter>
+ * <ply-animated-counter [value]="48295" prefix="$" separator=","></ply-animated-counter>
  */
 @Component({
-  selector: 'base-animated-counter',
+  selector: 'ply-animated-counter',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   templateUrl: './animated-counter.component.html',

@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   ChangeDetectionStrategy,
@@ -28,13 +28,13 @@ export type TriCheckboxState = boolean | 'indeterminate';
  * control derives the mixed state (e.g. select-all).
  *
  * @example
- * <base-tri-state-checkbox [(ngModel)]="status">Include archived</base-tri-state-checkbox>
+ * <ply-tri-state-checkbox [(ngModel)]="status">Include archived</ply-tri-state-checkbox>
  *
  * @example
- * <base-tri-state-checkbox color="success" [(ngModel)]="filter">Published</base-tri-state-checkbox>
+ * <ply-tri-state-checkbox color="success" [(ngModel)]="filter">Published</ply-tri-state-checkbox>
  */
 @Component({
-  selector: 'base-tri-state-checkbox',
+  selector: 'ply-tri-state-checkbox',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [IconComponent],
   templateUrl: './tri-state-checkbox.component.html',
@@ -52,7 +52,7 @@ export class TriStateCheckboxComponent implements ControlValueAccessor {
    * Extra host classes merged via `cn()`.
    *
    * @example
-   * <base-tri-state-checkbox class="mb-4" [(ngModel)]="value">Label</base-tri-state-checkbox>
+   * <ply-tri-state-checkbox class="mb-4" [(ngModel)]="value">Label</ply-tri-state-checkbox>
    */
   readonly extraClass = input('', { alias: 'class' });
 
@@ -60,7 +60,7 @@ export class TriStateCheckboxComponent implements ControlValueAccessor {
    * Semantic visual color.
    *
    * @example
-   * <base-tri-state-checkbox color="danger" [(ngModel)]="value">Delete</base-tri-state-checkbox>
+   * <ply-tri-state-checkbox color="danger" [(ngModel)]="value">Delete</ply-tri-state-checkbox>
    */
   readonly color = input<CheckboxColor>('primary');
 
@@ -68,7 +68,7 @@ export class TriStateCheckboxComponent implements ControlValueAccessor {
    * Disables the checkbox (also set by forms via `setDisabledState`).
    *
    * @example
-   * <base-tri-state-checkbox [disabled]="true" [(ngModel)]="value">Locked</base-tri-state-checkbox>
+   * <ply-tri-state-checkbox [disabled]="true" [(ngModel)]="value">Locked</ply-tri-state-checkbox>
    */
   readonly disabled = model(false);
 
@@ -77,7 +77,7 @@ export class TriStateCheckboxComponent implements ControlValueAccessor {
    * Also supports two-way binding via `[(state)]`.
    *
    * @example
-   * <base-tri-state-checkbox [(state)]="status">Status</base-tri-state-checkbox>
+   * <ply-tri-state-checkbox [(state)]="status">Status</ply-tri-state-checkbox>
    */
   readonly state = model<TriCheckboxState>(false);
 
@@ -85,7 +85,7 @@ export class TriStateCheckboxComponent implements ControlValueAccessor {
    * Optional accessible name for the native input when there is no visible label text.
    *
    * @example
-   * <base-tri-state-checkbox [ariaLabel]="'Select row'" [(ngModel)]="rowState"></base-tri-state-checkbox>
+   * <ply-tri-state-checkbox [ariaLabel]="'Select row'" [(ngModel)]="rowState"></ply-tri-state-checkbox>
    */
   readonly ariaLabel = input<string | undefined>(undefined);
 

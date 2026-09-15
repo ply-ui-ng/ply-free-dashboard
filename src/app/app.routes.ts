@@ -21,7 +21,7 @@ export const routes: Routes = [
         title: 'Sign in',
         data: seo({
           description:
-            'Sign in to the Base UI Free Dashboard demo. Mock auth — try demo@base-ui.net / password.',
+            'Sign in to the Ply Free Dashboard demo. Mock auth — try demo@ply-ui.com / password.',
         }),
         loadComponent: () => import('./pages/login/login').then((m) => m.Login),
       },
@@ -30,7 +30,7 @@ export const routes: Routes = [
         title: 'Create account',
         data: seo({
           description:
-            'Create a demo account for Base UI Free Dashboard. Registration is mocked with localStorage.',
+            'Create a demo account for Ply Free Dashboard. Registration is mocked with localStorage.',
         }),
         loadComponent: () => import('./pages/register/register').then((m) => m.Register),
       },
@@ -39,7 +39,7 @@ export const routes: Routes = [
         title: 'Forgot password',
         data: seo({
           description:
-            'Request a password reset for the Base UI Free Dashboard demo (mocked auth flow).',
+            'Request a password reset for the Ply Free Dashboard demo (mocked auth flow).',
         }),
         loadComponent: () =>
           import('./pages/forgot-password/forgot-password').then((m) => m.ForgotPassword),
@@ -57,7 +57,7 @@ export const routes: Routes = [
         title: 'Dashboard',
         data: seo({
           description:
-            'Overview metrics and activity for the Base UI Free Dashboard Angular admin template.',
+            'Overview metrics and activity for the Ply Free Dashboard Angular admin template.',
         }),
         loadComponent: () => import('./pages/dashboard/dashboard').then((m) => m.Dashboard),
       },
@@ -66,7 +66,7 @@ export const routes: Routes = [
         title: 'Users',
         data: seo({
           description:
-            'Users CRUD demo with tables and dialogs built from Base UI free components.',
+            'Users CRUD demo with tables and dialogs built from Ply free components.',
         }),
         loadComponent: () => import('./pages/users/users').then((m) => m.Users),
       },
@@ -75,7 +75,7 @@ export const routes: Routes = [
         title: 'Settings',
         data: seo({
           description:
-            'Profile, billing, and notification settings with in-page Base UI sidenav navigation.',
+            'Profile, billing, and notification settings with in-page Ply sidenav navigation.',
         }),
         loadComponent: () => import('./pages/settings/settings').then((m) => m.Settings),
       },
@@ -84,7 +84,7 @@ export const routes: Routes = [
         title: 'Primitives',
         data: seo({
           description:
-            'Base UI primitives gallery: buttons, badges, chips, avatars, icons, kbd, aspect-ratio, scroll-area, ripple, and reveal.',
+            'Ply primitives gallery: buttons, badges, chips, avatars, icons, kbd, aspect-ratio, scroll-area, ripple, and reveal.',
         }),
         loadComponent: () =>
           import('./pages/ui/primitives/primitives').then((m) => m.UiPrimitives),
@@ -94,7 +94,7 @@ export const routes: Routes = [
         title: 'Forms',
         data: seo({
           description:
-            'Base UI form controls gallery: inputs, select, OTP, phone, currency, masks, sliders, and rating.',
+            'Ply form controls gallery: inputs, select, OTP, phone, currency, masks, sliders, and rating.',
         }),
         loadComponent: () => import('./pages/ui/forms/forms').then((m) => m.UiForms),
       },
@@ -103,7 +103,7 @@ export const routes: Routes = [
         title: 'Feedback',
         data: seo({
           description:
-            'Base UI feedback gallery: alerts, toasts, progress, loading overlay, cookie banner, countdown, and skeletons.',
+            'Ply feedback gallery: alerts, toasts, progress, loading overlay, cookie banner, countdown, and skeletons.',
         }),
         loadComponent: () => import('./pages/ui/feedback/feedback').then((m) => m.UiFeedback),
       },
@@ -112,7 +112,7 @@ export const routes: Routes = [
         title: 'Overlays',
         data: seo({
           description:
-            'Base UI overlays gallery: dialog, dropdown, hover-card, context menu, tooltip, popover, drawer, and bottom sheet.',
+            'Ply overlays gallery: dialog, dropdown, hover-card, context menu, tooltip, popover, drawer, and bottom sheet.',
         }),
         loadComponent: () => import('./pages/ui/overlays/overlays').then((m) => m.UiOverlays),
       },
@@ -121,7 +121,7 @@ export const routes: Routes = [
         title: 'Navigation',
         data: seo({
           description:
-            'Base UI navigation gallery: tabs, breadcrumb, accordion, menubar, stepper, and scroll helpers.',
+            'Ply navigation gallery: tabs, breadcrumb, accordion, menubar, stepper, and scroll helpers.',
         }),
         loadComponent: () =>
           import('./pages/ui/navigation/navigation').then((m) => m.UiNavigation),
@@ -131,7 +131,7 @@ export const routes: Routes = [
         title: 'Data display',
         data: seo({
           description:
-            'Base UI data display gallery: cards, stats, calendar, carousel, code, paginator, and timeline.',
+            'Ply data display gallery: cards, stats, calendar, carousel, code, paginator, and timeline.',
         }),
         loadComponent: () =>
           import('./pages/ui/data-display/data-display').then((m) => m.UiDataDisplay),
@@ -141,7 +141,7 @@ export const routes: Routes = [
         title: 'Form blocks',
         data: seo({
           description:
-            'All 19 free Base UI form blocks: billing, payment, shipping, checkout, team invite, and more.',
+            'All 19 free Ply form blocks: billing, payment, shipping, checkout, team invite, and more.',
         }),
         loadComponent: () =>
           import('./pages/ui/form-blocks/form-blocks').then((m) => m.UiFormBlocks),

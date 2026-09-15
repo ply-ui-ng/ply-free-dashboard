@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   Component,
@@ -28,12 +28,12 @@ import { injectTimers } from '../safe-timer/safe-timer';
  * Supports HTML, TypeScript, JavaScript, and Bash highlighting.
  *
  * @example
- * <base-code language="HTML" [showCode]="true">
+ * <ply-code language="HTML" [showCode]="true">
  *   <div class="test">Hello World</div>
- * </base-code>
+ * </ply-code>
  */
 @Component({
-  selector: 'base-code',
+  selector: 'ply-code',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [IconComponent, IconButtonDirective, ClipboardModule, TooltipDirective],
   templateUrl: './code.component.html',

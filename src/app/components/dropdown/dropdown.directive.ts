@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   Directive,
@@ -25,27 +25,27 @@ import {
 } from '../dropdown-menu-stack/dropdown-menu-stack.service';
 
 /**
- * A directive that attaches a `base-dropdown-menu` to a trigger element (like a button).
+ * A directive that attaches a `ply-dropdown-menu` to a trigger element (like a button).
  * Automatically handles overlay positioning, backdrop clicks, and detachment.
- * Supports cascading submenus: put `[base-dropdown-menu-trigger]` on a menu item with
+ * Supports cascading submenus: put `[ply-dropdown-menu-trigger]` on a menu item with
  * `placement="right"` (or `left`). Nested menus open on hover once the parent cascade
  * is open; leaf clicks and outside clicks close.
  *
  * @example
- * <button [base-dropdown-menu-trigger]="myMenu" placement="end">Open</button>
- * <base-dropdown-menu #myMenu>
- *   <base-dropdown-menu-item>Action</base-dropdown-menu-item>
- * </base-dropdown-menu>
+ * <button [ply-dropdown-menu-trigger]="myMenu" placement="end">Open</button>
+ * <ply-dropdown-menu #myMenu>
+ *   <ply-dropdown-menu-item>Action</ply-dropdown-menu-item>
+ * </ply-dropdown-menu>
  *
  * @example
  * <!-- Cascading submenu -->
- * <button base-dropdown-menu-item [base-dropdown-menu-trigger]="sub" placement="right">More</button>
- * <base-dropdown-menu #sub>
- *   <base-dropdown-menu-item>Nested action</base-dropdown-menu-item>
- * </base-dropdown-menu>
+ * <button ply-dropdown-menu-item [ply-dropdown-menu-trigger]="sub" placement="right">More</button>
+ * <ply-dropdown-menu #sub>
+ *   <ply-dropdown-menu-item>Nested action</ply-dropdown-menu-item>
+ * </ply-dropdown-menu>
  */
 @Directive({
-  selector: '[base-dropdown-menu-trigger]',
+  selector: '[ply-dropdown-menu-trigger]',
   host: {
     '(click)': 'onTriggerClick($event)',
   },
@@ -58,9 +58,9 @@ export class DropdownMenuDirective<T> implements OnDestroy, DropdownMenuStackEnt
   /** The physical placement of the dropdown relative to the trigger. Defaults to 'end'. */
   readonly placement = input<DropdownPlacement>('end');
 
-  /** The reference to the `base-dropdown-menu` component to open. */
+  /** The reference to the `ply-dropdown-menu` component to open. */
   readonly dropdownPanel = input.required<DropdownPanel<T>>({
-    alias: 'base-dropdown-menu-trigger',
+    alias: 'ply-dropdown-menu-trigger',
   });
 
   private overlay = inject(Overlay);

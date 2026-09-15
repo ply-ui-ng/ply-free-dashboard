@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component,
   computed,
@@ -17,12 +17,12 @@ import { cn } from '../tw-merge/tw-merge';
  * A native HTML `<select>` wrapper component.
  *
  * @example
- * <base-select [(ngModel)]="selectedValue" placeholder="Select an option">
+ * <ply-select [(ngModel)]="selectedValue" placeholder="Select an option">
  *   <option value="1">Option 1</option>
- * </base-select>
+ * </ply-select>
  */
 @Component({
-  selector: 'base-select',
+  selector: 'ply-select',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CommonModule, IconComponent],
   templateUrl: './select.component.html',

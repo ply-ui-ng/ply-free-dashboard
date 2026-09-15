@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, computed, input ,
   ChangeDetectionStrategy
@@ -10,16 +10,16 @@ import { IconComponent } from '../../icon/icon.component';
 import { cn } from '../../tw-merge/tw-merge';
 
 /**
- * An individual breadcrumb link within a `base-breadcrumb`.
+ * An individual breadcrumb link within a `ply-breadcrumb`.
  * The last item (current page, usually without `link`) truncates with an ellipsis
  * and stays on a single row; hover the crumb to see the full `label` via `title`.
  *
  * @example
- * <base-breadcrumb-item label="Products" link="/products"></base-breadcrumb-item>
- * <base-breadcrumb-item label="A long current page title"></base-breadcrumb-item>
+ * <ply-breadcrumb-item label="Products" link="/products"></ply-breadcrumb-item>
+ * <ply-breadcrumb-item label="A long current page title"></ply-breadcrumb-item>
  */
 @Component({
-  selector: 'base-breadcrumb-item',
+  selector: 'ply-breadcrumb-item',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [IconComponent],
   templateUrl: './breadcrumb-item.component.html',

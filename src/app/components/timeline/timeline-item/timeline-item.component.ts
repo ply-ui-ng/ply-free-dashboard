@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, computed, input ,
   ChangeDetectionStrategy, booleanAttribute } from '@angular/core';
@@ -10,15 +10,15 @@ import { cn } from '../../tw-merge/tw-merge';
 import { TimelineColor } from '../../types';
 
 /**
- * A single event within a `base-timeline`.
+ * A single event within a `ply-timeline`.
  *
  * @example
- * <base-timeline-item color="primary" icon="check" time="10:00 AM">
+ * <ply-timeline-item color="primary" icon="check" time="10:00 AM">
  *   <p>Event description</p>
- * </base-timeline-item>
+ * </ply-timeline-item>
  */
 @Component({
-  selector: 'base-timeline-item',
+  selector: 'ply-timeline-item',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [IconComponent],
   templateUrl: './timeline-item.component.html',

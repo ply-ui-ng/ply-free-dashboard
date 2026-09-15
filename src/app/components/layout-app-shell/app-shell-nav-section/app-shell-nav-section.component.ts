@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { ChangeDetectionStrategy, Component, computed, inject, input } from '@angular/core';
 import { SidebarService } from '../../sidebar/sidebar.service';
@@ -8,16 +8,16 @@ import { cn } from '../../tw-merge/tw-merge';
 import { LayoutAppShellComponent } from '../layout-app-shell.component';
 
 /**
- * Labeled group inside `base-app-shell-sidebar`. The heading fades out with the
+ * Labeled group inside `ply-app-shell-sidebar`. The heading fades out with the
  * desktop mini-rail; a small gap still separates groups.
  *
  * @example
- * <base-app-shell-nav-section label="Workspace">
- *   <a base-app-shell-nav-item icon="home" routerLink="/">Home</a>
- * </base-app-shell-nav-section>
+ * <ply-app-shell-nav-section label="Workspace">
+ *   <a ply-app-shell-nav-item icon="home" routerLink="/">Home</a>
+ * </ply-app-shell-nav-section>
  */
 @Component({
-  selector: 'base-app-shell-nav-section',
+  selector: 'ply-app-shell-nav-section',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './app-shell-nav-section.component.html',
   host: {
@@ -33,14 +33,14 @@ export class AppShellNavSectionComponent {
   /**
    * Extra host classes merged via `cn()`.
    * @example
-   * <base-app-shell-nav-section class="mt-6" label="Account"></base-app-shell-nav-section>
+   * <ply-app-shell-nav-section class="mt-6" label="Account"></ply-app-shell-nav-section>
    */
   readonly extraClass = input('', { alias: 'class' });
 
   /**
    * Visible section heading. Fades out when the desktop rail is collapsed.
    * @example
-   * <base-app-shell-nav-section label="Docs"></base-app-shell-nav-section>
+   * <ply-app-shell-nav-section label="Docs"></ply-app-shell-nav-section>
    */
   readonly label = input('');
 

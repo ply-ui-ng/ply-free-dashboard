@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 
 import { Component, computed, signal ,
@@ -18,7 +18,7 @@ import { injectTimers } from '../safe-timer/safe-timer';
  * this.toast.success('Saved');
  */
 @Component({
-  selector: 'base-toast-container',
+  selector: 'ply-toast-container',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [IconComponent],
   templateUrl: './toast.component.html'

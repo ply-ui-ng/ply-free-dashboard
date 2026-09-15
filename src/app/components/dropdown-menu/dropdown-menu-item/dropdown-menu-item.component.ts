@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   Component,
@@ -14,19 +14,19 @@ import { IconComponent } from '../../icon/icon.component';
 import { cn } from '../../tw-merge/tw-merge';
 
 /**
- * An individual item within a `base-dropdown-menu`.
+ * An individual item within a `ply-dropdown-menu`.
  *
  * Clicking a normal item closes the menu. Bind `checked` (or set `stayOpen`)
  * for selectable items that toggle without dismissing the dropdown.
  *
  * @example
- * <base-dropdown-menu>
- *   <base-dropdown-menu-item>Profile</base-dropdown-menu-item>
- *   <base-dropdown-menu-item [(checked)]="wordWrap">Word wrap</base-dropdown-menu-item>
- * </base-dropdown-menu>
+ * <ply-dropdown-menu>
+ *   <ply-dropdown-menu-item>Profile</ply-dropdown-menu-item>
+ *   <ply-dropdown-menu-item [(checked)]="wordWrap">Word wrap</ply-dropdown-menu-item>
+ * </ply-dropdown-menu>
  */
 @Component({
-  selector: 'base-dropdown-menu-item',
+  selector: 'ply-dropdown-menu-item',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './dropdown-menu-item.component.html',
   imports: [IconComponent],
@@ -44,7 +44,7 @@ export class DropdownMenuItemComponent {
    * Extra host classes merged via `cn()`.
    *
    * @example
-   * <base-dropdown-menu-item class="font-medium">Save</base-dropdown-menu-item>
+   * <ply-dropdown-menu-item class="font-medium">Save</ply-dropdown-menu-item>
    */
   readonly extraClass = input('', { alias: 'class' });
 
@@ -53,7 +53,7 @@ export class DropdownMenuItemComponent {
    * after click. Two-way bind to toggle.
    *
    * @example
-   * <base-dropdown-menu-item [(checked)]="showSidebar">Sidebar</base-dropdown-menu-item>
+   * <ply-dropdown-menu-item [(checked)]="showSidebar">Sidebar</ply-dropdown-menu-item>
    */
   readonly checked = model<boolean | undefined>(undefined);
 
@@ -62,7 +62,7 @@ export class DropdownMenuItemComponent {
    * Implied when {@link checked} is bound.
    *
    * @example
-   * <base-dropdown-menu-item stayOpen (click)="toggle()">Pin</base-dropdown-menu-item>
+   * <ply-dropdown-menu-item stayOpen (click)="toggle()">Pin</ply-dropdown-menu-item>
    */
   readonly stayOpen = input(false, { transform: booleanAttribute });
 

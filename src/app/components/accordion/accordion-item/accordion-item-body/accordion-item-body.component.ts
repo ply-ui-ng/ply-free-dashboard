@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, computed, input ,
   ChangeDetectionStrategy
@@ -11,12 +11,12 @@ import { cn } from '../../../tw-merge/tw-merge';
  * The body content of an accordion item.
  *
  * @example
- * <base-accordion-item-body>
+ * <ply-accordion-item-body>
  *   Content goes here
- * </base-accordion-item-body>
+ * </ply-accordion-item-body>
  */
 @Component({
-  selector: 'base-accordion-item-body',
+  selector: 'ply-accordion-item-body',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './accordion-item-body.component.html',
   host: { '[class]': 'hostCls()' }

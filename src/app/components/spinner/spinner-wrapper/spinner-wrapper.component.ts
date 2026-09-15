@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 
 import { Component, input ,
@@ -12,12 +12,12 @@ import { Component, input ,
  * Provides a backdrop that can be dark or light.
  * 
  * @example
- * <base-spinner-wrapper backdrop="dark">
- *   <base-spinner></base-spinner>
- * </base-spinner-wrapper>
+ * <ply-spinner-wrapper backdrop="dark">
+ *   <ply-spinner></ply-spinner>
+ * </ply-spinner-wrapper>
  */
 @Component({
-  selector: 'base-spinner-wrapper',
+  selector: 'ply-spinner-wrapper',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   templateUrl: './spinner-wrapper.component.html'

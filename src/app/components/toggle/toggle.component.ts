@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 
 import { Component, forwardRef, input, model, computed ,
@@ -13,10 +13,10 @@ import { ToggleColor, ToggleSize, ToggleShape } from "../types";
  * Integrates natively with Angular Forms (`ngModel` and `formControlName`).
  * 
  * @example
- * <base-toggle [(ngModel)]="isActive" color="success" size="lg" shape="rounded"></base-toggle>
+ * <ply-toggle [(ngModel)]="isActive" color="success" size="lg" shape="rounded"></ply-toggle>
  */
 @Component({
-  selector: 'base-toggle',
+  selector: 'ply-toggle',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [FormsModule],
   templateUrl: './toggle.component.html',
@@ -42,7 +42,7 @@ export class ToggleComponent implements ControlValueAccessor {
    * the toggle has no adjacent visible text label (e.g. a standalone switch).
    *
    * @example
-   * <base-toggle aria-label="Two-factor authentication"></base-toggle>
+   * <ply-toggle aria-label="Two-factor authentication"></ply-toggle>
    */
   readonly ariaLabel = input<string | undefined>(undefined, { alias: 'aria-label' });
 

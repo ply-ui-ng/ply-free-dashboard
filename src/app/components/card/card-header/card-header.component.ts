@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, computed, input ,
   ChangeDetectionStrategy
@@ -8,13 +8,13 @@ import { Component, computed, input ,
 import { cn } from '../../tw-merge/tw-merge';
 
 /**
- * The header section of a base-card. Usually contains the title and optional actions.
+ * The header section of a ply-card. Usually contains the title and optional actions.
  *
  * @example
- * <base-card-header>Card Title</base-card-header>
+ * <ply-card-header>Card Title</ply-card-header>
  */
 @Component({
-  selector: 'base-card-header',
+  selector: 'ply-card-header',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './card-header.component.html',
   host: { '[class]': 'hostCls()' }

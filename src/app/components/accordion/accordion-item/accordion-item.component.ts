@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, computed, input, model, output, ChangeDetectionStrategy, booleanAttribute } from '@angular/core';
 
@@ -10,16 +10,16 @@ import { cn } from '../../tw-merge/tw-merge';
 let accordionItemIdCounter = 0;
 
 /**
- * A single item within a base-accordion containing a header and body.
+ * A single item within a ply-accordion containing a header and body.
  *
  * @example
- * <base-accordion-item>
- *   <base-accordion-item-header>Header</base-accordion-item-header>
- *   <base-accordion-item-body>Body</base-accordion-item-body>
- * </base-accordion-item>
+ * <ply-accordion-item>
+ *   <ply-accordion-item-header>Header</ply-accordion-item-header>
+ *   <ply-accordion-item-body>Body</ply-accordion-item-body>
+ * </ply-accordion-item>
  */
 @Component({
-  selector: 'base-accordion-item',
+  selector: 'ply-accordion-item',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [IconComponent],
   templateUrl: './accordion-item.component.html',
@@ -35,8 +35,8 @@ export class AccordionItemComponent {
   /** Emitted when the item is toggled. Carries the new open state. */
   readonly toggled = output<boolean>();
 
-  readonly headerId = `base-accordion-header-${accordionItemIdCounter}`;
-  readonly panelId = `base-accordion-panel-${accordionItemIdCounter++}`;
+  readonly headerId = `ply-accordion-header-${accordionItemIdCounter}`;
+  readonly panelId = `ply-accordion-panel-${accordionItemIdCounter++}`;
 
   protected readonly hostCls = computed(() =>
     cn(

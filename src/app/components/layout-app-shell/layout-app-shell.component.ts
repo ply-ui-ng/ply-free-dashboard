@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   ChangeDetectionStrategy,
@@ -24,32 +24,32 @@ const DASH_DESKTOP_BP = '(min-width: 1080px)';
 
 /**
  * Primary **application / dashboard chrome**: left rail, sticky top bar, and
- * scrollable content. Pair with `base-app-shell-sidebar`, `base-app-shell-topbar`,
- * `base-app-shell-content`, and optional `base-app-shell-nav-section` /
- * `base-app-shell-nav-item`.
+ * scrollable content. Pair with `ply-app-shell-sidebar`, `ply-app-shell-topbar`,
+ * `ply-app-shell-content`, and optional `ply-app-shell-nav-section` /
+ * `ply-app-shell-nav-item`.
  *
  * Desktop: expanded rail or a 76px mini rail (`SidebarService`). Mobile: overlay
- * drawer. Do **not** use `base-sidenav` for app chrome — that component is for
+ * drawer. Do **not** use `ply-sidenav` for app chrome — that component is for
  * in-page section navigation only.
  *
- * Nested nav, mega menus, and the full `base-shell` product chrome (page +
- * dashboard modes) belong in Base UI Pro.
+ * Nested nav, mega menus, and the full `ply-shell` product chrome (page +
+ * dashboard modes) belong in Ply Pro.
  *
  * @example
- * <base-app-shell>
- *   <base-app-shell-sidebar>
- *     <base-app-shell-nav-section label="App">
- *       <a base-app-shell-nav-item icon="home" routerLink="/app">Home</a>
- *     </base-app-shell-nav-section>
- *   </base-app-shell-sidebar>
- *   <base-app-shell-topbar>Title / search / avatar</base-app-shell-topbar>
- *   <base-app-shell-content>
+ * <ply-app-shell>
+ *   <ply-app-shell-sidebar>
+ *     <ply-app-shell-nav-section label="App">
+ *       <a ply-app-shell-nav-item icon="home" routerLink="/app">Home</a>
+ *     </ply-app-shell-nav-section>
+ *   </ply-app-shell-sidebar>
+ *   <ply-app-shell-topbar>Title / search / avatar</ply-app-shell-topbar>
+ *   <ply-app-shell-content>
  *     <router-outlet />
- *   </base-app-shell-content>
- * </base-app-shell>
+ *   </ply-app-shell-content>
+ * </ply-app-shell>
  */
 @Component({
-  selector: 'base-app-shell',
+  selector: 'ply-app-shell',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [IconComponent, IconStrokedButtonDirective],
   templateUrl: './layout-app-shell.component.html',
@@ -67,7 +67,7 @@ export class LayoutAppShellComponent {
    * Extra host classes merged via `cn()`.
    *
    * @example
-   * <base-app-shell class="bg-slate-50"></base-app-shell>
+   * <ply-app-shell class="bg-slate-50"></ply-app-shell>
    */
   readonly extraClass = input('', { alias: 'class' });
 
@@ -75,7 +75,7 @@ export class LayoutAppShellComponent {
    * Expanded rail width in px.
    *
    * @example
-   * <base-app-shell [width]="260"></base-app-shell>
+   * <ply-app-shell [width]="260"></ply-app-shell>
    */
   readonly width = input(280);
 
@@ -83,7 +83,7 @@ export class LayoutAppShellComponent {
    * Mini (icons-only) rail width in px.
    *
    * @example
-   * <base-app-shell [miniWidth]="72"></base-app-shell>
+   * <ply-app-shell [miniWidth]="72"></ply-app-shell>
    */
   readonly miniWidth = input(76);
 

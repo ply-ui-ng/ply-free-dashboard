@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 
 import { Component, input ,
@@ -16,10 +16,10 @@ import { InputSpinnerComponent } from '../input-spinner/input-spinner.component'
  * Allows users to navigate between pages of data and change the page size.
  * 
  * @example
- * <base-paginator [basePaginator]="true" [pageSizeOptions]="[10, 20, 50]"></base-paginator>
+ * <ply-paginator [plyPaginator]="true" [pageSizeOptions]="[10, 20, 50]"></ply-paginator>
  */
 @Component({
-  selector: 'base-paginator',
+  selector: 'ply-paginator',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     FormsModule,
@@ -32,7 +32,7 @@ import { InputSpinnerComponent } from '../input-spinner/input-spinner.component'
 })
 export class PaginatorComponent {
   /** If true, applies a distinct "base" visual variant. */
-  readonly basePaginator = input(false, { transform: booleanAttribute });
+  readonly plyPaginator = input(false, { transform: booleanAttribute });
   
   /** If true, shows explicit previous/next arrow buttons instead of standard pagination. */
   readonly arrows = input(false, { transform: booleanAttribute });

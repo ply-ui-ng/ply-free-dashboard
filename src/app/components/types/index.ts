@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 export type AlertColor = '' | 'primary' | 'success' | 'danger' | 'accent' | 'warning';
 export type AlertVariant = 'soft' | 'solid' | 'outline';
@@ -44,7 +44,7 @@ export interface MeterGroupItem {
   value: number;
   /** Segment color. Defaults by cycling the palette when omitted. */
   color?: MeterGroupColor;
-  /** Optional `base-icon` name shown in the legend. */
+  /** Optional `ply-icon` name shown in the legend. */
   icon?: string;
 }
 export type QuoteVariant = 'default' | 'border-left' | 'icon-top' | 'avatar-left';
@@ -102,7 +102,7 @@ export type ShellLayoutMode = 'auto' | 'mobile' | 'desktop';
  */
 export type ShellMode = 'page' | 'dashboard';
 
-/** Which edge a `base-shell` sidebar occupies. */
+/** Which edge a `ply-shell` sidebar occupies. */
 export type ShellSide = 'left' | 'right';
 
 /** @deprecated Use {@link ShellSide}. */
@@ -173,10 +173,10 @@ export interface ChatMessage {
 
 export type SliderColor = 'primary' | 'success' | 'danger' | 'warning' | 'accent';
 
-/** Selected span for `base-dual-range-slider` (start ≤ end). */
+/** Selected span for `ply-dual-range-slider` (start ≤ end). */
 export type DualRangeValue = { start: number; end: number };
 
-/** Panel layout for `base-splitter`. */
+/** Panel layout for `ply-splitter`. */
 export type SplitterOrientation = 'horizontal' | 'vertical';
 
 export type TableSortDirection = 'asc' | 'desc' | '';

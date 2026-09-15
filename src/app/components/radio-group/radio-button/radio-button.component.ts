@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, inject, input, computed ,
   ChangeDetectionStrategy, booleanAttribute } from '@angular/core';
@@ -9,13 +9,13 @@ import { RadioGroupComponent, RADIO_GROUP } from '../radio-group.component';
 import { RadioColor } from "../../types";
 
 /**
- * An individual radio option inside a `base-radio-group`.
+ * An individual radio option inside a `ply-radio-group`.
  *
  * @example
- * <base-radio-button value="option-1" label="Option 1"></base-radio-button>
+ * <ply-radio-button value="option-1" label="Option 1"></ply-radio-button>
  */
 @Component({
-  selector: 'base-radio-button',
+  selector: 'ply-radio-button',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   templateUrl: './radio-button.component.html'

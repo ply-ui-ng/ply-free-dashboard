@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   Component,
@@ -29,17 +29,17 @@ let hoverCardIdCounter = 0;
 
 /**
  * Rich content panel that opens when the pointer (or keyboard focus) rests on the trigger.
- * Unlike `base-popover`, there is no backdrop — the pointer can move into the panel.
+ * Unlike `ply-popover`, there is no backdrop — the pointer can move into the panel.
  * Closes after a short delay on leave, on outside pointer down, and on Escape.
  *
  * @example
- * <base-hover-card>
+ * <ply-hover-card>
  *   <a hover-card-trigger href="/team/ada">Ada Lovelace</a>
  *   <p>Mathematician and first programmer.</p>
- * </base-hover-card>
+ * </ply-hover-card>
  */
 @Component({
-  selector: 'base-hover-card',
+  selector: 'ply-hover-card',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [OverlayModule],
   templateUrl: './hover-card.component.html',
@@ -51,47 +51,47 @@ export class HoverCardComponent implements OnDestroy {
   private readonly viewContainerRef = inject(ViewContainerRef);
   private readonly timers = injectTimers();
 
-  readonly panelId = `base-hover-card-panel-${++hoverCardIdCounter}`;
+  readonly panelId = `ply-hover-card-panel-${++hoverCardIdCounter}`;
 
   /**
    * Extra host classes merged via `cn()`.
    * @example
-   * <base-hover-card class="align-middle"></base-hover-card>
+   * <ply-hover-card class="align-middle"></ply-hover-card>
    */
   readonly extraClass = input('', { alias: 'class' });
 
   /**
    * Minimum width of the overlay panel.
    * @example
-   * <base-hover-card minWidth="280px"></base-hover-card>
+   * <ply-hover-card minWidth="280px"></ply-hover-card>
    */
   readonly minWidth = input('240px');
 
   /**
    * Preferred placement relative to the trigger. Flips when there is not enough room.
    * @example
-   * <base-hover-card placement="top"></base-hover-card>
+   * <ply-hover-card placement="top"></ply-hover-card>
    */
   readonly placement = input<PopoverPlacement>('bottom-start');
 
   /**
    * Milliseconds to wait after pointer enter / focus before opening.
    * @example
-   * <base-hover-card [openDelay]="0"></base-hover-card>
+   * <ply-hover-card [openDelay]="0"></ply-hover-card>
    */
   readonly openDelay = input(200);
 
   /**
    * Milliseconds to wait after pointer leave before closing (lets the pointer reach the panel).
    * @example
-   * <base-hover-card [closeDelay]="100"></base-hover-card>
+   * <ply-hover-card [closeDelay]="100"></ply-hover-card>
    */
   readonly closeDelay = input(150);
 
   /**
    * Emits whenever the panel opens or closes.
    * @example
-   * <base-hover-card (openChange)="onOpen($event)"></base-hover-card>
+   * <ply-hover-card (openChange)="onOpen($event)"></ply-hover-card>
    */
   readonly openChange = output<boolean>();
 

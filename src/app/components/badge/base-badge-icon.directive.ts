@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Directive, ElementRef, Renderer2, OnInit, inject, input } from '@angular/core';
 
@@ -8,7 +8,7 @@ import { Directive, ElementRef, Renderer2, OnInit, inject, input } from '@angula
  * Applies badge styling to an icon.
  * 
  * @example
- * <base-icon base-badge-icon color="danger" size="md" name="bell"></base-icon>
+ * <ply-icon ply-badge-icon color="danger" size="md" name="bell"></ply-icon>
  */
 @Directive({
   selector: '[badge-icon]',

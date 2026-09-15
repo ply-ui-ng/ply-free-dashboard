@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Directive, ElementRef, HostListener, inject, input } from '@angular/core';
 
@@ -8,14 +8,14 @@ import { Directive, ElementRef, HostListener, inject, input } from '@angular/cor
  * A behavior directive that smoothly scrolls the window to a target element when the host is clicked.
  * 
  * @example
- * <button [baseScrollTo]="'#footer'">Scroll to Footer</button>
+ * <button [plyScrollTo]="'#footer'">Scroll to Footer</button>
  */
 @Directive({
-  selector: '[baseScrollTo]',
+  selector: '[plyScrollTo]',
 })
 export class ScrollToDirective {
   /** A valid CSS selector (like an ID '#my-div') specifying the target to scroll to. */
-  readonly target = input('', { alias: "baseScrollTo" });
+  readonly target = input('', { alias: "plyScrollTo" });
   
   private el = inject(ElementRef);
 

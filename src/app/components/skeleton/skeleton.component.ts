@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, computed, input ,
   ChangeDetectionStrategy, booleanAttribute } from '@angular/core';
@@ -9,7 +9,7 @@ import { SkeletonVariant } from '../types';
 import { cn } from '../tw-merge/tw-merge';
 
 @Component({
-  selector: 'base-skeleton',
+  selector: 'ply-skeleton',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   templateUrl: './skeleton.component.html',

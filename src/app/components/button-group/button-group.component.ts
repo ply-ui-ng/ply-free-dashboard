@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   Component,
@@ -28,12 +28,12 @@ export type { ButtonGroupParent } from './button-group.token';
  * A container for grouping multiple toggle buttons.
  *
  * @example
- * <base-button-group size="sm" [(ngModel)]="viewMode">
- *   <base-group-button-item value="list" icon="list"></base-group-button-item>
- * </base-button-group>
+ * <ply-button-group size="sm" [(ngModel)]="viewMode">
+ *   <ply-group-button-item value="list" icon="list"></ply-group-button-item>
+ * </ply-button-group>
  */
 @Component({
-  selector: 'base-button-group',
+  selector: 'ply-button-group',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   templateUrl: './button-group.component.html',
@@ -49,7 +49,7 @@ export class ButtonGroupComponent implements ControlValueAccessor {
    * Shared size for all items in the group. Matches button / icon-button heights
    * (`sm` = 28px, `default` = 36px, etc.).
    * @example
-   * <base-button-group size="sm">...</base-button-group>
+   * <ply-button-group size="sm">...</ply-button-group>
    */
   readonly size = input<GroupButtonSize>('default');
   readonly change     = output<unknown>();

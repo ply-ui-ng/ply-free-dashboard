@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { AfterViewInit, Component, input, contentChild ,
   ChangeDetectionStrategy
@@ -14,14 +14,14 @@ import { injectTimers } from '../../safe-timer/safe-timer';
  * Should be used inside a component that is passed to `DialogService.open()`.
  * 
  * @example
- * <base-dialog [width]="600">
- *   <base-dialog-header>Title</base-dialog-header>
- *   <base-dialog-body>Content here</base-dialog-body>
- *   <base-dialog-footer>Buttons here</base-dialog-footer>
- * </base-dialog>
+ * <ply-dialog [width]="600">
+ *   <ply-dialog-header>Title</ply-dialog-header>
+ *   <ply-dialog-body>Content here</ply-dialog-body>
+ *   <ply-dialog-footer>Buttons here</ply-dialog-footer>
+ * </ply-dialog>
  */
 @Component({
-  selector: 'base-dialog',
+  selector: 'ply-dialog',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CommonModule],
   templateUrl: './dialog.component.html'
@@ -32,7 +32,7 @@ export class DialogComponent implements AfterViewInit {
   /** Explicit width in pixels. If not provided, it relies on Tailwind classes or content size. */
   readonly width = input<number>();
   
-  /** Explicit height in pixels. Applied dynamically to the `base-dialog-body` for scrolling. */
+  /** Explicit height in pixels. Applied dynamically to the `ply-dialog-body` for scrolling. */
   readonly height = input<number>();
   
   readonly bodyComponent = contentChild(DialogBodyComponent);

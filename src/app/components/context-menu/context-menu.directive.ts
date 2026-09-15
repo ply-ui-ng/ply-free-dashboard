@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   Directive,
@@ -27,18 +27,18 @@ interface ContextMenuPoint {
 }
 
 /**
- * Opens a `base-context-menu` on right-click (or Shift+F10 / the ContextMenu key)
+ * Opens a `ply-context-menu` on right-click (or Shift+F10 / the ContextMenu key)
  * at the pointer position.
  *
  * @example
- * <div [base-context-menu-trigger]="menu" tabindex="0">Right-click me</div>
- * <base-context-menu #menu>
- *   <button base-context-menu-item>Rename</button>
- *   <button base-context-menu-item>Delete</button>
- * </base-context-menu>
+ * <div [ply-context-menu-trigger]="menu" tabindex="0">Right-click me</div>
+ * <ply-context-menu #menu>
+ *   <button ply-context-menu-item>Rename</button>
+ *   <button ply-context-menu-item>Delete</button>
+ * </ply-context-menu>
  */
 @Directive({
-  selector: '[base-context-menu-trigger]',
+  selector: '[ply-context-menu-trigger]',
   host: {
     '(contextmenu)': 'onContextMenu($event)',
     '(keydown)': 'onKeydown($event)',
@@ -62,21 +62,21 @@ export class ContextMenuDirective<T> implements OnDestroy {
   readonly isOpen = signal(false);
 
   /**
-   * The reference to the `base-context-menu` component to open.
+   * The reference to the `ply-context-menu` component to open.
    *
    * @example
-   * <div [base-context-menu-trigger]="fileMenu">...</div>
+   * <div [ply-context-menu-trigger]="fileMenu">...</div>
    */
   readonly contextMenuPanel = input.required<ContextMenuPanel<T>>({
-    alias: 'base-context-menu-trigger',
+    alias: 'ply-context-menu-trigger',
   });
 
   /**
    * When true, the native browser context menu is not suppressed and the
-   * Base UI menu will not open.
+   * Ply menu will not open.
    *
    * @example
-   * <div [base-context-menu-trigger]="menu" [disabled]="true">...</div>
+   * <div [ply-context-menu-trigger]="menu" [disabled]="true">...</div>
    */
   readonly disabled = input(false, { transform: booleanAttribute });
 

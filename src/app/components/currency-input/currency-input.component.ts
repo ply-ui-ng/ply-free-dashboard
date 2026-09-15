@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   Component,
@@ -19,13 +19,13 @@ import { cn } from '../tw-merge/tw-merge';
 /**
  * Locale-aware currency field. Stores a `number | null` via Angular forms.
  * Shows a formatted value when idle and a raw editable amount while focused.
- * Do not nest inside `base-input-group` — it is a composite control.
+ * Do not nest inside `ply-input-group` — it is a composite control.
  *
  * @example
- * <base-currency-input [(ngModel)]="price" currency="USD"></base-currency-input>
+ * <ply-currency-input [(ngModel)]="price" currency="USD"></ply-currency-input>
  */
 @Component({
-  selector: 'base-currency-input',
+  selector: 'ply-currency-input',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   templateUrl: './currency-input.component.html',
@@ -42,56 +42,56 @@ export class CurrencyInputComponent implements ControlValueAccessor {
   /**
    * Extra host classes merged via `cn()`.
    * @example
-   * <base-currency-input class="max-w-xs"></base-currency-input>
+   * <ply-currency-input class="max-w-xs"></ply-currency-input>
    */
   readonly extraClass = input('', { alias: 'class' });
 
   /**
    * ISO 4217 currency code used for formatting and the prefix symbol.
    * @example
-   * <base-currency-input currency="EUR"></base-currency-input>
+   * <ply-currency-input currency="EUR"></ply-currency-input>
    */
   readonly currency = input('USD');
 
   /**
    * BCP 47 locale passed to `Intl.NumberFormat`. Defaults to `en-US`.
    * @example
-   * <base-currency-input locale="de-DE" currency="EUR"></base-currency-input>
+   * <ply-currency-input locale="de-DE" currency="EUR"></ply-currency-input>
    */
   readonly locale = input('en-US');
 
   /**
    * Placeholder shown when the value is empty and the field is not focused.
    * @example
-   * <base-currency-input placeholder="0.00"></base-currency-input>
+   * <ply-currency-input placeholder="0.00"></ply-currency-input>
    */
   readonly placeholder = input('0.00');
 
   /**
    * Accessible name for the inner text field.
    * @example
-   * <base-currency-input ariaLabel="Amount"></base-currency-input>
+   * <ply-currency-input ariaLabel="Amount"></ply-currency-input>
    */
   readonly ariaLabel = input('Amount');
 
   /**
    * Minimum allowed value (applied on blur). Omit for no floor.
    * @example
-   * <base-currency-input [min]="0"></base-currency-input>
+   * <ply-currency-input [min]="0"></ply-currency-input>
    */
   readonly min = input<number | null>(null);
 
   /**
    * Maximum allowed value (applied on blur). Omit for no ceiling.
    * @example
-   * <base-currency-input [max]="1000000"></base-currency-input>
+   * <ply-currency-input [max]="1000000"></ply-currency-input>
    */
   readonly max = input<number | null>(null);
 
   /**
    * Hide the currency symbol prefix (the formatted value still uses the currency).
    * @example
-   * <base-currency-input [showSymbol]="false"></base-currency-input>
+   * <ply-currency-input [showSymbol]="false"></ply-currency-input>
    */
   readonly showSymbol = input(true, { transform: booleanAttribute });
 

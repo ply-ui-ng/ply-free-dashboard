@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Directive, computed, input } from '@angular/core';
 import { LinkColor, LinkSize } from "../types";
@@ -10,10 +10,10 @@ import { LinkColor, LinkSize } from "../types";
  * Use this to style inline anchors and links.
  * 
  * @example
- * <a base-link color="primary" size="lg">Read more</a>
+ * <a ply-link color="primary" size="lg">Read more</a>
  */
 @Directive({
-  selector: '[base-link]',
+  selector: '[ply-link]',
   host: {
     '[class]': 'classes()',
     '[style.width]': 'styleWidth()'
@@ -30,7 +30,7 @@ export class BaseLinkDirective {
   readonly width = input<string>();
 
   readonly classes = computed(() => {
-    const baseClasses = 'inline-flex items-center tracking-wide transition-colors duration-200 disabled:cursor-not-allowed disabled:opacity-50 [&_base-icon]:stroke-current [&_base-icon]:fill-current';
+    const baseClasses = 'inline-flex items-center tracking-wide transition-colors duration-200 disabled:cursor-not-allowed disabled:opacity-50 [&_ply-icon]:stroke-current [&_ply-icon]:fill-current';
     
     const colorMap: Record<LinkColor, string> = {
       primary: 'text-blue-500 hover:text-blue-700 active:text-blue-900 disabled:text-blue-300',
@@ -42,10 +42,10 @@ export class BaseLinkDirective {
     };
 
     const sizeMap: Record<LinkSize, string> = {
-      sm: 'text-xs gap-2 [&_base-icon]:w-3! [&_base-icon]:h-3!',
-      default: 'text-sm gap-3 [&_base-icon]:w-5! [&_base-icon]:h-5!',
-      lg: 'text-base gap-4 [&_base-icon]:w-6! [&_base-icon]:h-6!',
-      xl: 'text-lg gap-5 [&_base-icon]:w-7! [&_base-icon]:h-7!',
+      sm: 'text-xs gap-2 [&_ply-icon]:w-3! [&_ply-icon]:h-3!',
+      default: 'text-sm gap-3 [&_ply-icon]:w-5! [&_ply-icon]:h-5!',
+      lg: 'text-base gap-4 [&_ply-icon]:w-6! [&_ply-icon]:h-6!',
+      xl: 'text-lg gap-5 [&_ply-icon]:w-7! [&_ply-icon]:h-7!',
     };
 
     const colorClass = colorMap[this.color()] || colorMap['default'];

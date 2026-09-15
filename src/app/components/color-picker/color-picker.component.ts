@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component,
   ElementRef,
@@ -29,10 +29,10 @@ let colorPickerIdCounter = 0;
  * Integrates with Angular Forms via ControlValueAccessor.
  *
  * @example
- * <base-color-picker [(ngModel)]="brandColor"></base-color-picker>
+ * <ply-color-picker [(ngModel)]="brandColor"></ply-color-picker>
  */
 @Component({
-  selector: 'base-color-picker',
+  selector: 'ply-color-picker',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CommonModule, FormsModule],
   templateUrl: './color-picker.component.html',
@@ -43,7 +43,7 @@ let colorPickerIdCounter = 0;
 export class ColorPickerComponent implements OnDestroy {
   /** Prerendering destroys the app after render; there is nothing to unbind on the server. */
   private readonly isSsrSafeBrowser = isPlatformBrowser(inject(PLATFORM_ID));
-  readonly panelId = `base-color-picker-panel-${++colorPickerIdCounter}`;
+  readonly panelId = `ply-color-picker-panel-${++colorPickerIdCounter}`;
 
   readonly extraClass = input('', { alias: 'class' });
   readonly pickerLabel = input('Color picker');

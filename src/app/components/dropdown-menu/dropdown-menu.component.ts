@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   Component,
@@ -23,16 +23,16 @@ let dropdownMenuIdCounter = 0;
 
 /**
  * The container component for a dropdown menu.
- * Designed to be passed into a `[base-dropdown-menu-trigger]` directive.
+ * Designed to be passed into a `[ply-dropdown-menu-trigger]` directive.
  *
  * @example
- * <base-dropdown-menu #myMenu size="200px">
- *   <base-dropdown-menu-item>Option 1</base-dropdown-menu-item>
- * </base-dropdown-menu>
- * <button [base-dropdown-menu-trigger]="myMenu">Open Menu</button>
+ * <ply-dropdown-menu #myMenu size="200px">
+ *   <ply-dropdown-menu-item>Option 1</ply-dropdown-menu-item>
+ * </ply-dropdown-menu>
+ * <button [ply-dropdown-menu-trigger]="myMenu">Open Menu</button>
  */
 @Component({
-  selector: 'base-dropdown-menu',
+  selector: 'ply-dropdown-menu',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CommonModule],
   templateUrl: './dropdown-menu.component.html',
@@ -52,7 +52,7 @@ export class DropdownMenuComponent<T> implements DropdownPanel<T> {
   readonly closed = output<void>();
 
   /** Stable id referenced by the trigger's aria-controls. */
-  readonly menuId = `base-dropdown-menu-${dropdownMenuIdCounter++}`;
+  readonly menuId = `ply-dropdown-menu-${dropdownMenuIdCounter++}`;
 
   readonly menuClasses = computed(() => {
     const base =

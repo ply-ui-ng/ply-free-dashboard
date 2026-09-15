@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   AfterViewInit,
@@ -26,7 +26,7 @@ let dialogLabelIdCounter = 0;
  * Created dynamically by `DialogService`.
  */
 @Component({
-  selector: 'base-dialog-container',
+  selector: 'ply-dialog-container',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   templateUrl: './dialog-container.component.html',
@@ -63,7 +63,7 @@ export class DialogContainerComponent implements DialogContainer, AfterViewInit,
 
   context!: DialogContext<unknown, unknown>;
 
-  readonly dialogLabelId = `base-dialog-label-${dialogLabelIdCounter++}`;
+  readonly dialogLabelId = `ply-dialog-label-${dialogLabelIdCounter++}`;
 
   private focusTrap?: FocusTrap;
   private previouslyFocused: HTMLElement | null = null;
@@ -92,7 +92,7 @@ export class DialogContainerComponent implements DialogContainer, AfterViewInit,
     const box = this.dialogBox()?.nativeElement;
     if (!box) return;
 
-    const heading = box.querySelector('h1, h2, h3, [base-dialog-header], base-dialog-header');
+    const heading = box.querySelector('h1, h2, h3, [ply-dialog-header], ply-dialog-header');
     if (heading instanceof HTMLElement) {
       if (!heading.id) {
         heading.id = this.dialogLabelId;

@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   ChangeDetectionStrategy,
@@ -22,11 +22,11 @@ import { cn } from '../tw-merge/tw-merge';
  * Implements ControlValueAccessor for `ngModel` / reactive forms.
  *
  * @example
- * <base-dual-range-slider [(ngModel)]="priceRange" [min]="10" [max]="100"></base-dual-range-slider>
- * <base-dual-range-slider color="success" [showValue]="true" [(ngModel)]="ages"></base-dual-range-slider>
+ * <ply-dual-range-slider [(ngModel)]="priceRange" [min]="10" [max]="100"></ply-dual-range-slider>
+ * <ply-dual-range-slider color="success" [showValue]="true" [(ngModel)]="ages"></ply-dual-range-slider>
  */
 @Component({
-  selector: 'base-dual-range-slider',
+  selector: 'ply-dual-range-slider',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './dual-range-slider.component.html',
   providers: [
@@ -95,7 +95,7 @@ export class DualRangeSliderComponent implements ControlValueAccessor {
    * Lower bound of the track.
    *
    * @example
-   * <base-dual-range-slider [min]="10" [(ngModel)]="range"></base-dual-range-slider>
+   * <ply-dual-range-slider [min]="10" [(ngModel)]="range"></ply-dual-range-slider>
    */
   readonly min = input(0, { transform: numberAttribute });
 
@@ -103,7 +103,7 @@ export class DualRangeSliderComponent implements ControlValueAccessor {
    * Upper bound of the track.
    *
    * @example
-   * <base-dual-range-slider [max]="100" [(ngModel)]="range"></base-dual-range-slider>
+   * <ply-dual-range-slider [max]="100" [(ngModel)]="range"></ply-dual-range-slider>
    */
   readonly max = input(100, { transform: numberAttribute });
 
@@ -111,7 +111,7 @@ export class DualRangeSliderComponent implements ControlValueAccessor {
    * Step increment between selectable values.
    *
    * @example
-   * <base-dual-range-slider [step]="5" [(ngModel)]="range"></base-dual-range-slider>
+   * <ply-dual-range-slider [step]="5" [(ngModel)]="range"></ply-dual-range-slider>
    */
   readonly step = input(1, { transform: numberAttribute });
 
@@ -119,7 +119,7 @@ export class DualRangeSliderComponent implements ControlValueAccessor {
    * Accent color for the selected span and thumbs.
    *
    * @example
-   * <base-dual-range-slider color="success" [(ngModel)]="range"></base-dual-range-slider>
+   * <ply-dual-range-slider color="success" [(ngModel)]="range"></ply-dual-range-slider>
    */
   readonly color = input<SliderColor>('primary');
 
@@ -127,7 +127,7 @@ export class DualRangeSliderComponent implements ControlValueAccessor {
    * Disables both thumbs. Also set by forms via `setDisabledState`.
    *
    * @example
-   * <base-dual-range-slider [disabled]="true" [(ngModel)]="range"></base-dual-range-slider>
+   * <ply-dual-range-slider [disabled]="true" [(ngModel)]="range"></ply-dual-range-slider>
    */
   readonly disabled = model(false);
 
@@ -135,7 +135,7 @@ export class DualRangeSliderComponent implements ControlValueAccessor {
    * Always show the selected start–end label after the track.
    *
    * @example
-   * <base-dual-range-slider [showValue]="true" [(ngModel)]="range"></base-dual-range-slider>
+   * <ply-dual-range-slider [showValue]="true" [(ngModel)]="range"></ply-dual-range-slider>
    */
   readonly showValue = input(false, { transform: booleanAttribute });
 
@@ -143,7 +143,7 @@ export class DualRangeSliderComponent implements ControlValueAccessor {
    * Show the track min/max labels beside the slider.
    *
    * @example
-   * <base-dual-range-slider [showMinMax]="true" [(ngModel)]="range"></base-dual-range-slider>
+   * <ply-dual-range-slider [showMinMax]="true" [(ngModel)]="range"></ply-dual-range-slider>
    */
   readonly showMinMax = input(false, { transform: booleanAttribute });
 
@@ -151,7 +151,7 @@ export class DualRangeSliderComponent implements ControlValueAccessor {
    * When true (default), hover/focus shows value tips above each thumb.
    *
    * @example
-   * <base-dual-range-slider [showTip]="false" [(ngModel)]="range"></base-dual-range-slider>
+   * <ply-dual-range-slider [showTip]="false" [(ngModel)]="range"></ply-dual-range-slider>
    */
   readonly showTip = input(true, { transform: booleanAttribute });
 
@@ -159,7 +159,7 @@ export class DualRangeSliderComponent implements ControlValueAccessor {
    * Accessible name for the control group.
    *
    * @example
-   * <base-dual-range-slider ariaLabel="Price range" [(ngModel)]="range"></base-dual-range-slider>
+   * <ply-dual-range-slider ariaLabel="Price range" [(ngModel)]="range"></ply-dual-range-slider>
    */
   readonly ariaLabel = input('Range');
 
@@ -167,7 +167,7 @@ export class DualRangeSliderComponent implements ControlValueAccessor {
    * Extra host classes merged via `cn()`.
    *
    * @example
-   * <base-dual-range-slider class="mb-4" [(ngModel)]="range"></base-dual-range-slider>
+   * <ply-dual-range-slider class="mb-4" [(ngModel)]="range"></ply-dual-range-slider>
    */
   readonly extraClass = input('', { alias: 'class' });
 

@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component ,
   ChangeDetectionStrategy
@@ -10,12 +10,12 @@ import { Component ,
  * The clickable header of an accordion item that toggles the body visibility.
  * 
  * @example
- * <base-accordion-item-header>
+ * <ply-accordion-item-header>
  *   Section Title
- * </base-accordion-item-header>
+ * </ply-accordion-item-header>
  */
 @Component({
-  selector: 'base-accordion-item-header',
+  selector: 'ply-accordion-item-header',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './accordion-item-header.component.html'
 })

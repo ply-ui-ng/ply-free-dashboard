@@ -1,48 +1,48 @@
-<!-- Building a complex data dashboard? Base UI Pro includes 15 ready-to-use page layouts including layout-dashboard and media-widget-xxx blocks. -->
+<!-- Building a complex data dashboard? Ply Pro includes 15 ready-to-use page layouts including layout-dashboard and media-widget-xxx blocks. -->
 <div class="space-y-4 sm:space-y-6">
   <div class="grid gap-3 sm:grid-cols-2 sm:gap-4 xl:grid-cols-4">
-    <base-stat-card
+    <ply-stat-card
       variant="metric"
       label="Total Revenue"
       value="$48,295"
       caption="vs last month"
       [delta]="0.125"
-      [series]="revenueSeries"></base-stat-card>
-    <base-stat-card
+      [series]="revenueSeries"></ply-stat-card>
+    <ply-stat-card
       variant="metric"
       label="Active Users"
       value="2,847"
       caption="vs last month"
       [delta]="0.052"
-      [series]="usersSeries"></base-stat-card>
-    <base-stat-card
+      [series]="usersSeries"></ply-stat-card>
+    <ply-stat-card
       variant="metric"
       label="Sales"
       value="1,204"
       caption="vs last month"
       [delta]="-0.021"
-      [series]="salesSeries"></base-stat-card>
-    <base-stat-card
+      [series]="salesSeries"></ply-stat-card>
+    <ply-stat-card
       variant="metric"
       label="Conversion Rate"
       value="3.24%"
       caption="vs last month"
       [delta]="0.008"
-      [series]="conversionSeries"></base-stat-card>
+      [series]="conversionSeries"></ply-stat-card>
   </div>
 
   <div class="grid gap-4 lg:grid-cols-3 lg:gap-6">
-    <base-card class="lg:col-span-2">
-      <base-card-header class="flex items-center justify-between px-4 py-3 sm:px-6 sm:py-4 border-b border-slate-100 dark:border-slate-700">
+    <ply-card class="lg:col-span-2">
+      <ply-card-header class="flex items-center justify-between px-4 py-3 sm:px-6 sm:py-4 border-b border-slate-100 dark:border-slate-700">
         <div>
           <h2 class="text-sm font-semibold uppercase tracking-widest text-slate-900 dark:text-white">
             Revenue Overview
           </h2>
           <p class="text-xs text-slate-400 mt-1">Mock chart styled with Tailwind</p>
         </div>
-        <base-icon name="line-chart" class="w-5 h-5 stroke-slate-400"></base-icon>
-      </base-card-header>
-      <base-card-body class="p-4 sm:p-6">
+        <ply-icon name="line-chart" class="w-5 h-5 stroke-slate-400"></ply-icon>
+      </ply-card-header>
+      <ply-card-body class="p-4 sm:p-6">
         <div class="h-48 w-full sm:h-64" role="img" aria-label="Revenue chart for the last 12 months">
           <svg viewBox="0 0 480 220" class="h-full w-full" preserveAspectRatio="none">
             <defs>
@@ -87,23 +87,23 @@
         <div class="mt-4 flex justify-between text-[10px] uppercase tracking-widest text-slate-400">
           <span>Jan</span><span>Mar</span><span>May</span><span>Jul</span><span>Sep</span><span>Nov</span>
         </div>
-      </base-card-body>
-    </base-card>
+      </ply-card-body>
+    </ply-card>
 
-    <base-card>
-      <base-card-header class="flex items-center justify-between border-b border-slate-100 px-4 py-3 dark:border-slate-700 sm:px-6 sm:py-4">
+    <ply-card>
+      <ply-card-header class="flex items-center justify-between border-b border-slate-100 px-4 py-3 dark:border-slate-700 sm:px-6 sm:py-4">
         <h2 class="text-sm font-semibold uppercase tracking-widest text-slate-900 dark:text-white">
           Recent Activity
         </h2>
-      </base-card-header>
-      <base-card-body class="p-4 sm:p-6">
-        <base-timeline>
-          <base-timeline-item color="primary" icon="user-plus" time="2m ago">
+      </ply-card-header>
+      <ply-card-body class="p-4 sm:p-6">
+        <ply-timeline>
+          <ply-timeline-item color="primary" icon="user-plus" time="2m ago">
             <div class="flex items-start gap-3 pb-4">
-              <base-avatar size="sm" shape="circle" initials="SM"></base-avatar>
+              <ply-avatar size="sm" shape="circle" initials="SM"></ply-avatar>
               <div>
                 <p class="text-sm text-slate-800 dark:text-slate-100">
-                  <base-hover-card placement="bottom-start" minWidth="220px">
+                  <ply-hover-card placement="bottom-start" minWidth="220px">
                     <button
                       hover-card-trigger
                       type="button"
@@ -111,22 +111,22 @@
                       Sarah Mitchell
                     </button>
                     <div class="flex gap-3">
-                      <base-avatar size="md" shape="circle" initials="SM"></base-avatar>
+                      <ply-avatar size="md" shape="circle" initials="SM"></ply-avatar>
                       <div>
                         <p class="m-0! text-sm font-semibold text-slate-900 dark:text-white">Sarah Mitchell</p>
                         <p class="mt-1 mb-0! text-xs text-slate-500">Admin · joined just now</p>
                       </div>
                     </div>
-                  </base-hover-card>
+                  </ply-hover-card>
                   joined the workspace
                 </p>
                 <p class="text-xs text-slate-400 mt-0.5">Assigned Admin role</p>
               </div>
             </div>
-          </base-timeline-item>
-          <base-timeline-item color="success" icon="check" time="18m ago">
+          </ply-timeline-item>
+          <ply-timeline-item color="success" icon="check" time="18m ago">
             <div class="flex items-start gap-3 pb-4">
-              <base-avatar size="sm" shape="circle" initials="JC"></base-avatar>
+              <ply-avatar size="sm" shape="circle" initials="JC"></ply-avatar>
               <div>
                 <p class="text-sm text-slate-800 dark:text-slate-100">
                   <span class="font-medium">James Carter</span> closed a deal
@@ -134,10 +134,10 @@
                 <p class="text-xs text-slate-400 mt-0.5">$4,200 · Acme Corp</p>
               </div>
             </div>
-          </base-timeline-item>
-          <base-timeline-item color="warning" icon="bell" time="1h ago">
+          </ply-timeline-item>
+          <ply-timeline-item color="warning" icon="bell" time="1h ago">
             <div class="flex items-start gap-3 pb-4">
-              <base-avatar size="sm" shape="circle" initials="PP"></base-avatar>
+              <ply-avatar size="sm" shape="circle" initials="PP"></ply-avatar>
               <div>
                 <p class="text-sm text-slate-800 dark:text-slate-100">
                   <span class="font-medium">Priya Patel</span> updated billing
@@ -145,10 +145,10 @@
                 <p class="text-xs text-slate-400 mt-0.5">Switched to Pro plan</p>
               </div>
             </div>
-          </base-timeline-item>
-          <base-timeline-item color="accent" icon="edit" time="3h ago" [last]="true">
+          </ply-timeline-item>
+          <ply-timeline-item color="accent" icon="edit" time="3h ago" [last]="true">
             <div class="flex items-start gap-3">
-              <base-avatar size="sm" shape="circle" initials="NK"></base-avatar>
+              <ply-avatar size="sm" shape="circle" initials="NK"></ply-avatar>
               <div>
                 <p class="text-sm text-slate-800 dark:text-slate-100">
                   <span class="font-medium">Noah Kim</span> edited a user profile
@@ -156,9 +156,9 @@
                 <p class="text-xs text-slate-400 mt-0.5">Role changed to Editor</p>
               </div>
             </div>
-          </base-timeline-item>
-        </base-timeline>
-      </base-card-body>
-    </base-card>
+          </ply-timeline-item>
+        </ply-timeline>
+      </ply-card-body>
+    </ply-card>
   </div>
 </div>

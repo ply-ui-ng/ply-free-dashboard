@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   Component,
@@ -21,12 +21,12 @@ import { cn } from '../tw-merge/tw-merge';
  * A highly configurable alert component for displaying important messages.
  *
  * @example
- * <base-alert color="danger" variant="soft" [close]="true" (closed)="onClose()">
+ * <ply-alert color="danger" variant="soft" [close]="true" (closed)="onClose()">
  *   Something went wrong!
- * </base-alert>
+ * </ply-alert>
  */
 @Component({
-  selector: 'base-alert',
+  selector: 'ply-alert',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [IconComponent],
   templateUrl: './alert.component.html',

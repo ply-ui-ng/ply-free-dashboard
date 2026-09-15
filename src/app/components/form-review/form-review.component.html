@@ -1,15 +1,15 @@
 <!--
-  Base UI (free tier) — https://base-ui.net
+  Ply (free tier) — https://ply-ui.com
   Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-  Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+  Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 -->
-<base-card class="mb-8">
+<ply-card class="mb-8">
         <div class="flex justify-between items-center px-6 py-4 border-b border-slate-100 dark:border-slate-800">
           <h3 class="font-bold text-sm text-slate-900 dark:text-white">Write a Review</h3>
-          <button><base-icon name="x"
-              class="w-4 h-4 text-slate-400 hover:text-slate-600 transition-colors"></base-icon></button>
+          <button><ply-icon name="x"
+              class="w-4 h-4 text-slate-400 hover:text-slate-600 transition-colors"></ply-icon></button>
         </div>
-        <base-card-body class="p-6 flex flex-col flex-1">
+        <ply-card-body class="p-6 flex flex-col flex-1">
           <div class="flex items-center gap-4 mb-6">
             <div class="w-16 h-16 rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-800 shrink-0">
               <img src="assets/images/products/watch.png" alt="" class="w-full h-full object-cover">
@@ -23,19 +23,19 @@
           </div>
           <div class="mb-6">
             <p class="text-[10px]! uppercase font-light! tracking-[2px]! text-slate-400 mb-2">Post Review</p>
-            <base-star-rating>
-              <base-star [rating]="4"></base-star>
+            <ply-star-rating>
+              <ply-star [rating]="4"></ply-star>
               <h4 class="m-0!">4</h4>
-            </base-star-rating>
+            </ply-star-rating>
           </div>
-          <base-input-group class="mb-4">
-            <base-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Title</base-label>
-            <input base-input placeholder="Title" />
-          </base-input-group>
-          <base-input-group class="mb-6 flex-1">
-            <base-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Review</base-label>
-            <textarea base-textarea rows="4" placeholder="Review"></textarea>
-          </base-input-group>
-          <button base-button color="primary" class="w-full py-3 mt-auto">Write a Review</button>
-        </base-card-body>
-      </base-card>
+          <ply-input-group class="mb-4">
+            <ply-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Title</ply-label>
+            <input ply-input placeholder="Title" />
+          </ply-input-group>
+          <ply-input-group class="mb-6 flex-1">
+            <ply-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Review</ply-label>
+            <textarea ply-textarea rows="4" placeholder="Review"></textarea>
+          </ply-input-group>
+          <button ply-button color="primary" class="w-full py-3 mt-auto">Write a Review</button>
+        </ply-card-body>
+      </ply-card>

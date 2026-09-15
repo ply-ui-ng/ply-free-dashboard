@@ -28,7 +28,7 @@ import { AuthService } from '../../core/auth/auth';
 export class Login {
   private readonly auth = inject(AuthService);
 
-  email = 'demo@base-ui.net';
+  email = 'demo@ply-ui.com';
   password = 'password';
 
   submit(): void {

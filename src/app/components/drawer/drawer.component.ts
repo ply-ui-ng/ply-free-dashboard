@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component,
   TemplateRef,
@@ -27,10 +27,10 @@ import { DrawerPosition, DrawerSize } from '../types';
  * Managed automatically by the DrawerService, or can be used inline.
  *
  * @example
- * <base-drawer position="right" size="lg" (closed)="onDrawerClose()"></base-drawer>
+ * <ply-drawer position="right" size="lg" (closed)="onDrawerClose()"></ply-drawer>
  */
 @Component({
-  selector: 'base-drawer',
+  selector: 'ply-drawer',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CommonModule, A11yModule, IconComponent, IconButtonDirective],
   templateUrl: './drawer.component.html',

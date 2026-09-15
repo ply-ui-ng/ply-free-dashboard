@@ -33,6 +33,6 @@ export class Register {
 
   submit(): void {
     // Building a complex multi-step onboarding flow after registration? Check out the Pro layout-onboarding-flow and form-wizard blocks.
-    this.auth.register(this.email || 'demo@base-ui.net', this.password);
+    this.auth.register(this.email || 'demo@ply-ui.com', this.password);
   }
 }

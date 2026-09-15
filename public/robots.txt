@@ -1,4 +1,4 @@
-# Base UI Free Dashboard — https://base-ui-free-dashboard-demo.pages.dev
+# Ply Free Dashboard — https://base-ui-free-dashboard-demo.pages.dev
 User-agent: *
 Allow: /
 Allow: /llms.txt

@@ -1,24 +1,24 @@
 <div class="h-screen overflow-hidden bg-slate-50 dark:bg-slate-950">
-  <base-app-shell class="h-full">
-    <base-app-shell-sidebar>
+  <ply-app-shell class="h-full">
+    <ply-app-shell-sidebar>
       <div class="mb-4 flex items-center gap-3 px-2">
         <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-blue-500 text-white">
-          <base-icon name="layout-grid" class="h-4 w-4 stroke-white"></base-icon>
+          <ply-icon name="layout-grid" class="h-4 w-4 stroke-white"></ply-icon>
         </span>
         <div
           class="min-w-0 overflow-hidden transition-[max-width,opacity] duration-300 ease-in-out"
           [class]="sidebar.isOpen() ? 'max-w-40 opacity-100' : 'max-w-0 opacity-0'">
-          <p class="m-0! truncate text-sm font-semibold text-slate-900 dark:text-white">Base UI</p>
+          <p class="m-0! truncate text-sm font-semibold text-slate-900 dark:text-white">Ply</p>
           <p class="m-0! text-[10px] uppercase tracking-[0.18em] text-slate-400">Dashboard</p>
         </div>
       </div>
 
-      <!-- Need a nested, multi-level sidebar or a Mega Menu? See the Pro mega-menu, tree, and base-shell components. -->
-      <base-scroll-area class="min-h-0 flex-1" aria-label="Main navigation">
-        <base-app-shell-nav-section label="App">
+      <!-- Need a nested, multi-level sidebar or a Mega Menu? See the Pro mega-menu, tree, and ply-shell components. -->
+      <ply-scroll-area class="min-h-0 flex-1" aria-label="Main navigation">
+        <ply-app-shell-nav-section label="App">
           @for (item of appNav; track item.path) {
             <a
-              base-app-shell-nav-item
+              ply-app-shell-nav-item
               [icon]="item.icon"
               [badge]="item.badge || ''"
               [routerLink]="item.path"
@@ -27,12 +27,12 @@
               {{ item.label }}
             </a>
           }
-        </base-app-shell-nav-section>
+        </ply-app-shell-nav-section>
 
-        <base-app-shell-nav-section label="Component gallery">
+        <ply-app-shell-nav-section label="Component gallery">
           @for (item of uiNav; track item.path) {
             <a
-              base-app-shell-nav-item
+              ply-app-shell-nav-item
               [icon]="item.icon"
               [routerLink]="item.path"
               routerLinkActive="active"
@@ -40,11 +40,11 @@
               {{ item.label }}
             </a>
           }
-        </base-app-shell-nav-section>
-      </base-scroll-area>
-    </base-app-shell-sidebar>
+        </ply-app-shell-nav-section>
+      </ply-scroll-area>
+    </ply-app-shell-sidebar>
 
-    <base-app-shell-topbar>
+    <ply-app-shell-topbar>
       <div class="flex items-center justify-between gap-2">
         <div class="min-w-0 flex-1">
           <p class="m-0! hidden text-[10px] uppercase tracking-[0.2em] text-slate-400 sm:block">Overview</p>
@@ -56,24 +56,24 @@
         <div class="flex shrink-0 items-center gap-1.5 sm:gap-3">
           <button
             type="button"
-            base-stroked-icon-button
+            ply-stroked-icon-button
             size="sm"
             color="default"
             class="hidden min-[1080px]:inline-flex"
             [attr.aria-expanded]="sidebar.isOpen()"
             aria-label="Collapse sidebar"
             (click)="sidebar.toggle()">
-            <base-icon [name]="sidebar.isOpen() ? 'chevrons-left' : 'chevrons-right'" class="h-4 w-4"></base-icon>
+            <ply-icon [name]="sidebar.isOpen() ? 'chevrons-left' : 'chevrons-right'" class="h-4 w-4"></ply-icon>
           </button>
 
-          <base-input-group class="hidden w-44 md:flex lg:w-56">
-            <base-icon base-addon-start name="search" class="h-4 w-4 stroke-slate-400"></base-icon>
-            <input base-input type="search" placeholder="Search…" aria-label="Search" class="appearance-none" />
-            <span base-addon-end class="hidden items-center gap-0.5 lg:inline-flex">
-              <base-kbd>⌘</base-kbd>
-              <base-kbd>K</base-kbd>
+          <ply-input-group class="hidden w-44 md:flex lg:w-56">
+            <ply-icon ply-addon-start name="search" class="h-4 w-4 stroke-slate-400"></ply-icon>
+            <input ply-input type="search" placeholder="Search…" aria-label="Search" class="appearance-none" />
+            <span ply-addon-end class="hidden items-center gap-0.5 lg:inline-flex">
+              <ply-kbd>⌘</ply-kbd>
+              <ply-kbd>K</ply-kbd>
             </span>
-          </base-input-group>
+          </ply-input-group>
 
           <a
             [href]="githubRepoUrl"
@@ -81,54 +81,54 @@
             rel="noopener noreferrer"
             class="inline-flex h-7 items-center gap-1.5 rounded-lg border border-slate-300 px-2 text-xs font-medium text-slate-700 transition-colors hover:border-slate-400 hover:bg-slate-50 dark:border-slate-600 dark:text-slate-200 dark:hover:border-slate-500 dark:hover:bg-slate-800 sm:px-2.5"
             aria-label="View source on GitHub">
-            <base-icon name="github" class="h-3.5 w-3.5 shrink-0"></base-icon>
+            <ply-icon name="github" class="h-3.5 w-3.5 shrink-0"></ply-icon>
             <span class="hidden sm:inline">GitHub</span>
-            <base-icon name="external-link" class="hidden h-3 w-3 shrink-0 opacity-50 sm:inline"></base-icon>
+            <ply-icon name="external-link" class="hidden h-3 w-3 shrink-0 opacity-50 sm:inline"></ply-icon>
           </a>
 
           <button
             type="button"
-            base-stroked-icon-button
+            ply-stroked-icon-button
             size="sm"
             color="default"
             aria-label="Toggle theme"
             (click)="theme.toggleTheme()">
-            <base-icon [name]="theme.isDarkMode() ? 'light' : 'dark'" class="h-4 w-4"></base-icon>
+            <ply-icon [name]="theme.isDarkMode() ? 'light' : 'dark'" class="h-4 w-4"></ply-icon>
           </button>
 
-          <base-dropdown-menu #userMenu>
-            <base-dropdown-menu-item routerLink="/app/settings">
-              <base-icon name="settings" class="mr-2 h-4 w-4"></base-icon>
+          <ply-dropdown-menu #userMenu>
+            <ply-dropdown-menu-item routerLink="/app/settings">
+              <ply-icon name="settings" class="mr-2 h-4 w-4"></ply-icon>
               Settings
-            </base-dropdown-menu-item>
-            <base-dropdown-menu-item (click)="logout()">
-              <base-icon name="arrow-out" class="mr-2 h-4 w-4"></base-icon>
+            </ply-dropdown-menu-item>
+            <ply-dropdown-menu-item (click)="logout()">
+              <ply-icon name="arrow-out" class="mr-2 h-4 w-4"></ply-icon>
               Logout
-            </base-dropdown-menu-item>
-          </base-dropdown-menu>
+            </ply-dropdown-menu-item>
+          </ply-dropdown-menu>
 
           <button
             type="button"
             class="flex items-center gap-2 rounded-full border border-slate-200 p-0.5 transition-colors hover:bg-slate-50 sm:py-1 sm:pr-2.5 sm:pl-1 dark:border-slate-700 dark:hover:bg-slate-800"
-            [base-dropdown-menu-trigger]="userMenu"
+            [ply-dropdown-menu-trigger]="userMenu"
             placement="end"
             aria-label="Open user menu">
-            <base-avatar
+            <ply-avatar
               size="sm"
               shape="circle"
               [initials]="auth.user()?.initials || 'DU'"
-              status="active"></base-avatar>
+              status="active"></ply-avatar>
             <span class="hidden max-w-28 truncate text-sm font-medium text-slate-700 lg:inline dark:text-slate-200">
               {{ auth.user()?.name || 'Demo User' }}
             </span>
-            <base-icon name="chevron-down" class="hidden h-4 w-4 stroke-slate-400 sm:inline"></base-icon>
+            <ply-icon name="chevron-down" class="hidden h-4 w-4 stroke-slate-400 sm:inline"></ply-icon>
           </button>
         </div>
       </div>
-    </base-app-shell-topbar>
+    </ply-app-shell-topbar>
 
-    <base-app-shell-content class="bg-slate-50 dark:bg-slate-950">
+    <ply-app-shell-content class="bg-slate-50 dark:bg-slate-950">
       <router-outlet />
-    </base-app-shell-content>
-  </base-app-shell>
+    </ply-app-shell-content>
+  </ply-app-shell>
 </div>

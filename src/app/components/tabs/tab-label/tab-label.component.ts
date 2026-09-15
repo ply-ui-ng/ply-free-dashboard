@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, TemplateRef, viewChild, signal ,
   ChangeDetectionStrategy
@@ -10,19 +10,19 @@ import { Component, TemplateRef, viewChild, signal ,
 import { IconComponent } from '../../icon/icon.component';
 
 /**
- * A custom label for a `base-tab`. Allows you to add rich content (icons, badges, etc.) as the tab label.
+ * A custom label for a `ply-tab`. Allows you to add rich content (icons, badges, etc.) as the tab label.
  *
  * @example
- * <base-tab>
- *   <base-tab-label>
- *     <base-icon name="settings"></base-icon>
+ * <ply-tab>
+ *   <ply-tab-label>
+ *     <ply-icon name="settings"></ply-icon>
  *     Settings
- *   </base-tab-label>
- *   <base-tab-body>Content</base-tab-body>
- * </base-tab>
+ *   </ply-tab-label>
+ *   <ply-tab-body>Content</ply-tab-body>
+ * </ply-tab>
  */
 @Component({
-  selector: 'base-tab-label',
+  selector: 'ply-tab-label',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [IconComponent],
   templateUrl: './tab-label.component.html'

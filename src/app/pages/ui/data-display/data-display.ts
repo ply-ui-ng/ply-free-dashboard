@@ -62,7 +62,7 @@ export class UiDataDisplay {
     { title: 'Support', color: 'bg-pink-500' },
   ];
 
-  protected readonly sampleCode = `const greeting = 'Hello Base UI';
+  protected readonly sampleCode = `const greeting = 'Hello Ply';
 export function greet() {
   return greeting;
 }`;

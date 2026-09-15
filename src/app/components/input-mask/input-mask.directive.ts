@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   AfterViewInit,
@@ -147,22 +147,22 @@ function mapCaretToMasked(
 
 /**
  * Dynamically masks a native `<input>` as the user types.
- * Pair with `[base-input]` for styling. Form controls receive the **masked**
+ * Pair with `[ply-input]` for styling. Form controls receive the **masked**
  * display value (use {@link unmaskInputValue} when you need raw characters).
  *
  * Pattern tokens: `0` digit, `A` letter, `S` alphanumeric; all other chars are literals.
  *
  * @example
- * <input base-input baseMask="(000) 000-0000" [(ngModel)]="phone" />
+ * <input ply-input plyMask="(000) 000-0000" [(ngModel)]="phone" />
  *
  * @example
- * <input base-input baseMask="00/00/0000" placeholder="MM/DD/YYYY" />
+ * <input ply-input plyMask="00/00/0000" placeholder="MM/DD/YYYY" />
  *
  * @example
- * <input base-input baseMask="AAAA-0000" />
+ * <input ply-input plyMask="AAAA-0000" />
  */
 @Directive({
-  selector: 'input[baseMask]',
+  selector: 'input[plyMask]',
   host: {
     '(blur)': 'onBlur()',
   },
@@ -177,15 +177,15 @@ export class BaseMaskDirective implements AfterViewInit, OnDestroy {
    * Tokens: `0` = digit, `A` = letter, `S` = alphanumeric. Other characters are literals.
    *
    * @example
-   * <input base-input baseMask="(000) 000-0000" />
+   * <input ply-input plyMask="(000) 000-0000" />
    */
-  readonly baseMask = input.required<string>();
+  readonly plyMask = input.required<string>();
 
   private readonly onInputCapture = (): void => this.applyFromElement(true);
 
   constructor() {
     effect(() => {
-      this.baseMask();
+      this.plyMask();
       untracked(() => this.applyFromElement(false));
     });
   }
@@ -211,12 +211,12 @@ export class BaseMaskDirective implements AfterViewInit, OnDestroy {
    * const digits = this.maskDir.unmaskedValue();
    */
   unmaskedValue(): string {
-    return unmaskInputValue(this.el.nativeElement.value, this.baseMask());
+    return unmaskInputValue(this.el.nativeElement.value, this.plyMask());
   }
 
   private applyFromElement(preserveCaret: boolean): void {
     const input = this.el.nativeElement;
-    const pattern = this.baseMask();
+    const pattern = this.plyMask();
     if (!pattern) {
       return;
     }

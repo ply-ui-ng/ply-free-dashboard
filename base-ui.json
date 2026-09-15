@@ -1,5 +1,5 @@
 {
-  "$schema": "https://base-ui.net/schema.json",
+  "$schema": "https://ply-ui.com/schema.json",
   "style": "scss",
   "tailwind": {
     "config": "src/tailwind.css",

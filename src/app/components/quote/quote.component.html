@@ -1,21 +1,21 @@
 <!--
-  Base UI (free tier) — https://base-ui.net
+  Ply (free tier) — https://ply-ui.com
   Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-  Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+  Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 -->
 <div [class]="containerClass()">
 
   <!-- Background Icon for icon-top -->
   @if (variant() === 'icon-top') {
-  <base-icon name="quote"
-    class="w-16 h-16 opacity-30 text-slate-300 dark:text-slate-700 stroke-current absolute top-0 left-0 -z-10"></base-icon>
+  <ply-icon name="quote"
+    class="w-16 h-16 opacity-30 text-slate-300 dark:text-slate-700 stroke-current absolute top-0 left-0 -z-10"></ply-icon>
   }
 
   <!-- Avatar Left Section -->
   @if (variant() === 'avatar-left' && (avatarUrl() || authorName())) {
   <div class="text-center shrink-0 flex items-center gap-2">
     @if (avatarUrl()) {
-    <base-avatar size="md" shape="circle" [avatarUrl]="avatarUrl()"></base-avatar>
+    <ply-avatar size="md" shape="circle" [avatarUrl]="avatarUrl()"></ply-avatar>
     }
     <div>
       @if (authorName()) {

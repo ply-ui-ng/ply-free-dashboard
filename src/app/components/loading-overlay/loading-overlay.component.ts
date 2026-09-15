@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   Component,
@@ -20,16 +20,16 @@ import { SpinnerColor, SpinnerSize } from '../types';
 
 /**
  * Blocks a region (or the viewport) with a spinner while work is in progress.
- * Prefer this over `base-spinner-wrapper` when you need a message, `aria-busy`,
+ * Prefer this over `ply-spinner-wrapper` when you need a message, `aria-busy`,
  * optional scroll locking, or a fullscreen cover.
  *
  * @example
- * <base-loading-overlay [visible]="saving()" message="Saving…">
+ * <ply-loading-overlay [visible]="saving()" message="Saving…">
  *   <form>…</form>
- * </base-loading-overlay>
+ * </ply-loading-overlay>
  */
 @Component({
-  selector: 'base-loading-overlay',
+  selector: 'ply-loading-overlay',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [SpinnerComponent],
   templateUrl: './loading-overlay.component.html',
@@ -46,49 +46,49 @@ export class LoadingOverlayComponent implements OnDestroy {
   /**
    * Extra host classes merged via `cn()`.
    * @example
-   * <base-loading-overlay class="min-h-64" [visible]="true"></base-loading-overlay>
+   * <ply-loading-overlay class="min-h-64" [visible]="true"></ply-loading-overlay>
    */
   readonly extraClass = input('', { alias: 'class' });
 
   /**
    * Shows the blocking overlay.
    * @example
-   * <base-loading-overlay [visible]="loading()"></base-loading-overlay>
+   * <ply-loading-overlay [visible]="loading()"></ply-loading-overlay>
    */
   readonly visible = input(false, { transform: booleanAttribute });
 
   /**
    * Cover the viewport instead of wrapping projected content.
    * @example
-   * <base-loading-overlay visible fullscreen></base-loading-overlay>
+   * <ply-loading-overlay visible fullscreen></ply-loading-overlay>
    */
   readonly fullscreen = input(false, { transform: booleanAttribute });
 
   /**
    * Set `overflow: hidden` on `document.body` while visible (typical for fullscreen).
    * @example
-   * <base-loading-overlay visible fullscreen lockScroll></base-loading-overlay>
+   * <ply-loading-overlay visible fullscreen lockScroll></ply-loading-overlay>
    */
   readonly lockScroll = input(false, { transform: booleanAttribute });
 
   /**
    * Optional status text announced via a live region.
    * @example
-   * <base-loading-overlay visible message="Loading invoices…"></base-loading-overlay>
+   * <ply-loading-overlay visible message="Loading invoices…"></ply-loading-overlay>
    */
   readonly message = input('');
 
   /**
    * Spinner diameter.
    * @example
-   * <base-loading-overlay visible size="lg"></base-loading-overlay>
+   * <ply-loading-overlay visible size="lg"></ply-loading-overlay>
    */
   readonly size = input<SpinnerSize>('lg');
 
   /**
    * Spinner color. Use `inverted` on a dark backdrop.
    * @example
-   * <base-loading-overlay visible color="primary"></base-loading-overlay>
+   * <ply-loading-overlay visible color="primary"></ply-loading-overlay>
    */
   readonly color = input<SpinnerColor>('primary');
 

@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   AfterViewInit,
@@ -18,42 +18,37 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { IconComponent } from '../icon/icon.component';
-import { IconStrokedButtonDirective } from '../button/base-icon-stroked-button.directive';
+import { IconButtonDirective } from '../button/base-icon-button.directive';
 import { BreadcrumbComponent } from '../breadcrumb/breadcrumb.component';
 import { BreadcrumbItemComponent } from '../breadcrumb/breadcrumb-item/breadcrumb-item.component';
-import { IconStrokedButtonColor, SidenavLayoutMode } from '../types';
+import { IconButtonColor, SidenavLayoutMode } from '../types';
 import { cn } from '../tw-merge/tw-merge';
 
 /**
  * Responsive section shell with a left nav rail and scrollable body.
- * Pair with `base-sidenav-nav` and `base-sidenav-body`. On small screens a
+ * Pair with `ply-sidenav-nav` and `ply-sidenav-body`. On small screens a
  * hamburger toggles the nav; active label is inferred from `routerLinkActive`.
  *
  * @example
- * <base-sidenav>
- *   <base-sidenav-nav>
- *     <base-nav-list>
- *       <button base-list-item routerLink="overview" routerLinkActive="text-blue-500!">Overview</button>
- *     </base-nav-list>
- *   </base-sidenav-nav>
- *   <base-sidenav-body>
+ * <ply-sidenav>
+ *   <ply-sidenav-nav>
+ *     <ply-nav-list>
+ *       <button ply-list-item routerLink="overview" routerLinkActive="text-blue-500!">Overview</button>
+ *     </ply-nav-list>
+ *   </ply-sidenav-nav>
+ *   <ply-sidenav-body>
  *     <router-outlet></router-outlet>
- *   </base-sidenav-body>
- * </base-sidenav>
+ *   </ply-sidenav-body>
+ * </ply-sidenav>
  *
  * @example
  * <!-- Force mobile chrome inside a narrow preview frame -->
- * <base-sidenav layout="mobile"></base-sidenav>
+ * <ply-sidenav layout="mobile"></ply-sidenav>
  */
 @Component({
-  selector: 'base-sidenav',
+  selector: 'ply-sidenav',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [
-    IconComponent,
-    IconStrokedButtonDirective,
-    BreadcrumbComponent,
-    BreadcrumbItemComponent,
-  ],
+  imports: [IconComponent, IconButtonDirective, BreadcrumbComponent, BreadcrumbItemComponent],
   templateUrl: './sidenav.component.html',
   host: { '[class]': 'hostCls()' },
 })
@@ -66,7 +61,7 @@ export class SidenavComponent implements AfterViewInit {
    * Extra host classes merged via `cn()`.
    *
    * @example
-   * <base-sidenav class="bg-white dark:bg-slate-900"></base-sidenav>
+   * <ply-sidenav class="bg-white dark:bg-slate-900"></ply-sidenav>
    */
   readonly extraClass = input('', { alias: 'class' });
 
@@ -74,21 +69,21 @@ export class SidenavComponent implements AfterViewInit {
    * Color for the mobile nav toggle button.
    *
    * @example
-   * <base-sidenav color="accent"></base-sidenav>
+   * <ply-sidenav color="accent"></ply-sidenav>
    */
-  readonly color = input<IconStrokedButtonColor | undefined>(undefined);
+  readonly color = input<IconButtonColor | undefined>(undefined);
 
   /**
    * Layout chrome mode. `auto` follows the viewport `lg` breakpoint;
    * `mobile` / `desktop` force that chrome (useful for narrow demos).
    *
    * @example
-   * <base-sidenav layout="mobile"></base-sidenav>
+   * <ply-sidenav layout="mobile"></ply-sidenav>
    */
   readonly layout = input<SidenavLayoutMode>('auto');
 
   protected readonly hostCls = computed(() =>
-    cn('flex flex-col w-full h-full overflow-hidden', this.extraClass())
+    cn('flex flex-col w-full h-full overflow-hidden', this.extraClass()),
   );
 
   /** Whether the mobile hamburger bar should render. */
@@ -144,7 +139,7 @@ export class SidenavComponent implements AfterViewInit {
     this.router.events
       .pipe(
         filter((event) => event instanceof NavigationEnd),
-        takeUntilDestroyed(this.destroyRef)
+        takeUntilDestroyed(this.destroyRef),
       )
       .subscribe(() => this.updateSelectedLabel());
 
@@ -164,17 +159,20 @@ export class SidenavComponent implements AfterViewInit {
     setTimeout(() => {
       // Scope to this shell's nav slot so nested demos / pages with
       // `!text-blue-500` (or their own sidenav) do not steal the label.
-      const nav = this.el.nativeElement.querySelector('base-sidenav-nav');
+      const nav = this.el.nativeElement.querySelector('ply-sidenav-nav');
       const activeElement = (nav ?? this.el.nativeElement).querySelector(
-        '.\\!text-blue-500'
+        '.\\!text-blue-500',
       ) as HTMLElement | null;
       if (activeElement) {
-        const label = Array.from(activeElement.childNodes)
-          .filter((n) => n.nodeType === Node.TEXT_NODE)
-          .map((n) => n.textContent?.trim() ?? '')
-          .filter(Boolean)
-          .join(' ')
-          .trim() || activeElement.textContent?.trim() || '';
+        const label =
+          Array.from(activeElement.childNodes)
+            .filter((n) => n.nodeType === Node.TEXT_NODE)
+            .map((n) => n.textContent?.trim() ?? '')
+            .filter(Boolean)
+            .join(' ')
+            .trim() ||
+          activeElement.textContent?.trim() ||
+          '';
         if (label) {
           this.selectedLabel.set(label);
         }
@@ -199,5 +197,4 @@ export class SidenavComponent implements AfterViewInit {
     this.navBarOpen.set(false);
     this.updateSelectedLabel();
   }
-
 }

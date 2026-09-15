@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, OnInit, input, output, model, computed, signal, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -28,10 +28,10 @@ export interface CalendarDate {
  * Home/End jump to the month; Enter/Space select.
  *
  * @example
- * <base-calendar mode="single" (dateSelected)="onDateChange($event)"></base-calendar>
+ * <ply-calendar mode="single" (dateSelected)="onDateChange($event)"></ply-calendar>
  */
 @Component({
-  selector: 'base-calendar',
+  selector: 'ply-calendar',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CommonModule, IconComponent, IconButtonDirective],
   templateUrl: './calendar.component.html',
@@ -42,7 +42,7 @@ export class CalendarComponent implements OnInit {
   readonly extraClass = input('', { alias: "class" });
 
   /** ID for the calendar grid, used by combobox aria-controls on date pickers. */
-  readonly panelId = input(`base-calendar-grid-${++calendarIdCounter}`);
+  readonly panelId = input(`ply-calendar-grid-${++calendarIdCounter}`);
 
   readonly hostClass = computed(() => {
     return cn(

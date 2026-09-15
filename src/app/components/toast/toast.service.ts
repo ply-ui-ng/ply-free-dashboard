@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   Injectable,
@@ -26,7 +26,7 @@ export interface ToastConfig {
   color?: ToastColor;
   /** Auto-dismiss delay in ms. `0` keeps the toast until dismissed. Defaults to 4000. */
   duration?: number;
-  /** `base-icon` name. Defaults from `color` when omitted. */
+  /** `ply-icon` name. Defaults from `color` when omitted. */
   icon?: string;
   /** Viewport corner. Defaults to `top-right`. */
   position?: ToastPosition;

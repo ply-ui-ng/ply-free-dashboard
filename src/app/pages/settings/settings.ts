@@ -53,8 +53,8 @@ export class Settings {
   protected readonly section = signal<SettingsSection>('profile');
 
   name = this.auth.user()?.name || 'Demo User';
-  email = this.auth.user()?.email || 'demo@base-ui.net';
-  bio = 'Product designer building clean dashboards with Base UI.';
+  email = this.auth.user()?.email || 'demo@ply-ui.com';
+  bio = 'Product designer building clean dashboards with Ply.';
   spendCap: number | null = 2500;
 
   selectSection(next: SettingsSection): void {

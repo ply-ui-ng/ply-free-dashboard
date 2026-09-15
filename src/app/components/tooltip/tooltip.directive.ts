@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   Directive,
@@ -25,19 +25,19 @@ let tooltipIdCounter = 0;
  * dropdown / popover / drawer on the same host.
  *
  * @example
- * <button base-tooltip="This is a helpful tip" tooltipPlacement="right" type="light">Hover Me</button>
+ * <button ply-tooltip="This is a helpful tip" tooltipPlacement="right" type="light">Hover Me</button>
  *
  * @example
  * <!-- Safe alongside dropdown/popover `placement` on the same host -->
  * <button
- *   [base-dropdown-menu-trigger]="menu"
+ *   [ply-dropdown-menu-trigger]="menu"
  *   placement="end"
- *   base-tooltip="Account"
+ *   ply-tooltip="Account"
  *   tooltipPlacement="bottom"
  * ></button>
  */
 @Directive({
-  selector: '[base-tooltip]',
+  selector: '[ply-tooltip]',
 })
 export class TooltipDirective implements OnDestroy {
   private readonly ssrDocument = inject(DOCUMENT);
@@ -45,7 +45,7 @@ export class TooltipDirective implements OnDestroy {
   private renderer = inject(Renderer2);
 
   /** The text content to display inside the tooltip. */
-  readonly tooltipTitle = input('', { alias: 'base-tooltip' });
+  readonly tooltipTitle = input('', { alias: 'ply-tooltip' });
 
   /**
    * The positioning of the tooltip relative to the host element. Defaults to 'top'.
@@ -53,7 +53,7 @@ export class TooltipDirective implements OnDestroy {
    * with dropdown, popover, and drawer placement on the same host.
    *
    * @example
-   * <span base-tooltip="Help" tooltipPlacement="bottom">?</span>
+   * <span ply-tooltip="Help" tooltipPlacement="bottom">?</span>
    */
   readonly placement = input<TooltipPlacement | string>('top', { alias: 'tooltipPlacement' });
 
@@ -74,7 +74,7 @@ export class TooltipDirective implements OnDestroy {
   private showTimeout?: ReturnType<typeof setTimeout>;
   private animateInTimeout?: ReturnType<typeof setTimeout>;
   private scrollListening = false;
-  private readonly tooltipId = `base-tooltip-${tooltipIdCounter++}`;
+  private readonly tooltipId = `ply-tooltip-${tooltipIdCounter++}`;
 
   /** Capture-phase so nested overflow containers also dismiss the tooltip. */
   private readonly onScroll = (): void => this.hide();
@@ -164,7 +164,7 @@ export class TooltipDirective implements OnDestroy {
     this.scrollListening = false;
   }
 
-  /** Keep an already-open tooltip in sync when `base-tooltip` text changes. */
+  /** Keep an already-open tooltip in sync when `ply-tooltip` text changes. */
   private updateVisibleTitle(title: string): void {
     const tooltip = this.tooltip;
     if (!tooltip) return;

@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Directive, ElementRef, OnInit, Renderer2, inject } from '@angular/core';
 
@@ -10,11 +10,11 @@ import { Directive, ElementRef, OnInit, Renderer2, inject } from '@angular/core'
  * 
  * @example
  * <ul>
- *   <li base-list-item>Item 1</li>
+ *   <li ply-list-item>Item 1</li>
  * </ul>
  */
 @Directive({
-  selector: '[base-list-item]',
+  selector: '[ply-list-item]',
 })
 export class BaseListItemDirective implements OnInit {
   private el = inject(ElementRef);

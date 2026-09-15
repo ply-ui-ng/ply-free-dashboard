@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component,
   computed,
@@ -18,10 +18,10 @@ import { cn } from '../tw-merge/tw-merge';
  * A numeric input component with increment and decrement buttons.
  *
  * @example
- * <base-input-spinner [(ngModel)]="quantity" [min]="1" [max]="10"></base-input-spinner>
+ * <ply-input-spinner [(ngModel)]="quantity" [min]="1" [max]="10"></ply-input-spinner>
  */
 @Component({
-  selector: 'base-input-spinner',
+  selector: 'ply-input-spinner',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CommonModule, FormsModule, IconComponent, IconButtonDirective],
   templateUrl: './input-spinner.component.html',

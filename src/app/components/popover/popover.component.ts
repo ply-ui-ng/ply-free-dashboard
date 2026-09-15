@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   Component,
@@ -32,13 +32,13 @@ let popoverIdCounter = 0;
  * even inside `overflow: hidden` parents.
  *
  * @example
- * <base-popover placement="bottom-start">
- *   <button popover-trigger base-button>Open</button>
+ * <ply-popover placement="bottom-start">
+ *   <button popover-trigger ply-button>Open</button>
  *   <div>Panel content here</div>
- * </base-popover>
+ * </ply-popover>
  */
 @Component({
-  selector: 'base-popover',
+  selector: 'ply-popover',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   templateUrl: './popover.component.html',
@@ -49,26 +49,26 @@ export class PopoverComponent implements OnDestroy {
   private readonly overlay = inject(Overlay);
   private readonly viewContainerRef = inject(ViewContainerRef);
 
-  readonly panelId = `base-popover-panel-${++popoverIdCounter}`;
+  readonly panelId = `ply-popover-panel-${++popoverIdCounter}`;
 
   /**
    * Extra host classes merged via `cn()`.
    * @example
-   * <base-popover class="align-middle"></base-popover>
+   * <ply-popover class="align-middle"></ply-popover>
    */
   readonly extraClass = input('', { alias: 'class' });
 
   /**
    * Minimum width of the overlay panel.
    * @example
-   * <base-popover minWidth="280px"></base-popover>
+   * <ply-popover minWidth="280px"></ply-popover>
    */
   readonly minWidth = input('200px');
 
   /**
    * Preferred placement relative to the trigger. Flips when there is not enough room.
    * @example
-   * <base-popover placement="top-end"></base-popover>
+   * <ply-popover placement="top-end"></ply-popover>
    */
   readonly placement = input<PopoverPlacement>('bottom-start');
 
@@ -90,7 +90,7 @@ export class PopoverComponent implements OnDestroy {
   }
 
   /**
-   * Toggle with an optional placement override — used by `[base-popover-trigger]`.
+   * Toggle with an optional placement override — used by `[ply-popover-trigger]`.
    * Pass the external trigger element so the overlay anchors to it.
    *
    * @example

@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, input ,
   ChangeDetectionStrategy
@@ -13,14 +13,14 @@ import { IconComponent } from '../icon/icon.component';
  * Centers an icon, title, and description.
  * 
  * @example
- * <base-empty-state 
+ * <ply-empty-state 
  *   iconName="inbox" 
  *   title="No Messages" 
  *   description="You have read all your messages.">
- * </base-empty-state>
+ * </ply-empty-state>
  */
 @Component({
-  selector: 'base-empty-state',
+  selector: 'ply-empty-state',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [IconComponent],
   templateUrl: './empty-state.component.html'

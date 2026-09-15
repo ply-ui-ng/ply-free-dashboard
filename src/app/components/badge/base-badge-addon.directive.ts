@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Directive, ElementRef, Renderer2, OnInit, AfterViewInit, inject, input } from '@angular/core';
 
@@ -8,12 +8,12 @@ import { Directive, ElementRef, Renderer2, OnInit, AfterViewInit, inject, input 
  * An addon element for a badge, typically used for small icons or indicators inside the badge.
  *
  * @example
- * <div base-badge-addon color="primary" size="sm">
- *   <base-icon name="x"></base-icon>
+ * <div ply-badge-addon color="primary" size="sm">
+ *   <ply-icon name="x"></ply-icon>
  * </div>
  */
 @Directive({
-  selector: '[base-badge-addon]',
+  selector: '[ply-badge-addon]',
 })
 export class BaseBadgeAddon implements OnInit, AfterViewInit {
     private renderer = inject(Renderer2);
@@ -78,7 +78,7 @@ export class BaseBadgeAddon implements OnInit, AfterViewInit {
         iconClasses += ' w-3 h-3 min-w-3 max-w-3';
     }
 
-    const iconElement = this.el.nativeElement.querySelector('base-icon');
+    const iconElement = this.el.nativeElement.querySelector('ply-icon');
     if (iconElement) {
       this.renderer.setAttribute(iconElement, 'class', iconClasses);
     }

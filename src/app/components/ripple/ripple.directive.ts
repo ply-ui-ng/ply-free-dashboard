@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   Directive,
@@ -26,11 +26,11 @@ const INK_START_OPACITY = 0.85;
  * stays within rounded corners. Free tier.
  *
  * @example
- * <button base-button color="primary" base-ripple>Click me</button>
+ * <button ply-button color="primary" ply-ripple>Click me</button>
  *
  * @example
  * <div
- *   base-ripple
+ *   ply-ripple
  *   rippleColor="rgba(59, 130, 246, 0.4)"
  *   class="rounded-lg bg-slate-100 p-8 dark:bg-slate-800"
  * >
@@ -38,7 +38,7 @@ const INK_START_OPACITY = 0.85;
  * </div>
  */
 @Directive({
-  selector: '[base-ripple]',
+  selector: '[ply-ripple]',
 })
 export class RippleDirective implements OnDestroy {
   private readonly el = inject(ElementRef<HTMLElement>);
@@ -54,7 +54,7 @@ export class RippleDirective implements OnDestroy {
    * Use a dark rgba on light surfaces.
    *
    * @example
-   * <button base-ripple rippleColor="rgba(0, 0, 0, 0.25)">Light</button>
+   * <button ply-ripple rippleColor="rgba(0, 0, 0, 0.25)">Light</button>
    */
   readonly rippleColor = input(DEFAULT_COLOR);
 
@@ -62,7 +62,7 @@ export class RippleDirective implements OnDestroy {
    * Always originates from the host center instead of the pointer position.
    *
    * @example
-   * <button base-ripple rippleCentered>Centered</button>
+   * <button ply-ripple rippleCentered>Centered</button>
    */
   readonly rippleCentered = input(false, { transform: booleanAttribute });
 
@@ -70,7 +70,7 @@ export class RippleDirective implements OnDestroy {
    * Disables ripple creation while leaving the directive attached.
    *
    * @example
-   * <button base-ripple [rippleDisabled]="isBusy">Save</button>
+   * <button ply-ripple [rippleDisabled]="isBusy">Save</button>
    */
   readonly rippleDisabled = input(false, { transform: booleanAttribute });
 
@@ -78,7 +78,7 @@ export class RippleDirective implements OnDestroy {
    * Animation duration in milliseconds.
    *
    * @example
-   * <button base-ripple [rippleDuration]="800">Slow</button>
+   * <button ply-ripple [rippleDuration]="800">Slow</button>
    */
   readonly rippleDuration = input(DEFAULT_DURATION, { transform: numberAttribute });
 

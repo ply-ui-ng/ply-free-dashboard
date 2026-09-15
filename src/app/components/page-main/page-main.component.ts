@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, computed, input ,
   ChangeDetectionStrategy
@@ -12,14 +12,14 @@ import { cn } from '../tw-merge/tw-merge';
  * The primary layout wrapper for a main page view.
  *
  * @example
- * <base-page-main>
- *   <base-page-main-header>Title</base-page-main-header>
- *   <base-page-main-body>Content</base-page-main-body>
- *   <base-page-main-footer>Footer</base-page-main-footer>
- * </base-page-main>
+ * <ply-page-main>
+ *   <ply-page-main-header>Title</ply-page-main-header>
+ *   <ply-page-main-body>Content</ply-page-main-body>
+ *   <ply-page-main-footer>Footer</ply-page-main-footer>
+ * </ply-page-main>
  */
 @Component({
-  selector: 'base-page-main',
+  selector: 'ply-page-main',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   templateUrl: './page-main.component.html',

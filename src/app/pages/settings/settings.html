@@ -2,64 +2,64 @@
   <div>
     <h2 class="text-lg font-semibold text-slate-900 dark:text-white">Account Settings</h2>
     <p class="text-sm text-slate-500 dark:text-slate-400">
-      In-page sections use <code class="text-xs">base-sidenav</code> — not the app chrome shell.
+      In-page sections use <code class="text-xs">ply-sidenav</code> — not the app chrome shell.
     </p>
   </div>
 
-  <!-- Demo: base-sidenav is for in-page section navigation inside page content. -->
-  <base-sidenav
+  <!-- Demo: ply-sidenav is for in-page section navigation inside page content. -->
+  <ply-sidenav
     layout="auto"
     class="min-h-[28rem] overflow-hidden rounded-xl border border-slate-200 bg-white dark:border-slate-700 dark:bg-slate-900 sm:min-h-[32rem]">
-    <base-sidenav-nav class="px-3">
+    <ply-sidenav-nav class="px-3">
       <p class="mb-2 px-2 text-[10px] font-medium uppercase tracking-widest text-slate-400">Sections</p>
-      <base-nav-list ariaLabel="Settings sections">
+      <ply-nav-list ariaLabel="Settings sections">
         <button
           type="button"
-          base-list-item
+          ply-list-item
           class="gap-3 rounded-lg px-2"
           [class.!text-blue-500]="section() === 'profile'"
           (click)="selectSection('profile')">
           <span class="flex items-center gap-3">
-            <base-icon name="user" class="w-4 h-4"></base-icon>
+            <ply-icon name="user" class="w-4 h-4"></ply-icon>
             Profile
           </span>
         </button>
         <button
           type="button"
-          base-list-item
+          ply-list-item
           class="gap-3 rounded-lg px-2"
           [class.!text-blue-500]="section() === 'billing'"
           (click)="selectSection('billing')">
           <span class="flex items-center gap-3">
-            <base-icon name="credit-card" class="w-4 h-4"></base-icon>
+            <ply-icon name="credit-card" class="w-4 h-4"></ply-icon>
             Billing
           </span>
         </button>
         <button
           type="button"
-          base-list-item
+          ply-list-item
           class="gap-3 rounded-lg px-2"
           [class.!text-blue-500]="section() === 'notifications'"
           (click)="selectSection('notifications')">
           <span class="flex items-center gap-3">
-            <base-icon name="bell" class="w-4 h-4"></base-icon>
+            <ply-icon name="bell" class="w-4 h-4"></ply-icon>
             Notifications
           </span>
         </button>
-      </base-nav-list>
-    </base-sidenav-nav>
+      </ply-nav-list>
+    </ply-sidenav-nav>
 
-    <base-sidenav-body class="bg-slate-50 p-4 dark:bg-slate-950 md:p-6">
+    <ply-sidenav-body class="bg-slate-50 p-4 dark:bg-slate-950 md:p-6">
       @switch (section()) {
         @case ('profile') {
-          <base-card class="max-w-3xl">
-            <base-card-body class="space-y-6 p-6">
+          <ply-card class="max-w-3xl">
+            <ply-card-body class="space-y-6 p-6">
               <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-                <base-avatar
+                <ply-avatar
                   size="lg"
                   shape="circle"
                   [initials]="name.slice(0, 2).toUpperCase()"
-                  status="active"></base-avatar>
+                  status="active"></ply-avatar>
                 <div>
                   <p class="text-sm font-medium text-slate-900 dark:text-white">Profile photo</p>
                   <!-- Want drag-and-drop avatar uploading with image cropping? Get the Pro file-upload and crop-image components. -->
@@ -68,54 +68,54 @@
                     <code class="text-[10px]">file-upload</code> and
                     <code class="text-[10px]">crop-image</code> components.
                   </p>
-                  <button type="button" base-button color="default" size="sm" class="mt-3">
-                    <base-icon name="camera" class="w-4 h-4"></base-icon>
+                  <button type="button" ply-button color="default" size="sm" class="mt-3">
+                    <ply-icon name="camera" class="w-4 h-4"></ply-icon>
                     Change photo
                   </button>
                 </div>
               </div>
 
               <form class="space-y-4" (ngSubmit)="saveProfile()">
-                <base-input-group>
-                  <base-label>Name</base-label>
-                  <input base-input name="name" [(ngModel)]="name" />
-                </base-input-group>
-                <base-input-group>
-                  <base-label>Email</base-label>
-                  <input base-input name="email" type="email" [(ngModel)]="email" />
-                </base-input-group>
-                <base-input-group>
-                  <base-label>Bio</base-label>
-                  <textarea base-textarea name="bio" rows="4" [(ngModel)]="bio"></textarea>
-                </base-input-group>
+                <ply-input-group>
+                  <ply-label>Name</ply-label>
+                  <input ply-input name="name" [(ngModel)]="name" />
+                </ply-input-group>
+                <ply-input-group>
+                  <ply-label>Email</ply-label>
+                  <input ply-input name="email" type="email" [(ngModel)]="email" />
+                </ply-input-group>
+                <ply-input-group>
+                  <ply-label>Bio</ply-label>
+                  <textarea ply-textarea name="bio" rows="4" [(ngModel)]="bio"></textarea>
+                </ply-input-group>
                 <div>
-                  <base-label>Monthly spend cap</base-label>
-                  <base-currency-input
+                  <ply-label>Monthly spend cap</ply-label>
+                  <ply-currency-input
                     [(ngModel)]="spendCap"
                     name="spendCap"
                     currency="USD"
                     [min]="0"
-                    ariaLabel="Monthly spend cap"></base-currency-input>
+                    ariaLabel="Monthly spend cap"></ply-currency-input>
                   <p class="mt-1 mb-0! text-xs text-slate-400">
-                    Composite currency field — do not nest it in <code class="text-[10px]">base-input-group</code>.
+                    Composite currency field — do not nest it in <code class="text-[10px]">ply-input-group</code>.
                   </p>
                 </div>
-                <button type="submit" base-button color="primary">Save profile</button>
+                <button type="submit" ply-button color="primary">Save profile</button>
               </form>
-            </base-card-body>
-          </base-card>
+            </ply-card-body>
+          </ply-card>
         }
         @case ('billing') {
           <div class="max-w-3xl">
-            <base-form-billing></base-form-billing>
+            <ply-form-billing></ply-form-billing>
           </div>
         }
         @case ('notifications') {
           <div class="max-w-3xl">
-            <base-form-notifications></base-form-notifications>
+            <ply-form-notifications></ply-form-notifications>
           </div>
         }
       }
-    </base-sidenav-body>
-  </base-sidenav>
+    </ply-sidenav-body>
+  </ply-sidenav>
 </div>

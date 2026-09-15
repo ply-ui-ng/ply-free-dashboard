@@ -1,25 +1,25 @@
 <!--
-  Base UI (free tier) — https://base-ui.net
+  Ply (free tier) — https://ply-ui.com
   Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-  Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+  Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 -->
-<ng-content select="base-label"></ng-content>
+<ng-content select="ply-label"></ng-content>
 <div [class]="getWrapperClasses()">
   <div class="flex items-center empty:hidden">
-    <ng-content select="[base-addon-start]" #addon></ng-content>
+    <ng-content select="[ply-addon-start]" #addon></ng-content>
   </div>
   <ng-content select="datalist"></ng-content>
 
   <div class="text-sm w-full h-full border-0 bg-transparent outline-none flex-1">
-    <ng-content select="[base-input]"></ng-content>
-    <ng-content select="[base-textarea]"></ng-content>
-    <ng-content select="base-mention-input"></ng-content>
+    <ng-content select="[ply-input]"></ng-content>
+    <ng-content select="[ply-textarea]"></ng-content>
+    <ng-content select="ply-mention-input"></ng-content>
   </div>
   <div class="flex items-center empty:hidden">
-    <ng-content select="[base-addon-end]"></ng-content>
+    <ng-content select="[ply-addon-end]"></ng-content>
   </div>
 </div>
 @if (showErrors()) {
-<ng-content select="base-error"></ng-content>
+<ng-content select="ply-error"></ng-content>
 }
-<ng-content select="base-info-text"></ng-content>
+<ng-content select="ply-info-text"></ng-content>

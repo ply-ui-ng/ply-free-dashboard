@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component,
   OnDestroy,
@@ -20,12 +20,12 @@ import { cn } from '../tw-merge/tw-merge';
  * A container component for accordion items.
  *
  * @example
- * <base-accordion [multi]="false">
- *   <base-accordion-item>...</base-accordion-item>
- * </base-accordion>
+ * <ply-accordion [multi]="false">
+ *   <ply-accordion-item>...</ply-accordion-item>
+ * </ply-accordion>
  */
 @Component({
-  selector: 'base-accordion',
+  selector: 'ply-accordion',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   templateUrl: './accordion.component.html',

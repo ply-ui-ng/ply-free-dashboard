@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 
@@ -15,23 +15,23 @@ const SPARKLINE_HEIGHT = 48;
  * A dashboard metric card. Classic mode shows a large value, label, optional
  * trend text, and icon. Metric mode matches Motif Admin KPI tiles: uppercase
  * label, delta pill, large value, inline sparkline, and caption — without
- * depending on Pro `base-chart`.
+ * depending on Pro `ply-chart`.
  *
  * @example
- * <base-stat-card label="Revenue" value="$48,295" trend="+12.5%" [trendUp]="true" icon="dollar-sign"></base-stat-card>
+ * <ply-stat-card label="Revenue" value="$48,295" trend="+12.5%" [trendUp]="true" icon="dollar-sign"></ply-stat-card>
  *
  * @example
- * <base-stat-card
+ * <ply-stat-card
  *   variant="metric"
  *   label="Net revenue"
  *   value="$248,910"
  *   caption="vs $210K previous period"
  *   [delta]="0.062"
  *   [series]="[12, 14, 13, 18, 17, 22]"
- * ></base-stat-card>
+ * ></ply-stat-card>
  */
 @Component({
-  selector: 'base-stat-card',
+  selector: 'ply-stat-card',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [IconComponent],
   templateUrl: './stat-card.component.html',
@@ -42,7 +42,7 @@ export class StatCardComponent {
    * Extra host classes merged via `cn()`.
    *
    * @example
-   * <base-stat-card class="shadow-lg" label="Users" value="1,842"></base-stat-card>
+   * <ply-stat-card class="shadow-lg" label="Users" value="1,842"></ply-stat-card>
    */
   readonly extraClass = input('', { alias: 'class' });
 
@@ -51,7 +51,7 @@ export class StatCardComponent {
    * vertical stack with delta pill and sparkline.
    *
    * @example
-   * <base-stat-card variant="metric" label="Revenue" value="$248K" [delta]="0.06" [series]="data"></base-stat-card>
+   * <ply-stat-card variant="metric" label="Revenue" value="$248K" [delta]="0.06" [series]="data"></ply-stat-card>
    */
   readonly variant = input<StatCardVariant>('classic');
 
@@ -59,7 +59,7 @@ export class StatCardComponent {
    * The large metric value.
    *
    * @example
-   * <base-stat-card value="$48,295" label="Revenue"></base-stat-card>
+   * <ply-stat-card value="$48,295" label="Revenue"></ply-stat-card>
    */
   readonly value = input('');
 
@@ -67,7 +67,7 @@ export class StatCardComponent {
    * Label rendered above the value (classic) or as a micro uppercase header (metric).
    *
    * @example
-   * <base-stat-card label="Active Users" value="1,842"></base-stat-card>
+   * <ply-stat-card label="Active Users" value="1,842"></ply-stat-card>
    */
   readonly label = input('');
 
@@ -75,7 +75,7 @@ export class StatCardComponent {
    * Preformatted trend text for classic mode (e.g. `"+12.5%"`).
    *
    * @example
-   * <base-stat-card trend="+12.5%" [trendUp]="true" value="$48K" label="Revenue"></base-stat-card>
+   * <ply-stat-card trend="+12.5%" [trendUp]="true" value="$48K" label="Revenue"></ply-stat-card>
    */
   readonly trend = input<string | undefined>(undefined);
 
@@ -83,7 +83,7 @@ export class StatCardComponent {
    * Classic mode: `true` = green up arrow, `false` = red down arrow.
    *
    * @example
-   * <base-stat-card trend="-3.1%" [trendUp]="false" value="34" label="Refunds"></base-stat-card>
+   * <ply-stat-card trend="-3.1%" [trendUp]="false" value="34" label="Refunds"></ply-stat-card>
    */
   readonly trendUp = input<boolean | undefined>(undefined);
 
@@ -91,7 +91,7 @@ export class StatCardComponent {
    * Optional icon name for classic mode (tinted bubble).
    *
    * @example
-   * <base-stat-card icon="dollar-sign" color="primary" value="$48K" label="Revenue"></base-stat-card>
+   * <ply-stat-card icon="dollar-sign" color="primary" value="$48K" label="Revenue"></ply-stat-card>
    */
   readonly icon = input<string | undefined>(undefined);
 
@@ -99,7 +99,7 @@ export class StatCardComponent {
    * Tint for the classic icon bubble.
    *
    * @example
-   * <base-stat-card color="success" icon="users" value="1,842" label="Users"></base-stat-card>
+   * <ply-stat-card color="success" icon="users" value="1,842" label="Users"></ply-stat-card>
    */
   readonly color = input<StatCardColor>('primary');
 
@@ -108,7 +108,7 @@ export class StatCardComponent {
    * Metric: always shown under the sparkline when non-empty.
    *
    * @example
-   * <base-stat-card caption="vs last month" trend="+12%" [trendUp]="true" value="$48K" label="Revenue"></base-stat-card>
+   * <ply-stat-card caption="vs last month" trend="+12%" [trendUp]="true" value="$48K" label="Revenue"></ply-stat-card>
    */
   readonly caption = input<string | undefined>(undefined);
 
@@ -117,7 +117,7 @@ export class StatCardComponent {
    * Drives the delta pill and sparkline stroke color.
    *
    * @example
-   * <base-stat-card variant="metric" [delta]="0.062" label="Revenue" value="$248K"></base-stat-card>
+   * <ply-stat-card variant="metric" [delta]="0.062" label="Revenue" value="$248K"></ply-stat-card>
    */
   readonly delta = input<number | undefined>(undefined);
 
@@ -125,7 +125,7 @@ export class StatCardComponent {
    * Metric mode: sparkline series. Empty/omitted hides the chart.
    *
    * @example
-   * <base-stat-card variant="metric" [series]="[12, 14, 13, 18]" label="Revenue" value="$248K"></base-stat-card>
+   * <ply-stat-card variant="metric" [series]="[12, 14, 13, 18]" label="Revenue" value="$248K"></ply-stat-card>
    */
   readonly series = input<readonly number[]>([]);
 

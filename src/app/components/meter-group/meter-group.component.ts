@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   ChangeDetectionStrategy,
@@ -61,15 +61,15 @@ interface MeterSegment extends MeterGroupItem {
  * of a single bar, with an optional legend.
  *
  * @example
- * <base-meter-group [value]="[
+ * <ply-meter-group [value]="[
  *   { label: 'Apps', value: 16, color: 'primary' },
  *   { label: 'Messages', value: 8, color: 'success' },
  *   { label: 'Media', value: 24, color: 'warning' },
- * ]"></base-meter-group>
+ * ]"></ply-meter-group>
  */
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
-  selector: 'base-meter-group',
+  selector: 'ply-meter-group',
   templateUrl: './meter-group.component.html',
   imports: [IconComponent, DecimalPipe],
   host: { '[class]': 'hostClass()' },
@@ -80,7 +80,7 @@ export class MeterGroupComponent {
    * relative to `max` (or the sum of values when `max` is unset).
    *
    * @example
-   * <base-meter-group [value]="storage"></base-meter-group>
+   * <ply-meter-group [value]="storage"></ply-meter-group>
    */
   readonly value = input<MeterGroupItem[]>([]);
 
@@ -88,7 +88,7 @@ export class MeterGroupComponent {
    * Thickness of the meter bar.
    *
    * @example
-   * <base-meter-group size="lg" [value]="items"></base-meter-group>
+   * <ply-meter-group size="lg" [value]="items"></ply-meter-group>
    */
   readonly size = input<MeterGroupSize>('md');
 
@@ -96,7 +96,7 @@ export class MeterGroupComponent {
    * Optional total baseline. When omitted, the sum of segment values is used.
    *
    * @example
-   * <base-meter-group [max]="100" [value]="items"></base-meter-group>
+   * <ply-meter-group [max]="100" [value]="items"></ply-meter-group>
    */
   readonly max = input<number | undefined>(undefined);
 
@@ -104,7 +104,7 @@ export class MeterGroupComponent {
    * Whether to render the legend under the bar.
    *
    * @example
-   * <base-meter-group [showLegend]="false" [value]="items"></base-meter-group>
+   * <ply-meter-group [showLegend]="false" [value]="items"></ply-meter-group>
    */
   readonly showLegend = input(true, { transform: booleanAttribute });
 
@@ -112,7 +112,7 @@ export class MeterGroupComponent {
    * Whether legend rows show the absolute value.
    *
    * @example
-   * <base-meter-group [showValue]="false" [value]="items"></base-meter-group>
+   * <ply-meter-group [showValue]="false" [value]="items"></ply-meter-group>
    */
   readonly showValue = input(true, { transform: booleanAttribute });
 
@@ -120,7 +120,7 @@ export class MeterGroupComponent {
    * Whether legend rows show the percentage share.
    *
    * @example
-   * <base-meter-group [showPercent]="false" [value]="items"></base-meter-group>
+   * <ply-meter-group [showPercent]="false" [value]="items"></ply-meter-group>
    */
   readonly showPercent = input(true, { transform: booleanAttribute });
 
@@ -128,7 +128,7 @@ export class MeterGroupComponent {
    * Extra host classes merged via `cn()`.
    *
    * @example
-   * <base-meter-group class="mb-6" [value]="items"></base-meter-group>
+   * <ply-meter-group class="mb-6" [value]="items"></ply-meter-group>
    */
   readonly extraClass = input('', { alias: 'class' });
 

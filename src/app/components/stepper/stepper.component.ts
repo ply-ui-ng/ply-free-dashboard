@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, input, output, contentChildren, model ,
   ChangeDetectionStrategy, effect, booleanAttribute } from '@angular/core';
@@ -16,19 +16,19 @@ import { cn } from '../tw-merge/tw-merge';
  * Automatically handles step transitions, active state, and visual progress lines.
  * 
  * @example
- * <base-stepper linear hideNavigation (stepChange)="onStep($event)">
- *   <base-step label="Step 1" description="First step">...</base-step>
- *   <base-step label="Step 2" description="Second step">...</base-step>
- * </base-stepper>
+ * <ply-stepper linear hideNavigation (stepChange)="onStep($event)">
+ *   <ply-step label="Step 1" description="First step">...</ply-step>
+ *   <ply-step label="Step 2" description="Second step">...</ply-step>
+ * </ply-stepper>
  */
 @Component({
-  selector: 'base-stepper',
+  selector: 'ply-stepper',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [NgTemplateOutlet, IconComponent, BaseButtonDirective, StrokedButtonDirective],
   templateUrl: './stepper.component.html'
 })
 export class StepperComponent {
-  /** Queries all `base-step` elements inside this stepper. */
+  /** Queries all `ply-step` elements inside this stepper. */
   readonly steps = contentChildren(StepComponent);
   
   /** The zero-based index of the currently active step. */

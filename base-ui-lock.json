@@ -282,7 +282,7 @@
         "nav-list.component.ts": "55328d10d7c742e557d66e9ce48d5eb7961dbc23d5684a9334b19eaf3588e5e6"
       }
     },
-    "base-list-item": {
+    "ply-list-item": {
       "tier": "free",
       "installedAt": "2026-07-20T15:47:49.891Z",
       "files": {
@@ -859,7 +859,7 @@
         "form-success-message.component.ts": "cf9ed9e5ba250ec4959151404c130591e07f56760316d03f57ddf3033bed3663"
       }
     },
-    "base-context-menu-item": {
+    "ply-context-menu-item": {
       "tier": "free",
       "installedAt": "2026-07-22T11:47:58.244Z",
       "files": {

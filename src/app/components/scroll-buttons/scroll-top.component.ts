@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { IconComponent } from '../icon/icon.component';
@@ -11,12 +11,12 @@ import { ScrollButtonBase } from './scroll-button.base';
  * Floating “scroll to top” button that appears after the user scrolls past a threshold.
  *
  * @example
- * <base-scroll-top threshold="400" color="primary"></base-scroll-top>
- * <base-scroll-top target="#panel" [fixed]="false"></base-scroll-top>
+ * <ply-scroll-top threshold="400" color="primary"></ply-scroll-top>
+ * <ply-scroll-top target="#panel" [fixed]="false"></ply-scroll-top>
  */
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
-  selector: 'base-scroll-top',
+  selector: 'ply-scroll-top',
   templateUrl: './scroll-top.component.html',
   imports: [IconComponent, IconButtonDirective],
   host: { '[class]': 'hostClass()' },
@@ -26,7 +26,7 @@ export class ScrollTopComponent extends ScrollButtonBase {
    * Accessible label for the button.
    *
    * @example
-   * <base-scroll-top ariaLabel="Back to top"></base-scroll-top>
+   * <ply-scroll-top ariaLabel="Back to top"></ply-scroll-top>
    */
   readonly ariaLabel = input('Scroll to top');
 

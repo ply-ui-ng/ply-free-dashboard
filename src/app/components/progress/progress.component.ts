@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   ChangeDetectionStrategy,
@@ -18,11 +18,11 @@ import { cn } from '../tw-merge/tw-merge';
  * at the leading edge of the fill.
  *
  * @example
- * <base-progress [value]="75" color="success" size="lg"></base-progress>
- * <base-progress [value]="40" [showTip]="false"></base-progress>
+ * <ply-progress [value]="75" color="success" size="lg"></ply-progress>
+ * <ply-progress [value]="40" [showTip]="false"></ply-progress>
  */
 @Component({
-  selector: 'base-progress',
+  selector: 'ply-progress',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './progress.component.html',
   host: {
@@ -38,7 +38,7 @@ export class ProgressComponent {
    * Current progress value from 0 to 100.
    *
    * @example
-   * <base-progress [value]="62"></base-progress>
+   * <ply-progress [value]="62"></ply-progress>
    */
   readonly value = input(0, { transform: numberAttribute });
 
@@ -46,7 +46,7 @@ export class ProgressComponent {
    * Semantic color of the fill.
    *
    * @example
-   * <base-progress color="success" [value]="80"></base-progress>
+   * <ply-progress color="success" [value]="80"></ply-progress>
    */
   readonly color = input<ProgressColor>('primary');
 
@@ -54,7 +54,7 @@ export class ProgressComponent {
    * Height / thickness of the bar.
    *
    * @example
-   * <base-progress size="lg" [value]="50"></base-progress>
+   * <ply-progress size="lg" [value]="50"></ply-progress>
    */
   readonly size = input<ProgressSize>('md');
 
@@ -62,7 +62,7 @@ export class ProgressComponent {
    * When true (default), hovering the bar shows the value in a tip at the fill edge.
    *
    * @example
-   * <base-progress [value]="45" [showTip]="false"></base-progress>
+   * <ply-progress [value]="45" [showTip]="false"></ply-progress>
    */
   readonly showTip = input(true, { transform: booleanAttribute });
 
@@ -70,7 +70,7 @@ export class ProgressComponent {
    * Extra host classes merged via `cn()`.
    *
    * @example
-   * <base-progress class="mb-4" [value]="30"></base-progress>
+   * <ply-progress class="mb-4" [value]="30"></ply-progress>
    */
   readonly extraClass = input('', { alias: 'class' });
 

@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Directive, ElementRef, inject, OnInit } from '@angular/core';
 
@@ -8,10 +8,10 @@ import { Directive, ElementRef, inject, OnInit } from '@angular/core';
  * Applies standardized heading typography styles to an element.
  * 
  * @example
- * <h1 base-heading size="xl">Page Title</h1>
+ * <h1 ply-heading size="xl">Page Title</h1>
  */
 @Directive({
-  selector: '[baseHeadingText]',
+  selector: '[plyHeadingText]',
   host: {
     class: 'text-slate-900 dark:text-white font-semibold'
   }

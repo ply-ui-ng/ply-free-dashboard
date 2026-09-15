@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component,
   ElementRef,
@@ -24,11 +24,11 @@ let customSelectIdCounter = 0;
  * A searchable dropdown select component.
  *
  * @example
- * <base-custom-select [(ngModel)]="selectedId" [options]="users" displayKey="name" valueKey="id">
- * </base-custom-select>
+ * <ply-custom-select [(ngModel)]="selectedId" [options]="users" displayKey="name" valueKey="id">
+ * </ply-custom-select>
  */
 @Component({
-  selector: 'base-custom-select',
+  selector: 'ply-custom-select',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [NgStyle, FormsModule, IconComponent],
   templateUrl: './custom-select.component.html',
@@ -68,8 +68,8 @@ export class CustomSelectComponent implements ControlValueAccessor, OnDestroy {
   readonly dropdownStyles = signal<Record<string, string | number>>({});
   readonly activeIndex = signal(-1);
 
-  readonly listboxId = `base-select-listbox-${customSelectIdCounter}`;
-  readonly labelId = `base-select-label-${customSelectIdCounter++}`;
+  readonly listboxId = `ply-select-listbox-${customSelectIdCounter}`;
+  readonly labelId = `ply-select-label-${customSelectIdCounter++}`;
 
   private el = inject(ElementRef);
   private onChange: (v: unknown) => void = () => {};

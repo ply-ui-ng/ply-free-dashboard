@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, computed, input ,
   ChangeDetectionStrategy
@@ -12,12 +12,12 @@ import { cn } from '../../tw-merge/tw-merge';
  * A section within a scroll-nav component that is linked to a sidebar item.
  *
  * @example
- * <base-scroll-nav-item id="section-1">
+ * <ply-scroll-nav-item id="section-1">
  *   Section content
- * </base-scroll-nav-item>
+ * </ply-scroll-nav-item>
  */
 @Component({
-  selector: 'base-scroll-nav-item',
+  selector: 'ply-scroll-nav-item',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   templateUrl: './scroll-nav-item.component.html',

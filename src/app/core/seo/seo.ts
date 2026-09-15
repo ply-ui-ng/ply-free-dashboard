@@ -54,7 +54,7 @@ export class SeoService {
     this.meta.updateTag({ property: 'og:url', content: canonical });
     this.meta.updateTag({ property: 'og:image', content: OG_IMAGE_URL });
     this.meta.updateTag({ property: 'og:type', content: 'website' });
-    this.meta.updateTag({ property: 'og:site_name', content: 'Base UI' });
+    this.meta.updateTag({ property: 'og:site_name', content: 'Ply' });
 
     this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
     this.meta.updateTag({ name: 'twitter:title', content: fullTitle });
@@ -129,9 +129,9 @@ export class SeoService {
         {
           '@type': 'Organization',
           '@id': `${SITE_URL}/#organization`,
-          name: 'Base UI',
-          url: 'https://base-ui.net',
-          sameAs: [GITHUB_REPO_URL, 'https://base-ui.net'],
+          name: 'Ply',
+          url: 'https://ply-ui.com',
+          sameAs: [GITHUB_REPO_URL, 'https://ply-ui.com'],
         },
         {
           '@type': 'SoftwareApplication',
@@ -154,7 +154,7 @@ export class SeoService {
             'Angular',
             'Tailwind CSS',
             'dashboard template',
-            'Base UI',
+            'Ply',
             'admin panel',
             'free',
           ],
@@ -175,10 +175,10 @@ export class SeoService {
           mainEntity: [
             {
               '@type': 'Question',
-              name: 'What is Base UI Free Dashboard?',
+              name: 'What is Ply Free Dashboard?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'A free open-source Angular 22 admin dashboard template styled with Tailwind CSS 4 and built with Base UI free-tier components. It includes mock auth, an app shell, demo pages, and a live component gallery.',
+                text: 'A free open-source Angular 22 admin dashboard template styled with Tailwind CSS 4 and built with Ply free-tier components. It includes mock auth, an app shell, demo pages, and a live component gallery.',
               },
             },
             {
@@ -186,7 +186,7 @@ export class SeoService {
               name: 'Is the dashboard free to use?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Yes. The dashboard template is free to use in your projects. Base UI free-tier components are free for unlimited projects; Pro components require a Base UI license.',
+                text: 'Yes. The dashboard template is free to use in your projects. Ply free-tier components are free for unlimited projects; Pro components require a Ply license.',
               },
             },
             {
@@ -194,7 +194,7 @@ export class SeoService {
               name: 'How do I run the demo locally?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Clone the GitHub repository, run npm install, then npm start. Open http://localhost:4200 and sign in with demo@base-ui.net / password (auth is mocked).',
+                text: 'Clone the GitHub repository, run npm install, then npm start. Open http://localhost:4200 and sign in with demo@ply-ui.com / password (auth is mocked).',
               },
             },
             {
@@ -202,7 +202,7 @@ export class SeoService {
               name: 'Where is the source code?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: `The source is on GitHub at ${GITHUB_REPO_URL}. Component docs and pricing are at https://base-ui.net.`,
+                text: `The source is on GitHub at ${GITHUB_REPO_URL}. Component docs and pricing are at https://ply-ui.com.`,
               },
             },
           ],

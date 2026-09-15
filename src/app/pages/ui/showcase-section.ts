@@ -6,8 +6,8 @@ import { CardBodyComponent, CardComponent, CardHeaderComponent } from 'Base';
   imports: [CardComponent, CardHeaderComponent, CardBodyComponent],
   template: `
     <section [attr.id]="sectionId() || null" class="scroll-mt-6 block">
-      <base-card class="overflow-hidden">
-        <base-card-header class="!h-auto flex-col !items-start gap-1 px-4 py-4 sm:px-6">
+      <ply-card class="overflow-hidden">
+        <ply-card-header class="!h-auto flex-col !items-start gap-1 px-4 py-4 sm:px-6">
           <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-900 dark:text-white">
             {{ title() }}
           </h3>
@@ -22,11 +22,11 @@ import { CardBodyComponent, CardComponent, CardHeaderComponent } from 'Base';
               {{ componentName() }}
             </code>
           }
-        </base-card-header>
-        <base-card-body class="space-y-4 p-4 sm:p-6">
+        </ply-card-header>
+        <ply-card-body class="space-y-4 p-4 sm:p-6">
           <ng-content />
-        </base-card-body>
-      </base-card>
+        </ply-card-body>
+      </ply-card>
     </section>
   `,
 })

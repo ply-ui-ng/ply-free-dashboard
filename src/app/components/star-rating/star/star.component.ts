@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { CommonModule } from '@angular/common';
 import { Component, input, output, model, computed,
@@ -10,10 +10,10 @@ import { Component, input, output, model, computed,
  * A single star in the `StarRatingComponent`. Handles the SVG rendering for each star segment.
  *
  * @example
- * <base-star [active]="true" [editable]="false"></base-star>
+ * <ply-star [active]="true" [editable]="false"></ply-star>
  */
 @Component({
-    selector: 'base-star',
+    selector: 'ply-star',
   changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [CommonModule],
     templateUrl: './star.component.html'

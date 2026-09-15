@@ -1,30 +1,30 @@
-# Base UI Free Dashboard
+# Ply Free Dashboard
 
-> Free Angular 22 + Tailwind CSS 4 admin dashboard template powered by Base UI free-tier components. Use it as a SaaS starter or as a live gallery of free Base UI widgets.
+> Free Angular 22 + Tailwind CSS 4 admin dashboard template powered by Ply free-tier components. Use it as a SaaS starter or as a live gallery of free Ply widgets.
 
 Site: https://base-ui-free-dashboard-demo.pages.dev/
 Source: https://github.com/lussos/base-ui-free-dashboard
-Product docs: https://base-ui.net
-Pricing: https://base-ui.net/pricing
+Product docs: https://ply-ui.com
+Pricing: https://ply-ui.com/pricing
 
 ## Summary
 
-Base UI Free Dashboard is an open-source demo and starter template. It shows how to build an authenticated admin shell with the free Base UI component set (copied into the repo via `base-ui-cli`). Auth is mocked with `localStorage` — there is no backend.
+Ply Free Dashboard is an open-source demo and starter template. It shows how to build an authenticated admin shell with the free Ply component set (copied into the repo via `ply-ui-cli`). Auth is mocked with `localStorage` — there is no backend.
 
-Demo login: `demo@base-ui.net` / `password` (any credentials work).
+Demo login: `demo@ply-ui.com` / `password` (any credentials work).
 
 ## Stack
 
 - Angular 22 (standalone components)
 - Tailwind CSS 4
-- Base UI free tier (`base-ui-cli`)
+- Ply free tier (`ply-ui-cli`)
 - Deployed on Cloudflare Pages
 
 ## Key features
 
 - Mock auth: login, register, forgot password
-- Free `base-app-shell` with sidebar + topbar
-- Pages: dashboard metrics, users CRUD, settings (in-page `base-sidenav`)
+- Free `ply-app-shell` with sidebar + topbar
+- Pages: dashboard metrics, users CRUD, settings (in-page `ply-sidenav`)
 - Component gallery: primitives, forms, feedback, overlays, navigation, data display, form blocks
 - GitHub Actions → Cloudflare Pages deploy
 
@@ -55,15 +55,15 @@ Demo login: `demo@base-ui.net` / `password` (any credentials work).
 
 ## Architecture notes for assistants
 
-- Import Base UI from the path alias `Base` → `src/app/components/index.ts`.
+- Import Ply from the path alias `Base` → `src/app/components/index.ts`.
 - Components exported from the `Base` barrel must use relative imports (not `from 'Base'`) to avoid Angular circular dependency `NG0919`.
-- Do not use `base-sidenav` as the primary app chrome; use free `base-app-shell` (`layout-app-shell`) + `SidebarService`.
+- Do not use `ply-sidenav` as the primary app chrome; use free `ply-app-shell` (`layout-app-shell`) + `SidebarService`.
 - Build output: `dist/base-ui-free-dashboard/browser`
 - Node.js 22+ required
 
 ## License
 
-Dashboard template code is free to use in projects. Base UI free-tier component source is free for unlimited projects; Pro components require a license. Do not redistribute fetched component source as a standalone library or kit.
+Dashboard template code is free to use in projects. Ply free-tier component source is free for unlimited projects; Pro components require a license. Do not redistribute fetched component source as a standalone library or kit.
 
 ## Optional
 

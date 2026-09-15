@@ -1,9 +1,9 @@
 <!--
-  Base UI (free tier) — https://base-ui.net
+  Ply (free tier) — https://ply-ui.com
   Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-  Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+  Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 -->
-<base-card>
+<ply-card>
   <div class="p-8 flex flex-col gap-7">
 
     <!-- Step Header -->
@@ -25,7 +25,7 @@
               [class.text-slate-400]="i > currentStep()"
               class="w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300">
               @if (i < currentStep()) {
-                <base-icon name="check" class="w-3.5 h-3.5 stroke-white stroke-2"></base-icon>
+                <ply-icon name="check" class="w-3.5 h-3.5 stroke-white stroke-2"></ply-icon>
               } @else {
                 <span class="text-[11px] font-bold">{{ i + 1 }}</span>
               }
@@ -48,23 +48,23 @@
     @if (currentStep() === 0) {
     <div class="flex flex-col gap-4 animate-in fade-in duration-200">
       <div class="flex gap-4">
-        <base-input-group class="flex-1">
-          <base-label class="text-[10px]! uppercase font-light! tracking-[2px]!">First Name</base-label>
-          <input base-input placeholder="Jane" />
-        </base-input-group>
-        <base-input-group class="flex-1">
-          <base-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Last Name</base-label>
-          <input base-input placeholder="Doe" />
-        </base-input-group>
+        <ply-input-group class="flex-1">
+          <ply-label class="text-[10px]! uppercase font-light! tracking-[2px]!">First Name</ply-label>
+          <input ply-input placeholder="Jane" />
+        </ply-input-group>
+        <ply-input-group class="flex-1">
+          <ply-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Last Name</ply-label>
+          <input ply-input placeholder="Doe" />
+        </ply-input-group>
       </div>
-      <base-input-group>
-        <base-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Work Email</base-label>
-        <input base-input type="email" placeholder="jane@company.com" />
-      </base-input-group>
-      <base-input-group>
-        <base-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Password</base-label>
-        <input base-input type="password" placeholder="Min. 8 characters" />
-      </base-input-group>
+      <ply-input-group>
+        <ply-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Work Email</ply-label>
+        <input ply-input type="email" placeholder="jane@company.com" />
+      </ply-input-group>
+      <ply-input-group>
+        <ply-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Password</ply-label>
+        <input ply-input type="password" placeholder="Min. 8 characters" />
+      </ply-input-group>
     </div>
     }
 
@@ -78,7 +78,7 @@
         [class.ring-blue-500]="selectedPlan() === 'starter'"
         class="flex items-center gap-4 p-5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 text-left transition-all hover:border-slate-300 cursor-pointer">
         <div class="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-700 flex items-center justify-center shrink-0">
-          <base-icon name="zap" class="w-4.5 h-4.5 stroke-slate-500"></base-icon>
+          <ply-icon name="zap" class="w-4.5 h-4.5 stroke-slate-500"></ply-icon>
         </div>
         <div class="flex-1">
           <p class="text-[13px] font-semibold text-slate-800 dark:text-slate-100">Starter</p>
@@ -86,7 +86,7 @@
         </div>
         @if (selectedPlan() === 'starter') {
         <div class="w-5 h-5 rounded-full bg-blue-600 flex items-center justify-center">
-          <base-icon name="check" class="w-2.75 h-2.75 stroke-white stroke-2"></base-icon>
+          <ply-icon name="check" class="w-2.75 h-2.75 stroke-white stroke-2"></ply-icon>
         </div>
         }
       </button>
@@ -98,18 +98,18 @@
         [class.ring-blue-500]="selectedPlan() === 'pro'"
         class="flex items-center gap-4 p-5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 text-left transition-all hover:border-slate-300 cursor-pointer">
         <div class="w-9 h-9 rounded-lg bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center shrink-0">
-          <base-icon name="layers" class="w-4.5 h-4.5 stroke-blue-600 dark:stroke-blue-400"></base-icon>
+          <ply-icon name="layers" class="w-4.5 h-4.5 stroke-blue-600 dark:stroke-blue-400"></ply-icon>
         </div>
         <div class="flex-1">
           <div class="flex items-center gap-2 mb-0.5">
             <p class="text-[13px] font-semibold text-slate-800 dark:text-slate-100">Pro</p>
-            <base-badge color="primary" size="sm" shape="rectangular">Popular</base-badge>
+            <ply-badge color="primary" size="sm" shape="rectangular">Popular</ply-badge>
           </div>
           <p class="text-[10px] text-slate-400 uppercase tracking-wider">Up to 25 seats · $29/mo</p>
         </div>
         @if (selectedPlan() === 'pro') {
         <div class="w-5 h-5 rounded-full bg-blue-600 flex items-center justify-center">
-          <base-icon name="check" class="w-2.75 h-2.75 stroke-white stroke-2"></base-icon>
+          <ply-icon name="check" class="w-2.75 h-2.75 stroke-white stroke-2"></ply-icon>
         </div>
         }
       </button>
@@ -135,9 +135,9 @@
           <span class="text-xs font-semibold text-slate-700 dark:text-slate-200">Today</span>
         </div>
       </div>
-      <base-checkbox class="text-[11px] text-slate-500">
+      <ply-checkbox class="text-[11px] text-slate-500">
         I agree to the <a href="#" class="text-blue-600 underline">Terms of Service</a> and <a href="#" class="text-blue-600 underline">Privacy Policy</a>
-      </base-checkbox>
+      </ply-checkbox>
     </div>
     }
 
@@ -147,7 +147,7 @@
       <button
         type="button"
         (click)="back()"
-        base-button color="secondary"
+        ply-button color="secondary"
         class="min-w-20">
         Back
       </button>
@@ -158,7 +158,7 @@
       <button
         type="button"
         (click)="next()"
-        base-button color="primary"
+        ply-button color="primary"
         class="min-w-20">
         Continue
       </button>
@@ -166,7 +166,7 @@
       @if (currentStep() === 2) {
       <button
         type="button"
-        base-button color="primary"
+        ply-button color="primary"
         class="min-w-30">
         Create Account
       </button>
@@ -174,4 +174,4 @@
     </div>
 
   </div>
-</base-card>
+</ply-card>

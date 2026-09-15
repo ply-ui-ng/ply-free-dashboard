@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component,
   ChangeDetectionStrategy,
@@ -37,13 +37,13 @@ const fade = trigger('fade', [
  * and traps focus while open.
  *
  * @example
- * <base-bottom-sheet [(open)]="isOpen" height="half" (closed)="onClosed()">
+ * <ply-bottom-sheet [(open)]="isOpen" height="half" (closed)="onClosed()">
  *   <h3 class="text-lg font-semibold mb-3">Filter Results</h3>
  *   <p>Sheet content here</p>
- * </base-bottom-sheet>
+ * </ply-bottom-sheet>
  */
 @Component({
-  selector: 'base-bottom-sheet',
+  selector: 'ply-bottom-sheet',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [A11yModule, IconComponent, IconButtonDirective],
   templateUrl: './bottom-sheet.component.html',

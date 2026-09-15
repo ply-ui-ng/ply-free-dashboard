@@ -1,9 +1,9 @@
 <!--
-  Base UI (free tier) — https://base-ui.net
+  Ply (free tier) — https://ply-ui.com
   Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-  Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+  Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 -->
-<base-card>
+<ply-card>
   <div class="p-8 flex flex-col gap-6">
     <div>
       <h3 class="font-bold text-sm text-slate-900 dark:text-white mb-1 uppercase tracking-widest">Invite Team Members</h3>
@@ -11,22 +11,22 @@
     </div>
 
     <div class="flex gap-3">
-      <base-input-group class="flex-1">
-        <base-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Email Address</base-label>
-        <input base-input placeholder="colleague@company.com" />
-      </base-input-group>
-      <base-input-group class="w-34">
-        <base-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Role</base-label>
-        <select base-input class="appearance-none pr-8">
+      <ply-input-group class="flex-1">
+        <ply-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Email Address</ply-label>
+        <input ply-input placeholder="colleague@company.com" />
+      </ply-input-group>
+      <ply-input-group class="w-34">
+        <ply-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Role</ply-label>
+        <select ply-input class="appearance-none pr-8">
           <option>Admin</option>
           <option selected>Member</option>
           <option>Viewer</option>
         </select>
-        <base-icon base-addon-end name="chevron-down" class="w-3.5 h-3.5 stroke-slate-400 pointer-events-none absolute right-3 top-1/2 -translate-y-1/2"></base-icon>
-      </base-input-group>
+        <ply-icon ply-addon-end name="chevron-down" class="w-3.5 h-3.5 stroke-slate-400 pointer-events-none absolute right-3 top-1/2 -translate-y-1/2"></ply-icon>
+      </ply-input-group>
     </div>
 
-    <button base-button color="primary" class="w-full">Send Invitation</button>
+    <button ply-button color="primary" class="w-full">Send Invitation</button>
 
     <div class="border-t border-slate-100 dark:border-slate-800 pt-5">
       <p class="text-[10px] uppercase tracking-widest text-slate-400 mb-4">Pending Invitations</p>
@@ -42,7 +42,7 @@
               <p class="text-[10px] text-slate-400 uppercase tracking-wider">Member · Sent 2 days ago</p>
             </div>
           </div>
-          <base-badge color="warning" size="sm" shape="rectangular">Pending</base-badge>
+          <ply-badge color="warning" size="sm" shape="rectangular">Pending</ply-badge>
         </div>
 
         <div class="flex items-center justify-between py-2.5 px-4 rounded-lg bg-slate-50 dark:bg-slate-800/50">
@@ -55,7 +55,7 @@
               <p class="text-[10px] text-slate-400 uppercase tracking-wider">Viewer · Sent 5 days ago</p>
             </div>
           </div>
-          <base-badge color="success" size="sm" shape="rectangular">Accepted</base-badge>
+          <ply-badge color="success" size="sm" shape="rectangular">Accepted</ply-badge>
         </div>
 
         <div class="flex items-center justify-between py-2.5 px-4 rounded-lg bg-slate-50 dark:bg-slate-800/50">
@@ -68,10 +68,10 @@
               <p class="text-[10px] text-slate-400 uppercase tracking-wider">Admin · Sent 8 days ago</p>
             </div>
           </div>
-          <base-badge color="danger" size="sm" shape="rectangular">Expired</base-badge>
+          <ply-badge color="danger" size="sm" shape="rectangular">Expired</ply-badge>
         </div>
 
       </div>
     </div>
   </div>
-</base-card>
+</ply-card>

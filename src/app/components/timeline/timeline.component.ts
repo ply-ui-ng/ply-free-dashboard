@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, computed, input ,
   ChangeDetectionStrategy
@@ -8,15 +8,15 @@ import { Component, computed, input ,
 import { cn } from '../tw-merge/tw-merge';
 
 /**
- * A vertical timeline container. Wrap `base-timeline-item` elements inside.
+ * A vertical timeline container. Wrap `ply-timeline-item` elements inside.
  *
  * @example
- * <base-timeline>
- *   <base-timeline-item color="primary" icon="check" time="Jan 1">Step one</base-timeline-item>
- * </base-timeline>
+ * <ply-timeline>
+ *   <ply-timeline-item color="primary" icon="check" time="Jan 1">Step one</ply-timeline-item>
+ * </ply-timeline>
  */
 @Component({
-  selector: 'base-timeline',
+  selector: 'ply-timeline',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `<ng-content></ng-content>`,
   host: { '[class]': 'hostCls()' }

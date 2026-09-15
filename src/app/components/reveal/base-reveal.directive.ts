@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   AfterViewInit,
@@ -21,11 +21,11 @@ import { isPlatformBrowser } from '@angular/common';
  * during server-side rendering.
  *
  * @example
- * <div baseReveal>Fades in on scroll</div>
- * <div baseReveal [revealDelay]="150" [revealTranslate]="32">Staggered</div>
+ * <div plyReveal>Fades in on scroll</div>
+ * <div plyReveal [revealDelay]="150" [revealTranslate]="32">Staggered</div>
  */
 @Directive({
-  selector: '[baseReveal]'
+  selector: '[plyReveal]'
 })
 export class RevealDirective implements AfterViewInit, OnDestroy {
   /** Delay in milliseconds before the reveal animation starts once visible. */

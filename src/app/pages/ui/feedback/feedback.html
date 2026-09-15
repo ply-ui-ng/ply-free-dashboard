@@ -2,12 +2,12 @@
   title="Feedback"
   description="Alerts, toasts, progress, meters, countdowns, and empty states."
   [sections]="sections">
-  <app-showcase-section sectionId="alerts" title="Alerts" componentName="base-alert">
+  <app-showcase-section sectionId="alerts" title="Alerts" componentName="ply-alert">
     <div class="space-y-3">
-      <base-alert color="primary" variant="soft" [close]="true">Primary soft alert with dismiss.</base-alert>
-      <base-alert color="success" variant="soft">Payment completed successfully.</base-alert>
-      <base-alert color="warning" variant="outline">Please verify your email address.</base-alert>
-      <base-alert color="danger" variant="solid">Your session has expired.</base-alert>
+      <ply-alert color="primary" variant="soft" [close]="true">Primary soft alert with dismiss.</ply-alert>
+      <ply-alert color="success" variant="soft">Payment completed successfully.</ply-alert>
+      <ply-alert color="warning" variant="outline">Please verify your email address.</ply-alert>
+      <ply-alert color="danger" variant="solid">Your session has expired.</ply-alert>
     </div>
   </app-showcase-section>
 
@@ -17,56 +17,56 @@
     description="Triggered via ToastService."
     componentName="ToastService">
     <div class="flex flex-wrap gap-2">
-      <button type="button" base-button color="success" (click)="showToast('success')">Success</button>
-      <button type="button" base-button color="danger" (click)="showToast('error')">Error</button>
-      <button type="button" base-button color="warning" (click)="showToast('warning')">Warning</button>
-      <button type="button" base-button color="primary" (click)="showToast('info')">Info</button>
+      <button type="button" ply-button color="success" (click)="showToast('success')">Success</button>
+      <button type="button" ply-button color="danger" (click)="showToast('error')">Error</button>
+      <button type="button" ply-button color="warning" (click)="showToast('warning')">Warning</button>
+      <button type="button" ply-button color="primary" (click)="showToast('info')">Info</button>
     </div>
   </app-showcase-section>
 
-  <app-showcase-section sectionId="progress" title="Progress" componentName="base-progress">
-    <base-progress [value]="progress()" color="primary" size="md"></base-progress>
-    <base-progress [value]="35" color="success" size="sm"></base-progress>
-    <base-progress [value]="80" color="warning" size="lg"></base-progress>
+  <app-showcase-section sectionId="progress" title="Progress" componentName="ply-progress">
+    <ply-progress [value]="progress()" color="primary" size="md"></ply-progress>
+    <ply-progress [value]="35" color="success" size="sm"></ply-progress>
+    <ply-progress [value]="80" color="warning" size="lg"></ply-progress>
   </app-showcase-section>
 
-  <app-showcase-section sectionId="meter-group" title="Meter group" componentName="base-meter-group">
-    <base-meter-group [value]="storageMeters" [max]="64" size="md"></base-meter-group>
+  <app-showcase-section sectionId="meter-group" title="Meter group" componentName="ply-meter-group">
+    <ply-meter-group [value]="storageMeters" [max]="64" size="md"></ply-meter-group>
   </app-showcase-section>
 
-  <app-showcase-section sectionId="animated-counter" title="Animated counter" componentName="base-animated-counter">
+  <app-showcase-section sectionId="animated-counter" title="Animated counter" componentName="ply-animated-counter">
     <div class="flex flex-wrap gap-8 text-2xl font-semibold text-slate-900 dark:text-white">
-      <base-animated-counter [value]="48295" prefix="$" separator=","></base-animated-counter>
-      <base-animated-counter [value]="1284" suffix=" users"></base-animated-counter>
-      <base-animated-counter [value]="98.6" [decimals]="1" suffix="%"></base-animated-counter>
+      <ply-animated-counter [value]="48295" prefix="$" separator=","></ply-animated-counter>
+      <ply-animated-counter [value]="1284" suffix=" users"></ply-animated-counter>
+      <ply-animated-counter [value]="98.6" [decimals]="1" suffix="%"></ply-animated-counter>
     </div>
   </app-showcase-section>
 
-  <app-showcase-section sectionId="countdown" title="Countdown" componentName="base-countdown">
-    <base-countdown [targetDate]="launchDate"></base-countdown>
+  <app-showcase-section sectionId="countdown" title="Countdown" componentName="ply-countdown">
+    <ply-countdown [targetDate]="launchDate"></ply-countdown>
   </app-showcase-section>
 
-  <app-showcase-section sectionId="coming-soon" title="Coming soon" componentName="base-coming-soon">
-    <base-coming-soon
+  <app-showcase-section sectionId="coming-soon" title="Coming soon" componentName="ply-coming-soon">
+    <ply-coming-soon
       title="Advanced analytics"
-      description="We're building richer reporting charts. Check back soon."></base-coming-soon>
+      description="We're building richer reporting charts. Check back soon."></ply-coming-soon>
   </app-showcase-section>
 
-  <app-showcase-section sectionId="skeleton" title="Skeleton" componentName="base-skeleton">
-    <base-skeleton variant="text" [count]="3"></base-skeleton>
+  <app-showcase-section sectionId="skeleton" title="Skeleton" componentName="ply-skeleton">
+    <ply-skeleton variant="text" [count]="3"></ply-skeleton>
     <div class="flex items-center gap-3">
-      <base-skeleton variant="circular" width="40px" height="40px"></base-skeleton>
+      <ply-skeleton variant="circular" width="40px" height="40px"></ply-skeleton>
       <div class="flex-1">
-        <base-skeleton variant="text" [count]="2"></base-skeleton>
+        <ply-skeleton variant="text" [count]="2"></ply-skeleton>
       </div>
     </div>
   </app-showcase-section>
 
-  <app-showcase-section sectionId="spinner" title="Spinner" componentName="base-spinner">
+  <app-showcase-section sectionId="spinner" title="Spinner" componentName="ply-spinner">
     <div class="flex flex-wrap items-center gap-6">
-      <base-spinner size="sm" color="primary"></base-spinner>
-      <base-spinner size="md" color="success"></base-spinner>
-      <base-spinner size="lg" color="accent"></base-spinner>
+      <ply-spinner size="sm" color="primary"></ply-spinner>
+      <ply-spinner size="md" color="success"></ply-spinner>
+      <ply-spinner size="lg" color="accent"></ply-spinner>
     </div>
   </app-showcase-section>
 
@@ -74,42 +74,42 @@
     sectionId="loading-overlay"
     title="Loading overlay"
     description="Blocks a region with a spinner, optional message, and aria-busy."
-    componentName="base-loading-overlay">
-    <button type="button" base-button color="primary" (click)="simulateSave()">Simulate save</button>
-    <base-loading-overlay class="min-h-40 rounded-lg" [visible]="saving()" message="Saving changes…">
+    componentName="ply-loading-overlay">
+    <button type="button" ply-button color="primary" (click)="simulateSave()">Simulate save</button>
+    <ply-loading-overlay class="min-h-40 rounded-lg" [visible]="saving()" message="Saving changes…">
       <div class="rounded-lg border border-slate-200 p-4 dark:border-slate-700">
         <p class="m-0! text-sm font-medium text-slate-900 dark:text-white">Invoice #1842</p>
         <p class="mt-2 mb-0! text-sm text-slate-600 dark:text-slate-300">
           Acme Corp — $1,240.00 due on the 24th.
         </p>
       </div>
-    </base-loading-overlay>
+    </ply-loading-overlay>
   </app-showcase-section>
 
-  <app-showcase-section sectionId="empty-state" title="Empty state" componentName="base-empty-state">
-    <base-empty-state
+  <app-showcase-section sectionId="empty-state" title="Empty state" componentName="ply-empty-state">
+    <ply-empty-state
       iconName="inbox"
       title="No messages yet"
-      description="When teammates mention you, notifications will show up here."></base-empty-state>
+      description="When teammates mention you, notifications will show up here."></ply-empty-state>
   </app-showcase-section>
 
   <app-showcase-section
     sectionId="cookie-banner"
     title="Cookie banner"
     description="SSR-safe consent banner. This demo uses a dedicated storage key."
-    componentName="base-cookie-banner">
+    componentName="ply-cookie-banner">
     <div class="flex flex-wrap items-center gap-3">
-      <button type="button" base-button color="primary" (click)="resetCookieDemo()">Show banner</button>
+      <button type="button" ply-button color="primary" (click)="resetCookieDemo()">Show banner</button>
       <p class="m-0! text-sm text-slate-600 dark:text-slate-300">
         Last choice: {{ lastConsent() ?? 'none' }}
       </p>
     </div>
-    <base-cookie-banner
+    <ply-cookie-banner
       #demoBanner
       storageKey="base-ui-dashboard-gallery-cookies"
       title="We use cookies"
       message="This gallery demo stores only a consent flag. Reject non-essential cookies anytime."
       (consentChange)="lastConsent.set($event)">
-    </base-cookie-banner>
+    </ply-cookie-banner>
   </app-showcase-section>
 </app-showcase-page>

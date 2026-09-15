@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   ChangeDetectionStrategy,
@@ -47,19 +47,19 @@ export interface SpeedDialAction {
  * Free tier.
  *
  * @example
- * <base-speed-dial [actions]="actions" (actionClick)="onAction($event)"></base-speed-dial>
+ * <ply-speed-dial [actions]="actions" (actionClick)="onAction($event)"></ply-speed-dial>
  *
  * @example
- * <base-speed-dial
+ * <ply-speed-dial
  *   [actions]="actions"
  *   direction="up"
  *   position="bottom-right"
  *   [showLabels]="true"
  *   [fixed]="false">
- * </base-speed-dial>
+ * </ply-speed-dial>
  */
 @Component({
-  selector: 'base-speed-dial',
+  selector: 'ply-speed-dial',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [IconComponent, IconButtonDirective],
   templateUrl: './speed-dial.component.html',
@@ -76,7 +76,7 @@ export class SpeedDialComponent {
    * Actions revealed when the dial is open.
    *
    * @example
-   * <base-speed-dial [actions]="[{ icon: 'edit', label: 'Edit' }]"></base-speed-dial>
+   * <ply-speed-dial [actions]="[{ icon: 'edit', label: 'Edit' }]"></ply-speed-dial>
    */
   readonly actions = input<SpeedDialAction[]>([]);
 
@@ -84,7 +84,7 @@ export class SpeedDialComponent {
    * Direction the action stack expands from the trigger.
    *
    * @example
-   * <base-speed-dial direction="left" [actions]="actions"></base-speed-dial>
+   * <ply-speed-dial direction="left" [actions]="actions"></ply-speed-dial>
    */
   readonly direction = input<SpeedDialDirection>('up');
 
@@ -92,7 +92,7 @@ export class SpeedDialComponent {
    * Corner placement when positioned against the viewport or a relative parent.
    *
    * @example
-   * <base-speed-dial position="bottom-left" [actions]="actions"></base-speed-dial>
+   * <ply-speed-dial position="bottom-left" [actions]="actions"></ply-speed-dial>
    */
   readonly position = input<SpeedDialPosition>('bottom-right');
 
@@ -100,7 +100,7 @@ export class SpeedDialComponent {
    * When true (default), uses `position: fixed`. Set false for `absolute` inside a `relative` parent.
    *
    * @example
-   * <base-speed-dial [fixed]="false" [actions]="actions"></base-speed-dial>
+   * <ply-speed-dial [fixed]="false" [actions]="actions"></ply-speed-dial>
    */
   readonly fixed = input(true, { transform: booleanAttribute });
 
@@ -108,7 +108,7 @@ export class SpeedDialComponent {
    * Trigger / default action button color.
    *
    * @example
-   * <base-speed-dial color="accent" [actions]="actions"></base-speed-dial>
+   * <ply-speed-dial color="accent" [actions]="actions"></ply-speed-dial>
    */
   readonly color = input<IconButtonColor | string>('primary');
 
@@ -116,7 +116,7 @@ export class SpeedDialComponent {
    * Size of the trigger and action icon buttons.
    *
    * @example
-   * <base-speed-dial size="lg" [actions]="actions"></base-speed-dial>
+   * <ply-speed-dial size="lg" [actions]="actions"></ply-speed-dial>
    */
   readonly size = input<IconButtonSize>('lg');
 
@@ -124,7 +124,7 @@ export class SpeedDialComponent {
    * Icon shown on the trigger when closed.
    *
    * @example
-   * <base-speed-dial openIcon="plus" [actions]="actions"></base-speed-dial>
+   * <ply-speed-dial openIcon="plus" [actions]="actions"></ply-speed-dial>
    */
   readonly openIcon = input('plus');
 
@@ -132,7 +132,7 @@ export class SpeedDialComponent {
    * Icon shown on the trigger when open.
    *
    * @example
-   * <base-speed-dial closeIcon="x" [actions]="actions"></base-speed-dial>
+   * <ply-speed-dial closeIcon="x" [actions]="actions"></ply-speed-dial>
    */
   readonly closeIcon = input('x');
 
@@ -140,7 +140,7 @@ export class SpeedDialComponent {
    * When true, shows each action’s `label` beside the button.
    *
    * @example
-   * <base-speed-dial [showLabels]="true" [actions]="actions"></base-speed-dial>
+   * <ply-speed-dial [showLabels]="true" [actions]="actions"></ply-speed-dial>
    */
   readonly showLabels = input(false, { transform: booleanAttribute });
 
@@ -148,7 +148,7 @@ export class SpeedDialComponent {
    * When true, clicking an action closes the dial (default).
    *
    * @example
-   * <base-speed-dial [closeOnAction]="false" [actions]="actions"></base-speed-dial>
+   * <ply-speed-dial [closeOnAction]="false" [actions]="actions"></ply-speed-dial>
    */
   readonly closeOnAction = input(true, { transform: booleanAttribute });
 
@@ -156,7 +156,7 @@ export class SpeedDialComponent {
    * Accessible name for the speed-dial group / trigger.
    *
    * @example
-   * <base-speed-dial ariaLabel="Create" [actions]="actions"></base-speed-dial>
+   * <ply-speed-dial ariaLabel="Create" [actions]="actions"></ply-speed-dial>
    */
   readonly ariaLabel = input('Speed dial');
 
@@ -164,7 +164,7 @@ export class SpeedDialComponent {
    * Extra host classes merged via `cn()`.
    *
    * @example
-   * <base-speed-dial class="!bottom-20" [actions]="actions"></base-speed-dial>
+   * <ply-speed-dial class="!bottom-20" [actions]="actions"></ply-speed-dial>
    */
   readonly extraClass = input('', { alias: 'class' });
 
@@ -172,7 +172,7 @@ export class SpeedDialComponent {
    * Open state (two-way). Prefer `[(open)]` when controlling from outside.
    *
    * @example
-   * <base-speed-dial [(open)]="isOpen" [actions]="actions"></base-speed-dial>
+   * <ply-speed-dial [(open)]="isOpen" [actions]="actions"></ply-speed-dial>
    */
   readonly open = model(false);
 
@@ -180,7 +180,7 @@ export class SpeedDialComponent {
    * Emitted when an enabled action button is clicked.
    *
    * @example
-   * <base-speed-dial [actions]="actions" (actionClick)="handle($event)"></base-speed-dial>
+   * <ply-speed-dial [actions]="actions" (actionClick)="handle($event)"></ply-speed-dial>
    */
   readonly actionClick = output<SpeedDialAction>();
 

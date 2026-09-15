@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, ChangeDetectionStrategy, computed, input } from '@angular/core';
 import { cn } from '../tw-merge/tw-merge';
@@ -9,10 +9,10 @@ import { cn } from '../tw-merge/tw-merge';
  * Inline keyboard glyph for shortcuts in copy, menus, and docs.
  *
  * @example
- * Press <base-kbd>⌘</base-kbd> <base-kbd>K</base-kbd> to open the command palette.
+ * Press <ply-kbd>⌘</ply-kbd> <ply-kbd>K</ply-kbd> to open the command palette.
  */
 @Component({
-  selector: 'base-kbd',
+  selector: 'ply-kbd',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   templateUrl: './kbd.component.html',
@@ -22,7 +22,7 @@ export class KbdComponent {
   /**
    * Extra host classes merged via `cn()`.
    * @example
-   * <base-kbd class="text-xs">Esc</base-kbd>
+   * <ply-kbd class="text-xs">Esc</ply-kbd>
    */
   readonly extraClass = input('', { alias: 'class' });
 

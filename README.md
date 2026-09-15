@@ -1,8 +1,8 @@
-# Base UI Free Dashboard
+# Ply Free Dashboard
 
-A free Angular admin dashboard template built with **Angular 22**, **Tailwind CSS 4**, and the [Base UI](https://base-ui.net) free tier.
+A free Angular admin dashboard template built with **Angular 22**, **Tailwind CSS 4**, and the [Ply](https://ply-ui.com) free tier.
 
-Use it as a starter for SaaS-style apps, or as a live gallery to review free Base UI components in a real shell.
+Use it as a starter for SaaS-style apps, or as a live gallery to review free Ply components in a real shell.
 
 ---
 
@@ -12,16 +12,16 @@ Use it as a starter for SaaS-style apps, or as a live gallery to review free Bas
 | --- | --- |
 | Framework | Angular 22 (standalone, zoneless-friendly patterns) |
 | Styling | Tailwind CSS 4 |
-| Components | Base UI free tier via [`base-ui-cli`](https://www.npmjs.com/package/base-ui-cli) (source copied into the repo) |
-| Icons | Base UI sprite (`public/assets/icons.svg`) |
+| Components | Ply free tier via [`ply-ui-cli`](https://www.npmjs.com/package/ply-ui-cli) (source copied into the repo) |
+| Icons | Ply sprite (`public/assets/icons.svg`) |
 
 ---
 
 ## Features
 
 - **Auth flow** — login, register, forgot password (mocked `localStorage` auth)
-- **App shell** — free `base-app-shell` with a collapsible mini rail, grouped `base-app-shell-nav-section` links, and a compact topbar
-- **App pages** — dashboard metrics, users CRUD with dialogs, settings with in-page `base-sidenav`
+- **App shell** — free `ply-app-shell` with a collapsible mini rail, grouped `ply-app-shell-nav-section` links, and a compact topbar
+- **App pages** — dashboard metrics, users CRUD with dialogs, settings with in-page `ply-sidenav`
 - **Component gallery** — scroll-nav demos for primitives, forms, feedback, overlays, navigation, data display, and all 19 free form blocks (including hover-card, menubar, currency-input, kbd, aspect-ratio, scroll-area, loading-overlay, and cookie-banner)
 - **Pro upsell notes** — comments where Pro widgets/layouts would extend the free shell
 
@@ -42,7 +42,7 @@ Open [http://localhost:4200](http://localhost:4200).
 
 | Field | Value |
 | --- | --- |
-| Email | `demo@base-ui.net` |
+| Email | `demo@ply-ui.com` |
 | Password | `password` |
 
 (Any email/password works — auth is mocked.)
@@ -130,7 +130,7 @@ Browse under **Component gallery** in the sidebar (requires sign-in).
 | `/app/ui/data-display` | Cards, stats, calendar, carousel, code, paginator, timeline, quote |
 | `/app/ui/form-blocks` | All 19 free form blocks (capped at `540px` in the demo) |
 
-Gallery pages use `base-scroll-nav` (“On this page”), content max-width **1080px**, and consistent section cards.
+Gallery pages use `ply-scroll-nav` (“On this page”), content max-width **1080px**, and consistent section cards.
 
 ---
 
@@ -138,7 +138,7 @@ Gallery pages use `base-scroll-nav` (“On this page”), content max-width **10
 
 ```
 src/app/
-  components/          # Base UI components (CLI) + layout-app-shell
+  components/          # Ply components (CLI) + layout-app-shell
   core/auth/           # Mock auth service + guards
   layouts/
     app-shell/         # Authenticated chrome
@@ -153,7 +153,7 @@ base-ui.json           # CLI config
 base-ui-lock.json      # Installed component lockfile
 ```
 
-Import Base UI symbols with the path alias:
+Import Ply symbols with the path alias:
 
 ```ts
 import { BaseButtonDirective, CardComponent } from 'Base';
@@ -169,38 +169,38 @@ Alias mapping: `"Base"` → `src/app/components/index.ts` (see `tsconfig.json`).
 
 | Need | Use | Tier |
 | --- | --- | --- |
-| App chrome (sidebar + topbar + content) | `base-app-shell` (`layout-app-shell`) + `SidebarService` | Free |
-| Grouped sidebar links (labels fade in the mini rail) | `base-app-shell-nav-section` + `base-app-shell-nav-item` | Free |
-| In-page section nav (Settings, docs TOC) | `base-sidenav` | Free |
-| Unified product chrome (page + dashboard modes) | `base-shell` | Pro |
+| App chrome (sidebar + topbar + content) | `ply-app-shell` (`layout-app-shell`) + `SidebarService` | Free |
+| Grouped sidebar links (labels fade in the mini rail) | `ply-app-shell-nav-section` + `ply-app-shell-nav-item` | Free |
+| In-page section nav (Settings, docs TOC) | `ply-sidenav` | Free |
+| Unified product chrome (page + dashboard modes) | `ply-shell` | Pro |
 | Nested / multi-level nav | `mega-menu`, `tree` | Pro |
 | Full opinionated dashboard page | `layout-dashboard` | Pro |
 
-Do **not** use `base-sidenav` as the primary application shell — it is for section navigation inside a page body.
+Do **not** use `ply-sidenav` as the primary application shell — it is for section navigation inside a page body.
 
 More detail: [docs/shells-vs-sidenav.md](docs/shells-vs-sidenav.md).
 
 ---
 
-## Working with Base UI
+## Working with Ply
 
-This project already has Base UI initialized. Components live under `src/app/components/` (you own the source).
+This project already has Ply initialized. Components live under `src/app/components/` (you own the source).
 
 ```bash
 # List free + pro catalog
-npx base-ui-cli list
+npx ply-ui-cli list
 
 # Add a component
-npx base-ui-cli add dialog -y
+npx ply-ui-cli add dialog -y
 
 # Update installed components from the registry
-npx base-ui-cli update -y
+npx ply-ui-cli update -y
 
 # Diff local vs upstream
-npx base-ui-cli diff
+npx ply-ui-cli diff
 ```
 
-Docs & pricing: [base-ui.net](https://base-ui.net) · [Pricing](https://base-ui.net/pricing)
+Docs & pricing: [ply-ui.com](https://ply-ui.com) · [Pricing](https://ply-ui.com/pricing)
 
 ---
 
@@ -216,4 +216,4 @@ Docs & pricing: [base-ui.net](https://base-ui.net) · [Pricing](https://base-ui.
 
 Dashboard template code in this repository is available for use in your projects.
 
-Base UI component source copied by the CLI is licensed under the [Base UI license](https://github.com/lussos/base-theme/blob/main/LICENSE.md): free-tier components are free for unlimited projects; Pro components require a license. Do not redistribute fetched component source as a standalone library or kit.
+Ply component source copied by the CLI is licensed under the [Ply license](https://github.com/ply-ui-ng/ply-theme/blob/main/LICENSE.md): free-tier components are free for unlimited projects; Pro components require a license. Do not redistribute fetched component source as a standalone library or kit.

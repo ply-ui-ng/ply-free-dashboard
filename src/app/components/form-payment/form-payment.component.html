@@ -1,20 +1,20 @@
 <!--
-  Base UI (free tier) — https://base-ui.net
+  Ply (free tier) — https://ply-ui.com
   Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-  Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+  Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 -->
-<base-card class="mb-8">
+<ply-card class="mb-8">
         <div class="flex justify-between items-center px-6 py-4 border-b border-slate-100 dark:border-slate-800">
           <h3 class="font-bold text-sm text-slate-900 dark:text-white">Payment Info</h3>
           <div class="flex gap-2 items-center">
-            <base-icon name="check-circle" class="w-4 h-4 stroke-green-500"></base-icon>
-            <base-icon name="check-circle" class="w-4 h-4 stroke-slate-900 dark:stroke-white"></base-icon>
+            <ply-icon name="check-circle" class="w-4 h-4 stroke-green-500"></ply-icon>
+            <ply-icon name="check-circle" class="w-4 h-4 stroke-slate-900 dark:stroke-white"></ply-icon>
             <div
               class="w-4 h-4 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center text-[10px] font-bold text-slate-400">
               3</div>
           </div>
         </div>
-        <base-card-body class="p-6 flex flex-col flex-1">
+        <ply-card-body class="p-6 flex flex-col flex-1">
           <div class="flex gap-4 mb-6">
             <button
               class="flex-1 py-4 rounded-xl border border-blue-500 dark:border-white flex items-center justify-center">
@@ -29,38 +29,38 @@
           <p class="text-xs text-slate-500 mb-8 leading-relaxed">Safe money transfer using your bank account.
             Visa, Maestro, Discover...</p>
 
-          <base-input-group class="mb-4">
-            <base-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Cardholder
-              Name</base-label>
-            <input base-input placeholder="Full name" />
-          </base-input-group>
+          <ply-input-group class="mb-4">
+            <ply-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Cardholder
+              Name</ply-label>
+            <input ply-input placeholder="Full name" />
+          </ply-input-group>
 
-          <base-input-group class="mb-4">
-            <base-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Card Number</base-label>
-            <input base-input placeholder="•••• •••• •••• ••••" />
-          </base-input-group>
+          <ply-input-group class="mb-4">
+            <ply-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Card Number</ply-label>
+            <input ply-input placeholder="•••• •••• •••• ••••" />
+          </ply-input-group>
 
           <div class="flex gap-4 mb-8">
-            <base-input-group class="inline-block">
-              <base-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Expiry Date</base-label>
-              <input base-input placeholder="MM / YY" />
-            </base-input-group>
-            <base-input-group class="inline-block">
-              <base-label class="text-[10px]! uppercase font-light! tracking-[2px]!">CVV</base-label>
-              <input base-input placeholder="CVV" />
-            </base-input-group>
+            <ply-input-group class="inline-block">
+              <ply-label class="text-[10px]! uppercase font-light! tracking-[2px]!">Expiry Date</ply-label>
+              <input ply-input placeholder="MM / YY" />
+            </ply-input-group>
+            <ply-input-group class="inline-block">
+              <ply-label class="text-[10px]! uppercase font-light! tracking-[2px]!">CVV</ply-label>
+              <input ply-input placeholder="CVV" />
+            </ply-input-group>
           </div>
 
           <div class="flex gap-4 mt-auto ">
             <div class="flex-1">
-              <button base-stroked-button color="primary" class="py-3">
-                <base-icon name="arrow-left" class="-ml-2"></base-icon>
+              <button ply-stroked-button color="primary" class="py-3">
+                <ply-icon name="arrow-left" class="-ml-2"></ply-icon>
                 Back
               </button>
             </div>
             <div class="flex-1">
-              <button base-button color="primary" class="py-3 w-full">Pay Now</button>
+              <button ply-button color="primary" class="py-3 w-full">Pay Now</button>
             </div>
           </div>
-        </base-card-body>
-      </base-card>
+        </ply-card-body>
+      </ply-card>

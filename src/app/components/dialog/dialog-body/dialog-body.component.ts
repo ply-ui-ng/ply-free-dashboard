@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, input, model ,
   ChangeDetectionStrategy
@@ -8,15 +8,15 @@ import { Component, input, model ,
 import { CommonModule } from '@angular/common';
 
 /**
- * A body section for a dialog, rendered as part of `base-dialog`.
+ * A body section for a dialog, rendered as part of `ply-dialog`.
  *
  * @example
- * <base-dialog-body>
+ * <ply-dialog-body>
  *   <p>Dialog content goes here.</p>
- * </base-dialog-body>
+ * </ply-dialog-body>
  */
 @Component({
-  selector: 'base-dialog-body',
+  selector: 'ply-dialog-body',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CommonModule],
   templateUrl: './dialog-body.component.html'

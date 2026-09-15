@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   trigger,
@@ -15,7 +15,7 @@ import {
  *
  * @example
  * <div [@dropdown]>
- *   <base-dropdown-menu>...</base-dropdown-menu>
+ *   <ply-dropdown-menu>...</ply-dropdown-menu>
  * </div>
  */
 export const dropdown = trigger('dropdown', [
@@ -48,7 +48,7 @@ export const dropdown = trigger('dropdown', [
  *
  * @example
  * <div [@openClose]>
- *   <base-accordion-item-body>Content</base-accordion-item-body>
+ *   <ply-accordion-item-body>Content</ply-accordion-item-body>
  * </div>
  */
 export const openClose = trigger('openClose', [
@@ -82,7 +82,7 @@ export const openClose = trigger('openClose', [
  *
  * @example
  * <button [@rotate180]>
- *   <base-icon name="chevron-down"></base-icon>
+ *   <ply-icon name="chevron-down"></ply-icon>
  * </button>
  */
 export const rotate180 = trigger('rotate180', [
@@ -113,7 +113,7 @@ export const rotate180 = trigger('rotate180', [
  *
  * @example
  * <div [@tabAnimation]>
- *   <base-tab-body>Tab content</base-tab-body>
+ *   <ply-tab-body>Tab content</ply-tab-body>
  * </div>
  */
 export const tabAnimation = trigger('tabAnimation', [

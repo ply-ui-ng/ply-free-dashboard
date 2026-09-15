@@ -1,22 +1,22 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import { Component, TemplateRef, input, viewChild ,
   ChangeDetectionStrategy, booleanAttribute } from '@angular/core';
 
 
 /**
- * An individual step within a `base-stepper`.
+ * An individual step within a `ply-stepper`.
  * Contains the label, icon, and template content to render when active.
  *
  * @example
- * <base-step label="Shipping" icon="truck" description="Enter address">
+ * <ply-step label="Shipping" icon="truck" description="Enter address">
  *   <div>Shipping form content</div>
- * </base-step>
+ * </ply-step>
  */
 @Component({
-  selector: 'base-step',
+  selector: 'ply-step',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   templateUrl: './step.component.html'

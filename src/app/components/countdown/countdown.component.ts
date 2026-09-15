@@ -1,6 +1,6 @@
-// Base UI (free tier) — https://base-ui.net
+// Ply (free tier) — https://ply-ui.com
 // Free to use in unlimited projects. Do not redistribute this source as a library, kit, or template collection.
-// Full license terms: https://github.com/Base-ui-ng/base-ui/blob/main/LICENSE.md
+// Full license terms: https://github.com/ply-ui-ng/ply/blob/main/LICENSE.md
 
 import {
   afterNextRender,
@@ -34,10 +34,10 @@ export interface CountdownTime {
  * hydration on prerendered pages (where `ngOnInit` does not re-run).
  *
  * @example
- * <base-countdown [targetDate]="launchDate" (finished)="onLaunch()"></base-countdown>
+ * <ply-countdown [targetDate]="launchDate" (finished)="onLaunch()"></ply-countdown>
  */
 @Component({
-  selector: 'base-countdown',
+  selector: 'ply-countdown',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   templateUrl: './countdown.component.html',
@@ -48,7 +48,7 @@ export class CountdownComponent {
    * Extra host classes merged via `cn()`.
    *
    * @example
-   * <base-countdown class="justify-center" [targetDate]="date"></base-countdown>
+   * <ply-countdown class="justify-center" [targetDate]="date"></ply-countdown>
    */
   readonly extraClass = input('', { alias: 'class' });
 
@@ -56,7 +56,7 @@ export class CountdownComponent {
    * Instant the countdown ends. Accepts a `Date` or an ISO/parseable string.
    *
    * @example
-   * <base-countdown [targetDate]="'2026-12-31T23:59:59Z'"></base-countdown>
+   * <ply-countdown [targetDate]="'2026-12-31T23:59:59Z'"></ply-countdown>
    */
   readonly targetDate = input.required<Date | string>();
 
@@ -64,7 +64,7 @@ export class CountdownComponent {
    * Whether to show the days unit.
    *
    * @example
-   * <base-countdown [targetDate]="date" [showDays]="false"></base-countdown>
+   * <ply-countdown [targetDate]="date" [showDays]="false"></ply-countdown>
    */
   readonly showDays = input(true, { transform: booleanAttribute });
 
@@ -72,7 +72,7 @@ export class CountdownComponent {
    * Label under the days value.
    *
    * @example
-   * <base-countdown [targetDate]="date" daysLabel="D"></base-countdown>
+   * <ply-countdown [targetDate]="date" daysLabel="D"></ply-countdown>
    */
   readonly daysLabel = input('Days');
 
@@ -80,7 +80,7 @@ export class CountdownComponent {
    * Label under the hours value.
    *
    * @example
-   * <base-countdown [targetDate]="date" hoursLabel="H"></base-countdown>
+   * <ply-countdown [targetDate]="date" hoursLabel="H"></ply-countdown>
    */
   readonly hoursLabel = input('Hours');
 
@@ -88,7 +88,7 @@ export class CountdownComponent {
    * Label under the minutes value.
    *
    * @example
-   * <base-countdown [targetDate]="date" minutesLabel="M"></base-countdown>
+   * <ply-countdown [targetDate]="date" minutesLabel="M"></ply-countdown>
    */
   readonly minutesLabel = input('Min');
 
@@ -96,7 +96,7 @@ export class CountdownComponent {
    * Label under the seconds value.
    *
    * @example
-   * <base-countdown [targetDate]="date" secondsLabel="S"></base-countdown>
+   * <ply-countdown [targetDate]="date" secondsLabel="S"></ply-countdown>
    */
   readonly secondsLabel = input('Sec');
 
@@ -104,7 +104,7 @@ export class CountdownComponent {
    * Emits on every tick with the remaining time breakdown.
    *
    * @example
-   * <base-countdown [targetDate]="date" (tick)="onTick($event)"></base-countdown>
+   * <ply-countdown [targetDate]="date" (tick)="onTick($event)"></ply-countdown>
    */
   readonly tick = output<CountdownTime>();
 
@@ -112,7 +112,7 @@ export class CountdownComponent {
    * Emits once when the countdown reaches zero.
    *
    * @example
-   * <base-countdown [targetDate]="date" (finished)="onLaunch()"></base-countdown>
+   * <ply-countdown [targetDate]="date" (finished)="onLaunch()"></ply-countdown>
    */
   readonly finished = output<void>();
 
