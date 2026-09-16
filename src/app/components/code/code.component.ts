@@ -18,7 +18,7 @@ import { isPlatformBrowser } from '@angular/common';
 import { Clipboard, ClipboardModule } from '@angular/cdk/clipboard';
 import { buttonSlideRightToLeft, openClose } from '../animations/animations';
 import { IconComponent } from '../icon/icon.component';
-import { IconButtonDirective } from '../button/base-icon-button.directive';
+import { IconButtonDirective } from '../button/ply-icon-button.directive';
 import { TooltipDirective } from '../tooltip/tooltip.directive';
 import { ToastService } from '../toast/toast.service';
 import { injectTimers } from '../safe-timer/safe-timer';

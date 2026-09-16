@@ -67,7 +67,7 @@ export class AppShell {
   protected readonly theme = inject(ThemeService);
   protected readonly sidebar = inject(SidebarService);
 
-  protected readonly githubRepoUrl = 'https://github.com/lussos/base-ui-free-dashboard';
+  protected readonly githubRepoUrl = 'https://github.com/ply-ui-ng/ply-free-dashboard';
 
   protected readonly appNav: NavItem[] = [
     { path: '/app/dashboard', label: 'Home', icon: 'home', title: 'Dashboard' },

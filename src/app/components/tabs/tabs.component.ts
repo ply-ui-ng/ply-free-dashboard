@@ -8,7 +8,7 @@ import { NgTemplateOutlet, DOCUMENT } from '@angular/common';
 import { Subject } from 'rxjs';
 import { TabComponent } from './tab/tab.component';
 import { IconComponent } from '../icon/icon.component';
-import { IconButtonDirective } from '../button/base-icon-button.directive';
+import { IconButtonDirective } from '../button/ply-icon-button.directive';
 import { cn } from '../tw-merge/tw-merge';
 import { injectTimers } from '../safe-timer/safe-timer';
 

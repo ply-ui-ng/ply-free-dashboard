@@ -11,13 +11,13 @@ import { TabLabelComponent } from '../tabs/tab-label/tab-label.component';
 import { TabBodyComponent } from '../tabs/tab-body/tab-body.component';
 import { InputGroupComponent } from '../input-group/input-group.component';
 import { LabelComponent } from '../input-group/label/label.component';
-import { BaseInputDirective } from '../input-group/base-input.directive';
-import { BaseAddonEndDirective } from '../input-group/base-addon-end.directive';
+import { BaseInputDirective } from '../input-group/ply-input.directive';
+import { BaseAddonEndDirective } from '../input-group/ply-addon-end.directive';
 import { IconComponent } from '../icon/icon.component';
 import { CheckboxComponent } from '../checkbox/checkbox.component';
-import { BaseButtonDirective } from '../button/base-button.directive';
-import { IconStrokedButtonDirective } from '../button/base-icon-stroked-button.directive';
-import { BaseLinkDirective } from '../button/base-link.directive';
+import { BaseButtonDirective } from '../button/ply-button.directive';
+import { IconStrokedButtonDirective } from '../button/ply-icon-stroked-button.directive';
+import { BaseLinkDirective } from '../button/ply-link.directive';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,

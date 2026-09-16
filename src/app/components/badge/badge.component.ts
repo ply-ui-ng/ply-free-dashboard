@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 import { Component, input, computed ,
   ChangeDetectionStrategy
 } from '@angular/core';
-import { BaseBadgeAddon } from './base-badge-addon.directive';
+import { BaseBadgeAddon } from './ply-badge-addon.directive';
 import { BadgeColor, BadgeSize, BadgeShape } from "../types";
 import { cn } from '../tw-merge/tw-merge';
 

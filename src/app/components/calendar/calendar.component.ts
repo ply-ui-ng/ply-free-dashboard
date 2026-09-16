@@ -5,7 +5,7 @@
 import { Component, OnInit, input, output, model, computed, signal, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IconComponent } from '../icon/icon.component';
-import { IconButtonDirective } from '../button/base-icon-button.directive';
+import { IconButtonDirective } from '../button/ply-icon-button.directive';
 import { cn } from '../tw-merge/tw-merge';
 
 let calendarIdCounter = 0;

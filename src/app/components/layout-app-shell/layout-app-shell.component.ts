@@ -15,7 +15,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { IconComponent } from '../icon/icon.component';
-import { IconStrokedButtonDirective } from '../button/base-icon-stroked-button.directive';
+import { IconStrokedButtonDirective } from '../button/ply-icon-stroked-button.directive';
 import { SidebarService } from '../sidebar/sidebar.service';
 import { cn } from '../tw-merge/tw-merge';
 

@@ -18,7 +18,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { IconComponent } from '../icon/icon.component';
-import { IconButtonDirective } from '../button/base-icon-button.directive';
+import { IconButtonDirective } from '../button/ply-icon-button.directive';
 import { BreadcrumbComponent } from '../breadcrumb/breadcrumb.component';
 import { BreadcrumbItemComponent } from '../breadcrumb/breadcrumb-item/breadcrumb-item.component';
 import { IconButtonColor, SidenavLayoutMode } from '../types';

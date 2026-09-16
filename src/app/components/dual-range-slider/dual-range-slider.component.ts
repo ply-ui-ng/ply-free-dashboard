@@ -67,7 +67,7 @@ import { cn } from '../tw-merge/tw-merge';
         border: 2px solid white;
         box-shadow: 0 1px 3px rgb(0 0 0 / 0.25);
         cursor: pointer;
-        background: var(--base-dual-thumb);
+        background: var(--ply-dual-thumb);
       }
       :host input[type='range']::-moz-range-thumb {
         pointer-events: auto;
@@ -77,7 +77,7 @@ import { cn } from '../tw-merge/tw-merge';
         border: 2px solid white;
         box-shadow: 0 1px 3px rgb(0 0 0 / 0.25);
         cursor: pointer;
-        background: var(--base-dual-thumb);
+        background: var(--ply-dual-thumb);
       }
       :host input[type='range']:disabled::-webkit-slider-thumb {
         cursor: default;

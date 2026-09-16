@@ -7,7 +7,7 @@ import { Component, OnInit, input ,
 } from '@angular/core';
 
 import { InputGroupComponent } from '../input-group/input-group.component';
-import { BaseInputDirective } from '../input-group/base-input.directive';
+import { BaseInputDirective } from '../input-group/ply-input.directive';
 import { IconComponent } from '../icon/icon.component';
 
 /**

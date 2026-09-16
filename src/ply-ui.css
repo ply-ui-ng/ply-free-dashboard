@@ -1,4 +1,4 @@
-/* Legacy alias for ply-ui.css — https://ply-ui.com */
+/* Ply global styles — https://ply-ui.com */
 
 /* Overlay positioning for dialogs, dropdowns and tooltips (Angular CDK). */
 @import '@angular/cdk/overlay-prebuilt.css';

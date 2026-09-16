@@ -7,8 +7,8 @@ import { Component, input, output, contentChildren, model ,
 import { NgTemplateOutlet } from '@angular/common';
 import { StepComponent } from './step/step.component';
 import { IconComponent } from '../icon/icon.component';
-import { BaseButtonDirective } from '../button/base-button.directive';
-import { StrokedButtonDirective } from '../button/base-stroked-button.directive';
+import { BaseButtonDirective } from '../button/ply-button.directive';
+import { StrokedButtonDirective } from '../button/ply-stroked-button.directive';
 import { cn } from '../tw-merge/tw-merge';
 
 /**

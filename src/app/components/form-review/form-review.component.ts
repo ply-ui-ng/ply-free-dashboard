@@ -8,12 +8,12 @@ import { CardComponent } from '../card/card.component';
 import { CardBodyComponent } from '../card/card-body/card-body.component';
 import { InputGroupComponent } from '../input-group/input-group.component';
 import { LabelComponent } from '../input-group/label/label.component';
-import { BaseInputDirective } from '../input-group/base-input.directive';
+import { BaseInputDirective } from '../input-group/ply-input.directive';
 import { IconComponent } from '../icon/icon.component';
-import { BaseButtonDirective } from '../button/base-button.directive';
+import { BaseButtonDirective } from '../button/ply-button.directive';
 import { StarRatingComponent } from '../star-rating/star-rating.component';
 import { StarComponent } from '../star-rating/star/star.component';
-import { BaseTextareaDirective } from '../input-group/base-textarea.directive';
+import { BaseTextareaDirective } from '../input-group/ply-textarea.directive';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,

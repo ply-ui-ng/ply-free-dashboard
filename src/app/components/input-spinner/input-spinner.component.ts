@@ -11,7 +11,7 @@ import { Component,
 import { CommonModule } from '@angular/common';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR, FormsModule } from '@angular/forms';
 import { IconComponent } from '../icon/icon.component';
-import { IconButtonDirective } from '../button/base-icon-button.directive';
+import { IconButtonDirective } from '../button/ply-icon-button.directive';
 import { cn } from '../tw-merge/tw-merge';
 
 /**

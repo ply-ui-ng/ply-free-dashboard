@@ -6,11 +6,11 @@ import {Component, computed, signal, ChangeDetectionStrategy} from '@angular/cor
 import { CardComponent } from '../card/card.component';
 import { InputGroupComponent } from '../input-group/input-group.component';
 import { LabelComponent } from '../input-group/label/label.component';
-import { BaseInputDirective } from '../input-group/base-input.directive';
-import { BaseButtonDirective } from '../button/base-button.directive';
+import { BaseInputDirective } from '../input-group/ply-input.directive';
+import { BaseButtonDirective } from '../button/ply-button.directive';
 import { IconComponent } from '../icon/icon.component';
-import { BaseAddonEndDirective } from '../input-group/base-addon-end.directive';
-import { BaseAddonStartDirective } from '../input-group/base-addon-start.directive';
+import { BaseAddonEndDirective } from '../input-group/ply-addon-end.directive';
+import { BaseAddonStartDirective } from '../input-group/ply-addon-start.directive';
 
 interface FilterChip {
   label: string;

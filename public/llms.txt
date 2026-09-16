@@ -2,8 +2,8 @@
 
 > Free Angular 22 + Tailwind CSS 4 admin dashboard template powered by Ply free-tier components. Use it as a SaaS starter or as a live gallery of free Ply widgets.
 
-Site: https://base-ui-free-dashboard-demo.pages.dev/
-Source: https://github.com/lussos/base-ui-free-dashboard
+Site: https://demo.ply-ui.com/
+Source: https://github.com/ply-ui-ng/ply-free-dashboard
 Product docs: https://ply-ui.com
 Pricing: https://ply-ui.com/pricing
 
@@ -30,12 +30,12 @@ Demo login: `demo@ply-ui.com` / `password` (any credentials work).
 
 ## Important URLs
 
-- [Live demo](https://base-ui-free-dashboard-demo.pages.dev/)
-- [Sign in](https://base-ui-free-dashboard-demo.pages.dev/login)
-- [GitHub repository](https://github.com/lussos/base-ui-free-dashboard)
-- [Open Graph image](https://base-ui-free-dashboard-demo.pages.dev/og-image.png)
-- [Sitemap](https://base-ui-free-dashboard-demo.pages.dev/sitemap.xml)
-- [robots.txt](https://base-ui-free-dashboard-demo.pages.dev/robots.txt)
+- [Live demo](https://demo.ply-ui.com/)
+- [Sign in](https://demo.ply-ui.com/login)
+- [GitHub repository](https://github.com/ply-ui-ng/ply-free-dashboard)
+- [Open Graph image](https://demo.ply-ui.com/og-image.png)
+- [Sitemap](https://demo.ply-ui.com/sitemap.xml)
+- [robots.txt](https://demo.ply-ui.com/robots.txt)
 
 ## App routes (demo)
 
@@ -67,5 +67,5 @@ Dashboard template code is free to use in projects. Ply free-tier component sour
 
 ## Optional
 
-- [Shells vs sidenav](https://github.com/lussos/base-ui-free-dashboard/blob/main/docs/shells-vs-sidenav.md)
-- [README](https://github.com/lussos/base-ui-free-dashboard/blob/main/README.md)
+- [Shells vs sidenav](https://github.com/ply-ui-ng/ply-free-dashboard/blob/main/docs/shells-vs-sidenav.md)
+- [README](https://github.com/ply-ui-ng/ply-free-dashboard/blob/main/README.md)

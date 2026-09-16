@@ -65,7 +65,7 @@ The demo is set up for [Cloudflare Pages](https://pages.cloudflare.com/) with SP
 ### Option A — Connect the GitHub repo (recommended)
 
 1. In [Cloudflare Dashboard](https://dash.cloudflare.com/) → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**.
-2. Select `lussos/base-ui-free-dashboard`.
+2. Select `ply-ui-ng/ply-free-dashboard`.
 3. Build settings:
 
 | Setting | Value |
@@ -79,7 +79,7 @@ The demo is set up for [Cloudflare Pages](https://pages.cloudflare.com/) with SP
 4. Deploy. Cloudflare will rebuild on every push to `main`.
 5. Optional: attach a custom domain under the project’s **Custom domains** tab.
 
-After the first deploy you get a URL like `https://base-ui-free-dashboard-demo.pages.dev`.
+After the first deploy you get a URL like `https://demo.ply-ui.com`.
 
 ### Option B — GitHub Actions
 
@@ -149,8 +149,8 @@ src/app/
     ui/                # Component gallery
 public/assets/         # Icon sprite, static assets
 docs/                  # Extra architecture notes
-base-ui.json           # CLI config
-base-ui-lock.json      # Installed component lockfile
+ply-ui.json            # CLI config (legacy base-ui.json still resolves)
+ply-ui-lock.json       # Installed component lockfile
 ```
 
 Import Ply symbols with the path alias:

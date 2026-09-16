@@ -14,8 +14,8 @@ import {
   signal,
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { BaseButtonDirective } from '../button/base-button.directive';
-import { StrokedButtonDirective } from '../button/base-stroked-button.directive';
+import { BaseButtonDirective } from '../button/ply-button.directive';
+import { StrokedButtonDirective } from '../button/ply-stroked-button.directive';
 import { IconComponent } from '../icon/icon.component';
 import { CookieConsent } from '../types';
 import { cn } from '../tw-merge/tw-merge';

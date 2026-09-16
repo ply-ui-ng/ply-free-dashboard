@@ -20,7 +20,7 @@ import { isPlatformBrowser } from '@angular/common';
 import { Subject, Subscription, timer } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { IconComponent } from '../icon/icon.component';
-import { IconButtonDirective } from '../button/base-icon-button.directive';
+import { IconButtonDirective } from '../button/ply-icon-button.directive';
 import { GALLERY_SLIDER_TOKEN } from './slider.tokens';
 import { CarouselItemComponent } from './carousel-item/carousel-item.component';
 import { cn } from '../tw-merge/tw-merge';

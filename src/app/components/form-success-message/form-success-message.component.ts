@@ -6,7 +6,7 @@ import {Component, ChangeDetectionStrategy} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from '../card/card.component';
 import { IconComponent } from '../icon/icon.component';
-import { BaseButtonDirective } from '../button/base-button.directive';
+import { BaseButtonDirective } from '../button/ply-button.directive';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,

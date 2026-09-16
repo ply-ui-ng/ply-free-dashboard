@@ -4,7 +4,7 @@
 
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { IconComponent } from '../icon/icon.component';
-import { IconButtonDirective } from '../button/base-icon-button.directive';
+import { IconButtonDirective } from '../button/ply-icon-button.directive';
 import { ScrollButtonBase } from './scroll-button.base';
 
 /**

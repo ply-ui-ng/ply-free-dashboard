@@ -7,9 +7,9 @@ import { CommonModule } from '@angular/common';
 import { CardComponent } from '../card/card.component';
 import { InputGroupComponent } from '../input-group/input-group.component';
 import { LabelComponent } from '../input-group/label/label.component';
-import { BaseInputDirective } from '../input-group/base-input.directive';
+import { BaseInputDirective } from '../input-group/ply-input.directive';
 import { CheckboxComponent } from '../checkbox/checkbox.component';
-import { BaseButtonDirective } from '../button/base-button.directive';
+import { BaseButtonDirective } from '../button/ply-button.directive';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,

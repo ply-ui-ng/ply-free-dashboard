@@ -8,11 +8,11 @@ import { CardComponent } from '../card/card.component';
 import { CardBodyComponent } from '../card/card-body/card-body.component';
 import { InputGroupComponent } from '../input-group/input-group.component';
 import { LabelComponent } from '../input-group/label/label.component';
-import { BaseInputDirective } from '../input-group/base-input.directive';
-import { BaseAddonEndDirective } from '../input-group/base-addon-end.directive';
+import { BaseInputDirective } from '../input-group/ply-input.directive';
+import { BaseAddonEndDirective } from '../input-group/ply-addon-end.directive';
 import { IconComponent } from '../icon/icon.component';
-import { StrokedButtonDirective } from '../button/base-stroked-button.directive';
-import { BaseTextareaDirective } from '../input-group/base-textarea.directive';
+import { StrokedButtonDirective } from '../button/ply-stroked-button.directive';
+import { BaseTextareaDirective } from '../input-group/ply-textarea.directive';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -7,7 +7,7 @@ import { Component, input ,
   ChangeDetectionStrategy, booleanAttribute } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { IconComponent } from '../icon/icon.component';
-import { IconButtonDirective } from '../button/base-icon-button.directive';
+import { IconButtonDirective } from '../button/ply-icon-button.directive';
 import { SelectComponent } from '../select/select.component';
 import { InputSpinnerComponent } from '../input-spinner/input-spinner.component';
 

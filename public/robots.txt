@@ -1,4 +1,4 @@
-# Ply Free Dashboard — https://base-ui-free-dashboard-demo.pages.dev
+# Ply Free Dashboard — https://demo.ply-ui.com
 User-agent: *
 Allow: /
 Allow: /llms.txt
@@ -36,5 +36,5 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://base-ui-free-dashboard-demo.pages.dev/sitemap.xml
-Host: https://base-ui-free-dashboard-demo.pages.dev
+Sitemap: https://demo.ply-ui.com/sitemap.xml
+Host: https://demo.ply-ui.com

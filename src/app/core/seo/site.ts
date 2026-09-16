@@ -1,5 +1,5 @@
 /** Canonical public site URL (Cloudflare Pages production). */
-export const SITE_URL = 'https://base-ui-free-dashboard-demo.pages.dev';
+export const SITE_URL = 'https://demo.ply-ui.com';
 
 export const SITE_NAME = 'Ply Free Dashboard';
 
@@ -18,7 +18,7 @@ export const SITE_KEYWORDS = [
   'open source',
 ].join(', ');
 
-export const GITHUB_REPO_URL = 'https://github.com/lussos/base-ui-free-dashboard';
+export const GITHUB_REPO_URL = 'https://github.com/ply-ui-ng/ply-free-dashboard';
 
 export const BASE_UI_URL = 'https://ply-ui.com';
 

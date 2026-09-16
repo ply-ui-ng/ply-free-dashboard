@@ -19,7 +19,7 @@ import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { A11yModule } from '@angular/cdk/a11y';
 import { trigger, transition, style, animate } from '@angular/animations';
 import { IconComponent } from '../icon/icon.component';
-import { IconButtonDirective } from '../button/base-icon-button.directive';
+import { IconButtonDirective } from '../button/ply-icon-button.directive';
 import { slideBottom } from '../animations/animations';
 import { cn } from '../tw-merge/tw-merge';
 import { BottomSheetHeight } from '../types';
